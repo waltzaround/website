@@ -1,7 +1,19 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+
+h1 {
+  font-size: 7rem;
+  letter-spacing: -5px;
+
+}
 
 h2 {
   line-height: 1.4;
 }
+
 
 
 
@@ -23,11 +35,31 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
-  background: pink;
   height: 80vh;
   width: 100vw;
-}
+  background: linear-gradient(270deg, #00ffbd, #ff9d9d, #fffb2c, #8466ff, #f8a4f9);
+background-size: 1000% 1000%;
 
+-webkit-animation: AnimationName 12s ease infinite;
+-moz-animation: AnimationName 12s ease infinite;
+animation: AnimationName 12s ease infinite;
+
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 .mainContentContainer{
   position: relative;
   display: flex;
@@ -37,8 +69,7 @@ h2 {
 
 
   height: 320px;
-  max-width: 800px;
-  width: 90%;
+  width: 100%;
 
 }
 
@@ -48,12 +79,21 @@ h2 {
   max-height: 400px;
   max-width: 640px;
   min-width: 320px;
-  margin-right: 80px;
+padding: 20px 0px 0px 20px;
+
 /*  background-color: purple;*/
 }
 
 .column {
   
+}
+
+.primary-button {
+  font-size: 2rem;
+  background-color: rgba(0,0,0,0);
+  font-weight: 700;
+  border: solid 4px;
+  border-radius: 20px;
 }
 
 
@@ -62,16 +102,27 @@ h2 {
   margin-top: 1rem;
 }
 
+
+
+.c-container {
+vertical-align: middle;
+
+margin-top:5%;
+
+}
 .Container {
   z-index: 1;
   position: relative;
+  margin: auto;
   height: auto;
   width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  max-width: 80rem;
   justify-content: center;
-
+}
+.grid-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
 }
  
  .project-title-container {
@@ -88,14 +139,22 @@ h2 {
  }
 
 .project-card {
-  width: 50vw;
-  height: 40vh;
-  background-color:orange;
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
+
+height: 25rem;
+
 }
 
 .red {
   background-color: red;
+}
+
+
+/*For extra small screens*/
+@media screen and (max-width: 800px) {
+.grid-container {
+
+    grid-template-columns: 1fr;
+}
+
+
 }
