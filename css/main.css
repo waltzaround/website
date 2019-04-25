@@ -1,0 +1,91 @@
+.mainContainer {
+  z-index: 1;
+  position: relative;
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  background-color: orange;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: pink;
+  height: 80vh;
+  width: 100vw;
+}
+
+.mainContentContainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+
+  height: 320px;
+  max-width: 800px;
+  width: 90%;
+
+}
+
+.about {
+  height: 30vh;
+  width: 50vw;
+  max-height: 400px;
+  max-width: 640px;
+  min-width: 320px;
+    background-color: purple;
+}
+
+.column {
+  
+}
+
+
+.mainButtonContainer {
+
+  margin-top: 1rem;
+}
+
+.Container {
+  z-index: 1;
+  position: relative;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+}
+ 
+ .project-title-container {
+  width: 80%;
+  max-width: 1280px;
+  height: 80px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 4rem;
+ }
+
+ .project-title {
+  margin: 0;
+ }
+
+.project-card {
+  width: 50vw;
+  height: 40vh;
+  background-color:orange;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.red {
+  background-color: red;
+}
