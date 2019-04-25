@@ -79,7 +79,7 @@ animation: AnimationName 12s ease infinite;
   max-height: 400px;
   max-width: 640px;
   min-width: 320px;
-padding: 20px 0px 0px 20px;
+padding: 20px 0px 0px 0px;
 
 /*  background-color: purple;*/
 }
