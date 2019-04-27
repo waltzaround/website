@@ -25,7 +25,9 @@ h4 {
   line-height: 1.7;
 }
 
-
+video {
+  width: 40rem;
+}
 
 .skew {
     transform: rotate(5deg)
@@ -50,8 +52,7 @@ h4 {
   left: 0;
   height: 100vh;
   width: 100vw;
-/*background-color: black;
-*/
+
   /*background: linear-gradient(270deg, #00ffbd, #ff9d9d, #fffb2c, #8466ff, #f8a4f9);*/
   /*background-size: 1000% 1000%;
 
@@ -173,5 +174,14 @@ height: 25rem;
     grid-template-columns: 1fr;
 }
 
+
+}
+/*For extra small screens*/
+@media screen and (max-width: 400px) {
+
+
+video {
+  width: 100vw;
+}
 
 }
