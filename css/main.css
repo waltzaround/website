@@ -33,6 +33,16 @@ video {
   width: 40rem;
 }
 
+.mainMenu {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  position: fixed;
+  padding: 20px;
+  z-index: 9000;
+  background-color: white;
+
+}
 .skew {
   transform: rotate(5deg)
 }
@@ -72,7 +82,6 @@ video {
 
   max-width: 640px;
   min-width: 320px;
-  padding: 80px 0px 0px 0px;
   box-sizing: border-box;
 }
 
@@ -127,7 +136,9 @@ video {
 .project-title {
   margin: 0;
 }
-
+.heroSpacer {
+margin-top: 80px
+}
 
 
 .wide {
@@ -144,6 +155,10 @@ video {
   .aboutText {
     padding-right: 1rem;
   }
+
+  .heroSpacer {
+margin-top: 80px
+}
 
   video {
     width: 50vw;
@@ -165,6 +180,10 @@ video {
     font-size: 3rem;
     letter-spacing: -1px;
   }
+
+  .heroSpacer {
+margin-top: 0px
+}
 
   .grid-container {
     grid-template-columns: 1fr;
@@ -188,4 +207,21 @@ video {
   }
   /*END SMALL SCREENS ROFL*/
 
+}
+
+/*
+Test classes*/
+.blue {
+  background-color: blue;
+  height: 800px;
+}
+
+.Singledemo {
+  background-color: purple;
+  height: 80rem;
+  width: 80rem;
+}
+.heroawesometext {
+  font-size: 12rem;
+  text-align: center;
 }
