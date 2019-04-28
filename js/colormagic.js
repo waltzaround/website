@@ -36,10 +36,10 @@ function tilt(orientation) {
 
 
 		var widthRatio = (orientation[0] + 180) / 360;
-		colorHue = widthRatio * 360;
+		colorHue = widthRatio * 720;
 
 		var heightRatio = (orientation[1] + 180) / 360;
-		colorSaturation = heightRatio * 50;
+		colorSaturation = heightRatio * 100;
 
 		var coolBackground = document.getElementById("coolBackground");
 
