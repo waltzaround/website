@@ -4,6 +4,10 @@ html {
   font-family: 'Rubik' ,-apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+
+
+
+
 h1 {
   font-size: 7rem;
   letter-spacing: -5px;
@@ -45,7 +49,7 @@ video {
   text-align: center;
 }
 
-.video{
+.coolBackground{
   position: absolute;
   top: 0;
   left: 0;
@@ -69,11 +73,12 @@ video {
   max-width: 640px;
   min-width: 320px;
   padding: 80px 0px 0px 0px;
+  box-sizing: border-box;
 }
 
 .aboutText { 
   padding-left: 2.5rem;
-  box-sizing: border-box;
+
 }
 
 .primary-button {
@@ -123,10 +128,7 @@ video {
   margin: 0;
 }
 
-.project-card {
 
-
-}
 
 .wide {
 
@@ -135,27 +137,49 @@ video {
 .red {
   background-color: red;
 }
+/*END DESKTOP LOL*/
+
+/*For Tablet Screens 640px - 1280px*/
+@media only screen and (min-width:640px) and (max-width: 1279px) {
+  .aboutText {
+    padding-right: 1rem;
+  }
+
+  video {
+    width: 50vw;
+    margin-top: -5rem;
+  }
+
+  .project-card {
+    width: 50vw;
+
+  }
+  /* END TABLET*/
+}
 
 
 /*For extra small screens*/
-@media screen and (max-width: 800px) {
+@media screen and (min-width:0px) and (max-width: 639px) {
   .grid-container {
     grid-template-columns: 1fr;
   }
 
-  video {
-    width: 100vw;
-  }
-}
-
-/*For extra small screens*/
-@media screen and (max-width: 400px) {
-  video {
-    width: 100vw;
-  }
-
   .project-card {
     width: 100vw;
-  }
-}
 
+  }
+  .aboutVideo {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .aboutText {
+    width: 100vw;
+    padding: 1rem;
+  }
+
+  video {
+    width: 100vw;
+  }
+  /*END SMALL SCREENS ROFL*/
+
+}
