@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 100%;
-
+  font-family: 'Rubik' ,-apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 
@@ -23,6 +23,7 @@ h3 {
 
 h4 {
   line-height: 1.7;
+  font-weight: 500;
 }
 
 video {
@@ -173,7 +174,9 @@ height: 25rem;
 
     grid-template-columns: 1fr;
 }
-
+video {
+  width: 100vw;
+}
 
 }
 /*For extra small screens*/
