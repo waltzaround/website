@@ -10,7 +10,6 @@ var mouseX = 0;
 var mouseY = 0;
 var colorHue;
 var colorSaturation;
-let gyroscope = new Gyroscope({frequency: 60});
 
 
 
