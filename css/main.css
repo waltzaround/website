@@ -160,6 +160,11 @@ video {
 
 /*For extra small screens*/
 @media screen and (min-width:0px) and (max-width: 639px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
   .grid-container {
     grid-template-columns: 1fr;
   }
