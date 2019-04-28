@@ -43,7 +43,7 @@ video {
   height: 100vh;
   width: 100vw;
   display: flex;
-  background-color: orange;
+  background-color: white;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -162,7 +162,8 @@ video {
 @media screen and (min-width:0px) and (max-width: 639px) {
 
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
+    letter-spacing: -1px;
   }
 
   .grid-container {
