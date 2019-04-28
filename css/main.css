@@ -4,7 +4,6 @@ html {
   font-family: 'Rubik' ,-apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-
 h1 {
   font-size: 7rem;
   letter-spacing: -5px;
@@ -31,9 +30,8 @@ video {
 }
 
 .skew {
-    transform: rotate(5deg)
+  transform: rotate(5deg)
 }
-
 
 .mainContainer {
   z-index: 1;
@@ -53,30 +51,8 @@ video {
   left: 0;
   height: 100vh;
   width: 100vw;
-
-  /*background: linear-gradient(270deg, #00ffbd, #ff9d9d, #fffb2c, #8466ff, #f8a4f9);*/
-  /*background-size: 1000% 1000%;
-
--webkit-animation: AnimationName 24s ease infinite;
--moz-animation: AnimationName 24s ease infinite;
-animation: AnimationName 24s ease infinite;*/
-
 }
-/*@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}*/
+
 .mainContentContainer{
   position: relative;
   display: flex;
@@ -85,22 +61,19 @@ animation: AnimationName 24s ease infinite;*/
   text-align: center;
   height: 320px;
   width: 100%;
-
 }
 
 .about {
-  height: 30vh;
   width: 50vw;
-  max-height: 400px;
+
   max-width: 640px;
   min-width: 320px;
-padding: 80px 0px 0px 0px;
-
-/*  background-color: purple;*/
+  padding: 80px 0px 0px 0px;
 }
 
-.column {
-  
+.aboutText { 
+  padding-left: 2.5rem;
+  box-sizing: border-box;
 }
 
 .primary-button {
@@ -111,20 +84,16 @@ padding: 80px 0px 0px 0px;
   border-radius: 20px;
 }
 
-
 .mainButtonContainer {
-
   margin-top: 1rem;
 }
 
-
-
 .c-container {
-vertical-align: middle;
-margin-left: 2rem;
-margin-top:2%;
-
+  vertical-align: middle;
+  margin-left: 2rem;
+  margin-top:2%;
 }
+
 .Container {
   z-index: 1;
   position: relative;
@@ -134,28 +103,28 @@ margin-top:2%;
   max-width: 80rem;
   justify-content: center;
 }
+
 .grid-container {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
 }
  
- .project-title-container {
+.project-title-container {
   width: 80%;
   max-width: 1280px;
   height: 8rem;
   text-align: left;
   margin: 0 auto;
   margin-top: 4rem;
- }
+}
 
- .project-title {
+.project-title {
   margin: 0;
- }
+}
 
 .project-card {
 
-height: 25rem;
 
 }
 
@@ -170,21 +139,23 @@ height: 25rem;
 
 /*For extra small screens*/
 @media screen and (max-width: 800px) {
-.grid-container {
-
+  .grid-container {
     grid-template-columns: 1fr;
-}
-video {
-  width: 100vw;
+  }
+
+  video {
+    width: 100vw;
+  }
 }
 
-}
 /*For extra small screens*/
 @media screen and (max-width: 400px) {
+  video {
+    width: 100vw;
+  }
 
-
-video {
-  width: 100vw;
+  .project-card {
+    width: 100vw;
+  }
 }
 
-}
