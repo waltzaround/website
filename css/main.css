@@ -4,9 +4,9 @@ html {
   font-family: 'Rubik' ,-apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-
-
-
+* {
+  -webkit-transition: all 1s;
+}
 
 h1 {
   font-size: 7rem;
@@ -91,11 +91,17 @@ video {
 }
 
 .primary-button {
+  height: 4.5rem;
+  width: 12rem;
   font-size: 2rem;
   background-color: rgba(0,0,0,0);
   font-weight: 700;
   border: solid 4px;
   border-radius: 20px;
+}
+
+.primary-button:hover {
+  background-color: rgba(255,255,255,1);
 }
 
 .mainButtonContainer {
@@ -156,8 +162,8 @@ margin-top: 80px
     padding-right: 1rem;
   }
 
-  .heroSpacer {
-margin-top: 80px
+.heroSpacer {
+  margin-top: 80px
 }
 
   video {
@@ -169,6 +175,12 @@ margin-top: 80px
     width: 50vw;
 
   }
+
+ .project-title-container {
+   margin: 4rem 0px 0px 2rem;
+
+  }
+
   /* END TABLET*/
 }
 
@@ -181,8 +193,10 @@ margin-top: 80px
     letter-spacing: -1px;
   }
 
-  .heroSpacer {
-margin-top: 0px
+
+
+.heroSpacer {
+  margin-top: 0px
 }
 
   .grid-container {

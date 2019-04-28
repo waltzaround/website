@@ -56,10 +56,10 @@ function mousePos (e) {
         mouseY = event.clientX + document.body.scrollTop;
 
 		var widthRatio = mouseX / screenWidth;
-		colorHue = widthRatio * 360 * 0.4;
+		colorHue = widthRatio * 360;
 
 		var heightRatio = mouseY / screenHeight;
-		colorSaturation = heightRatio * 100;
+		colorSaturation = heightRatio * 50;
 
 		var coolBackground = document.getElementById("coolBackground");
 
