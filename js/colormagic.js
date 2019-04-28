@@ -20,6 +20,7 @@ if (window.DeviceOrientationEvent) {
     }, true);
 } else if (window.DeviceMotionEvent) {
     window.addEventListener('devicemotion', function () {
+    	console.log('ios devicemotion e', event)
         tilt([event.acceleration.x * 2, event.acceleration.y * 2]);
     }, true);
 } else {
