@@ -1,12 +1,24 @@
+/*For Desktop Screens1280px++*/
+@media only screen and (min-width:1280px) and (max-width: 90000px) {
+* {
+  -webkit-transition: all 1s;
+}
+/*
+This is screwing with the color animations on mobile to will force it to desktop only*/
+
+  /* END DESKTOP*/
+}
+
+
+
+
 html {
   scroll-behavior: smooth;
   font-size: 100%;
   font-family: 'Rubik' ,-apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-* {
-  -webkit-transition: all 1s;
-}
+
 
 h1 {
   font-size: 7rem;
@@ -31,6 +43,10 @@ h4 {
 
 video {
   width: 40rem;
+}
+
+p {
+  line-height: 1.8;
 }
 
 .mainMenu {
@@ -199,26 +215,31 @@ margin-top: 80px
   margin-top: 0px
 }
 
-  .grid-container {
+.grid-container {
     grid-template-columns: 1fr;
   }
 
-  .project-card {
+.project-card {
     width: 100vw;
 
   }
-  .aboutVideo {
+.aboutVideo {
     padding: 0px 0px 0px 0px;
   }
 
-  .aboutText {
+.aboutText {
     width: 100vw;
     padding: 1rem;
   }
 
-  video {
+video {
     width: 100vw;
   }
+
+.primary-button {
+  height: 4.5rem;
+  width: 12rem;
+
   /*END SMALL SCREENS ROFL*/
 
 }
