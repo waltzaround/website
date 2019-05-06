@@ -50,6 +50,14 @@ p {
   line-height: 1.8;
 }
 
+.top4 {
+  padding-top: 4rem; 
+}
+.menuLink {
+  color: black;
+  text-decoration: none;
+}
+
 .mainMenu {
   top: 0px;
   left: 0px;
@@ -60,9 +68,15 @@ p {
   background-color: white;
 
 }
-.skew {
-  transform: rotate(5deg)
+
+.rightMenu {
+  top: 0px;
+  right: 0px;
+  position: fixed;
+  z-index: 90001;
+  padding: 20px;
 }
+
 
 .mainContainer {
   z-index: 1;
@@ -76,6 +90,24 @@ p {
   text-align: center;
 }
 
+.herocontainer {
+width: 100vw;
+}
+
+.heroHeaderText{
+  top: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 240px;
+  width: 100%;
+}
+ .fullWidthImg {
+  width:80rem;
+ }
+
 .coolBackground{
   position: absolute;
   top: 0;
@@ -85,6 +117,7 @@ p {
 }
 
 .mainContentContainer{
+  top: 0;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -159,10 +192,19 @@ p {
 .project-title {
   margin: 0;
 }
+
 .heroSpacer {
 margin-top: 80px
 }
 
+.heroImg {
+  width:100vw;
+  display: block;
+  position: relative;
+  object-fit: scale-down;
+  background-size: contain;
+  overflow: hidden;
+}
 
 .wide {
 
@@ -192,6 +234,9 @@ margin-top: 80px
     width: 50vw;
 
   }
+ .fullWidthImg {
+  width:100vw;
+ }
 
  .project-title-container {
    margin: 4rem 0px 0px 2rem;
@@ -209,8 +254,14 @@ margin-top: 80px
     font-size: 3rem;
     letter-spacing: -1px;
   }
+  
+.fullWidthImg {
+  width:100vw;
+ }
 
-
+.menuRight {
+  opacity: 0;
+}
 
 .heroSpacer {
   margin-top: 0px
@@ -240,10 +291,10 @@ video {
 .primary-button {
   height: 4.5rem;
   width: 12rem;
-
-  /*END SMALL SCREENS ROFL*/
-
 }
+
+
+}   /*END SMALL SCREENS ROFL*/
 
 /*
 Test classes*/
@@ -260,4 +311,8 @@ Test classes*/
 .heroawesometext {
   font-size: 12rem;
   text-align: center;
+}
+
+.skew {
+  transform: rotate(5deg)
 }
