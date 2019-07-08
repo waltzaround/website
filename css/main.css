@@ -1,13 +1,4 @@
 /*For Desktop Screens1280px++*/
-@media only screen and (min-width:1280px) and (max-width: 90000px) {
-* {
-  -webkit-transition: all 1s;
-}
-/*
-This is screwing with the color animations on mobile to will force it to desktop only*/
-
-  /* END DESKTOP*/
-}
 
 
 
@@ -21,9 +12,10 @@ html {
 
 
 h1 {
-  font-size: 7rem;
-  letter-spacing: -5px;
-  font-weight: 700;
+  font-size: 5rem;
+  letter-spacing: -4px;
+  font-weight: 500;
+  line-height: 1.4;
 
 }
 
@@ -86,8 +78,7 @@ p {
   display: flex;
   background-color: white;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+
 }
 
 .herocontainer {
@@ -117,14 +108,17 @@ width: 100vw;
 }
 
 .mainContentContainer{
+  align-items: top;
   top: 0;
+  margin-top: 0;
+  padding-top: 0; 
   position: relative;
-  display: flex;
+
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  height: 320px;
-  width: 100%;
+
+  text-align: left;
+
+  width: calc(100vw - 4rem);
 }
 
 .about {
@@ -142,16 +136,18 @@ width: 100vw;
 
 .primary-button {
   height: 4.5rem;
-  width: 12rem;
+  padding: 0 2rem 0 2rem;
   font-size: 2rem;
-  background-color: rgba(0,0,0,0);
+  color: black;
+  background: none;
+  border: none;
   font-weight: 700;
-  border: solid 4px;
-  border-radius: 20px;
+
 }
 
 .primary-button:hover {
   background-color: rgba(255,255,255,1);
+  cursor: pointer;
 }
 
 .mainButtonContainer {
@@ -179,7 +175,13 @@ width: 100vw;
   align-items: center;
   grid-template-columns: 1fr 1fr;
 }
- 
+
+.project-card:hover {
+  transition: all 0.25s;
+  transform: scale(1.05);
+}
+
+
 .project-title-container {
   width: 80%;
   max-width: 1280px;
@@ -206,9 +208,6 @@ margin-top: 80px
   overflow: hidden;
 }
 
-.wide {
-
-}
 
 .red {
   background-color: red;
@@ -217,6 +216,11 @@ margin-top: 80px
 
 /*For Tablet Screens 640px - 1280px*/
 @media only screen and (min-width:640px) and (max-width: 1279px) {
+
+
+  h1 {
+    font-size: 4rem;
+  }
   .aboutText {
     padding-right: 1rem;
   }
@@ -232,8 +236,10 @@ margin-top: 80px
 
   .project-card {
     width: 50vw;
-
   }
+
+
+
  .fullWidthImg {
   width:100vw;
  }
@@ -246,13 +252,21 @@ margin-top: 80px
   /* END TABLET*/
 }
 
+@media only screen and (min-width:640px) and (max-width: 1279px) {
+height
+}
+
 
 /*For extra small screens*/
 @media screen and (min-width:0px) and (max-width: 639px) {
 
   h1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     letter-spacing: -1px;
+  }
+
+  .mainContentContainer{ 
+    margin-top: 1rem;
   }
   
 .fullWidthImg {
