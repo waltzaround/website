@@ -9,7 +9,10 @@ html {
   font-family: 'Rubik' ,-apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-
+a {
+  text-decoration: none;
+  line-height: 0;
+}
 
 h1 {
   font-size: 5rem;
@@ -175,24 +178,30 @@ width: 100vw;
   align-items: center;
   grid-template-columns: 1fr 1fr;
 }
+.project-card {
+  
+}
 
 .project-card:hover {
   transition: all 0.25s;
   transform: scale(1.05);
+
 }
 
 
 .project-title-container {
   width: 80%;
   max-width: 1280px;
-  height: 8rem;
+  height: auto;
   text-align: left;
-  margin: 0 auto;
+  margin: 2rem auto;
   margin-top: 4rem;
 }
 
 .project-title {
   margin: 0;
+  height: auto;
+  margin: 2rem auto;
 }
 
 .heroSpacer {
