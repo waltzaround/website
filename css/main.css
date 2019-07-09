@@ -275,7 +275,8 @@ margin-top: 80px
   }
 
   .mainContentContainer{ 
-    margin-top: 1rem;
+    margin-top: 0rem;
+    width: calc(100vw - 2rem);
   }
   
 .fullWidthImg {
