@@ -1,12 +1,9 @@
 /*For Desktop Screens1280px++*/
 
-
-
-
 html {
   scroll-behavior: smooth;
-  font-size: 100%;
-  font-family: 'Rubik' ,-apple-system, BlinkMacSystemFont, sans-serif;
+
+  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 a {
@@ -19,23 +16,35 @@ h1 {
   letter-spacing: -2.5px;
   font-weight: 500;
   line-height: 1.4;
-
 }
 
 h2 {
+  margin-top: 0;
   line-height: 1.4;
+  letter-spacing: -1.6px;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 4rem;
   letter-spacing: -2px;
+  margin: 0;
 }
 
 h4 {
   line-height: 1.7;
   font-weight: 500;
   font-size: 1.4rem;
+  letter-spacing: -1px;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 300;
 }
 
 video {
@@ -47,11 +56,14 @@ p {
 }
 
 .top4 {
-  padding-top: 4rem; 
+  padding-top: 4rem;
 }
 .menuLink {
   color: black;
   text-decoration: none;
+}
+.down {
+  margin-bottom: 2rem;
 }
 
 .mainMenu {
@@ -62,7 +74,6 @@ p {
   padding: 20px;
   z-index: 9000;
   background-color: white;
-
 }
 
 .rightMenu {
@@ -73,23 +84,21 @@ p {
   padding: 20px;
 }
 
-
 .mainContainer {
   z-index: 1;
   position: relative;
-  margin-top: 10rem;
+  margin: 10rem 0;
   width: 100vw;
   display: flex;
   background-color: white;
   justify-content: center;
-
 }
 
 .herocontainer {
-width: 100vw;
+  width: 100vw;
 }
 
-.heroHeaderText{
+.heroHeaderText {
   top: 0;
   position: relative;
   display: flex;
@@ -99,11 +108,11 @@ width: 100vw;
   height: 240px;
   width: 100%;
 }
- .fullWidthImg {
-  width:80rem;
- }
+.fullWidthImg {
+  width: 80rem;
+}
 
-.coolBackground{
+.coolBackground {
   position: absolute;
   top: 0;
   left: 0;
@@ -113,7 +122,7 @@ width: 100vw;
   padding-bottom: 4rem;
 }
 
-.mainContentContainer{
+.mainContentContainer {
   align-items: top;
   top: 0;
   margin-top: 0;
@@ -135,9 +144,8 @@ width: 100vw;
   box-sizing: border-box;
 }
 
-.aboutText { 
+.aboutText {
   padding-left: 2.5rem;
-
 }
 
 .primary-button {
@@ -148,11 +156,10 @@ width: 100vw;
   background: none;
   border: none;
   font-weight: 700;
-
 }
 
 .primary-button:hover {
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255, 255, 255, 1);
   cursor: pointer;
 }
 
@@ -163,7 +170,7 @@ width: 100vw;
 .c-container {
   vertical-align: middle;
   margin-left: 2rem;
-  margin-top:2%;
+  margin-top: 2%;
 }
 
 .Container {
@@ -178,20 +185,16 @@ width: 100vw;
 
 .grid-container {
   display: grid;
-  align-items: center;
+  align-items: top;
   grid-template-columns: 1fr 1fr;
-  
 }
 .project-card {
-  
 }
 
 .project-card:hover {
   transition: all 0.25s;
   transform: scale(1.05);
-
 }
-
 
 .project-title-container {
   width: 80%;
@@ -199,7 +202,6 @@ width: 100vw;
   height: auto;
   text-align: left;
   margin: 4rem auto;
-
 }
 
 .project-title {
@@ -209,11 +211,11 @@ width: 100vw;
 }
 
 .heroSpacer {
-margin-top: 120px
+  margin-top: 120px;
 }
 
 .heroImg {
-  width:100vw;
+  width: 100vw;
   display: block;
   position: relative;
   object-fit: scale-down;
@@ -221,18 +223,21 @@ margin-top: 120px
   overflow: hidden;
 }
 
+.VoluntarilyBG {
+  background-color: purple;
+  padding: 5rem 0;
+}
 
+.white {
+  color: white;
+}
 .red {
   background-color: red;
 }
 /*END DESKTOP LOL*/
 
 /*For Tablet Screens 640px - 1280px*/
-@media only screen and (min-width:640px) and (max-width: 1279px) {
-
-
-  
-
+@media only screen and (min-width: 640px) and (max-width: 1279px) {
   h1 {
     font-size: 4rem;
   }
@@ -240,9 +245,9 @@ margin-top: 120px
     padding-right: 1rem;
   }
 
-.heroSpacer {
-  margin-top: 80px
-}
+  .heroSpacer {
+    margin-top: 80px;
+  }
 
   video {
     width: 50vw;
@@ -253,101 +258,91 @@ margin-top: 120px
     width: 50vw;
   }
   .mainContainer {
-    margin-top: 5rem;
+    margin: 5rem 0;
   }
 
+  .fullWidthImg {
+    width: 100vw;
+  }
 
-
- .fullWidthImg {
-  width:100vw;
- }
-
- .project-title-container {
-   margin: 4rem auto;
-   text-align: center;
-
+  .project-title-container {
+    margin: 4rem auto;
+    text-align: center;
   }
 
   /* END TABLET*/
 }
 
-@media only screen and (min-width:640px) and (max-width: 1279px) {
+@media only screen and (min-width: 640px) and (max-width: 1279px) {
   .mainContainer {
     height: auto;
-
-   }
+  }
 }
 
-
 /*For extra small screens*/
-@media screen and (min-width:0px) and (max-width: 639px) {
-
-  
+@media screen and (min-width: 0px) and (max-width: 639px) {
   h1 {
     font-size: 1.5rem;
     letter-spacing: -1px;
   }
 
   .mainContainer {
-  margin-top: 0;
-}
-  .mainContentContainer{ 
+    margin-top: 0;
+  }
+  .mainContentContainer {
     margin-top: 0rem;
     width: calc(100vw - 2rem);
   }
-  
-.fullWidthImg {
-  width:100vw;
- }
 
-.menuRight {
-  opacity: 0;
-}
-
-.heroSpacer {
-  margin-top: 0px
-}
-
-.grid-container {
-    grid-template-columns: 1fr;
-  }
-
-.project-card {
+  .fullWidthImg {
     width: 100vw;
   }
 
-.project-title {
-  font-size: 2rem;
-}
+  .menuRight {
+    opacity: 0;
+  }
 
-.project-title-container {
- margin: 0 auto;
- text-align: center;
-}
+  .heroSpacer {
+    margin-top: 0px;
+  }
 
-.aboutVideo {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    width: 100vw;
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+
+  .project-title-container {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .aboutVideo {
     padding: 0px 0px 0px 0px;
   }
 
-.aboutText {
+  .aboutText {
     width: 100vw;
     padding: 1rem;
   }
 
-video {
+  video {
     width: 100vw;
   }
 
-.primary-button {
-  height: 4.5rem;
-  width: 12rem;
-  padding-left: 0;
-  text-align: left;
-}
-
-
-
-}   /*END SMALL SCREENS ROFL*/
+  .primary-button {
+    height: 4.5rem;
+    width: 12rem;
+    padding-left: 0;
+    text-align: left;
+  }
+} /*END SMALL SCREENS ROFL*/
 
 /*
 Test classes*/
@@ -367,5 +362,5 @@ Test classes*/
 }
 
 .skew {
-  transform: rotate(5deg)
+  transform: rotate(5deg);
 }
