@@ -1,5 +1,5 @@
-/*For Desktop Screens1280px++*/
 
+/* Base element styling */
 html {
   scroll-behavior: smooth;
 
@@ -16,6 +16,7 @@ h1 {
   letter-spacing: -2.5px;
   font-weight: 500;
   line-height: 1.4;
+  text-rendering: optimizeLegibility;
 }
 
 h2 {
@@ -24,27 +25,30 @@ h2 {
   letter-spacing: -1.6px;
   font-weight: 700;
   font-size: 2.5rem;
+  text-rendering: optimizeLegibility;
 }
 
 h3 {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 4rem;
   letter-spacing: -2px;
+  line-height: 1.35;
   margin: 0;
 }
 
 h4 {
   line-height: 1.7;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.4rem;
   letter-spacing: -1px;
 }
 
 h6 {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #333;
   font-weight: 300;
+  text-rendering: optimizeLegibility;
 }
 
 video {
@@ -53,17 +57,21 @@ video {
 
 p {
   line-height: 1.8;
+  letter-spacing: 0.3px;
+  margin: initial;
+}
+ul {
+  margin:  0.25rem 0 1rem 0;
 }
 
-.top4 {
-  padding-top: 4rem;
-}
+/* End base element styling */
+
+
+/* Primary Menu classes */
 .menuLink {
   color: black;
   text-decoration: none;
-}
-.down {
-  margin-bottom: 2rem;
+  
 }
 
 .mainMenu {
@@ -83,6 +91,69 @@ p {
   z-index: 90001;
   padding: 20px;
 }
+/* End Primary */
+
+/* Text styles */
+
+
+.text-white {
+  color: white;
+
+
+}
+.text-dark {
+  color: #030303;
+
+}
+.text-mighway {
+  color: #246182;
+}
+
+.text-light-link {
+  color: white;  
+  transition: 0.5s;
+}
+.text-light-link:hover {
+  color: pink;
+
+}
+
+
+.case-study-info {
+  font-weight:300;
+}
+
+.case-study-info-bold {
+  font-weight: 500;
+}
+
+/* End text styles */
+
+/* Background styles */
+.voluntarily-bg {
+  background-color: #333;
+  padding: 5rem 0;
+}
+
+.ubiquity-bg {
+  background-color: #09002a;
+  padding: 5rem 0;
+}
+.qrious-bg {
+  background-color: #00f8b5;
+  padding: 5rem 0;
+}
+.flatbot-bg {
+  background-color: #6b44ff;
+  padding: 5rem 0;
+}
+
+.mighway-bg {
+  background-color: #f2e8e1;
+  padding: 5rem 0;
+}
+
+
 
 .mainContainer {
   z-index: 1;
@@ -188,8 +259,7 @@ p {
   align-items: top;
   grid-template-columns: 1fr 1fr;
 }
-.project-card {
-}
+
 
 .project-card:hover {
   transition: all 0.25s;
@@ -223,18 +293,7 @@ p {
   overflow: hidden;
 }
 
-.VoluntarilyBG {
-  background-color: purple;
-  padding: 5rem 0;
-}
 
-.white {
-  color: white;
-}
-.red {
-  background-color: red;
-}
-/*END DESKTOP LOL*/
 
 /*For Tablet Screens 640px - 1280px*/
 @media only screen and (min-width: 640px) and (max-width: 1279px) {
@@ -344,15 +403,30 @@ p {
   }
 } /*END SMALL SCREENS ROFL*/
 
-/*
-Test classes*/
+/* Utility classes - to be refactored out once style is solidified*/
+.top4 {
+  padding-top: 4rem;
+}
+
+.down {
+  margin-bottom: 2rem;
+}
+
+.case-study-subtitle {
+  margin-bottom: 2rem;
+}
+
+.red {
+  background-color: red;
+}
+
 .blue {
   background-color: blue;
   height: 800px;
 }
 
 .Singledemo {
-  background-color: purple;
+  background-color: rgb(96, 93, 96);
   height: 80rem;
   width: 80rem;
 }
