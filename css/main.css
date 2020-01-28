@@ -118,12 +118,24 @@ ul {
 
 }
 
+.text-dark-link {
+  color: #030303;  
+  transition: 0.5s;
+}
+.text-dark-link:hover {
+  color: darkred;
+
+}
 
 .case-study-info {
   font-weight:300;
 }
 
 .case-study-info-bold {
+  font-weight: 500;
+}
+
+h3 > strong {
   font-weight: 500;
 }
 
