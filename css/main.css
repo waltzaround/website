@@ -40,7 +40,7 @@ h4 {
   line-height: 1.7;
   font-weight: 400;
   font-size: 1.4rem;
-  letter-spacing: -1px;
+  letter-spacing: -0.7px;
 }
 
 h6 {
@@ -164,7 +164,7 @@ h3 > strong {
   background-color: #f2e8e1;
   padding: 5rem 0;
 }
-
+/* End Background Styles */
 
 
 .mainContainer {
@@ -304,7 +304,15 @@ h3 > strong {
   background-size: contain;
   overflow: hidden;
 }
+/* Case study Section */
 
+.case-study-title {
+  margin: 2rem 0;
+
+}
+.case-study-image {
+  margin-bottom: 2rem;
+}
 
 
 /*For Tablet Screens 640px - 1280px*/
@@ -312,6 +320,26 @@ h3 > strong {
   h1 {
     font-size: 4rem;
   }
+  h3 { 
+    font-size: 3rem;
+  }
+  .Container {
+    z-index: 1;
+    position: relative;
+    margin: auto;
+    height: auto;
+    width: 90vw;
+
+    justify-content: center;
+  }
+
+  .case-study-image {
+    width: 100%;
+    overflow: cover;
+    margin-top: 2rem;
+
+  }
+
   .aboutText {
     padding-right: 1rem;
   }
@@ -326,11 +354,12 @@ h3 > strong {
   }
 
   .project-card {
-    width: 50vw;
+    width: 100%;
   }
   .mainContainer {
     margin: 5rem 0;
   }
+  
 
   .fullWidthImg {
     width: 100vw;
@@ -341,6 +370,10 @@ h3 > strong {
     text-align: center;
   }
 
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
   /* END TABLET*/
 }
 
@@ -348,6 +381,9 @@ h3 > strong {
   .mainContainer {
     height: auto;
   }
+
+
+
 }
 
 /*For extra small screens*/
@@ -355,6 +391,10 @@ h3 > strong {
   h1 {
     font-size: 1.5rem;
     letter-spacing: -1px;
+  }
+
+  h3 {
+font-size: 2rem;
   }
 
   .mainContainer {
@@ -368,6 +408,25 @@ h3 > strong {
   .fullWidthImg {
     width: 100vw;
   }
+
+.case-study-title {
+  margin: 0 1rem;
+  letter-spacing: -1px;
+}
+.case-study-subtitle {
+  margin: 0 1rem;
+}
+
+.case-study-about {
+  margin: 1rem;
+}
+
+.case-study-image {
+  width: 100%;
+  overflow: cover;
+  margin-top: 2rem;
+
+}
 
   .menuRight {
     opacity: 0;
@@ -420,9 +479,7 @@ h3 > strong {
   padding-top: 4rem;
 }
 
-.down {
-  margin-bottom: 2rem;
-}
+
 
 .case-study-subtitle {
   margin-bottom: 2rem;
