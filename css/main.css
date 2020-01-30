@@ -315,8 +315,8 @@ h3 > strong {
 }
 
 
-/*For Tablet Screens 640px - 1280px*/
-@media only screen and (min-width: 640px) and (max-width: 1279px) {
+/*For Tablet Screens 640px - 1300px*/
+@media only screen and (min-width: 640px) and (max-width: 1300px) {
   h1 {
     font-size: 4rem;
   }
