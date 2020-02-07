@@ -273,13 +273,31 @@ h3 > strong {
   justify-content: center;
 }
 
+.project-container {
+  z-index: 1;
+  position: relative;
+  margin: auto;
+  height: auto;
+  width: 100vw;
+  justify-content: center;
+}
+
 .grid-container {
   display: grid;
   align-items: top;
   grid-template-columns: 1fr 1fr;
 }
 
+.project-grid-container {
+  display: grid;
+  align-items: top;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
+.project-card {
+ width: 100%;
+ overflow: hidden;
+}
 
 .project-card:hover {
   transition: all 0.25s;
