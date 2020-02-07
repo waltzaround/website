@@ -297,6 +297,8 @@ h3 > strong {
 .project-card {
  width: 100%;
  overflow: hidden;
+ height: 100%;
+
 }
 
 .project-card:hover {
@@ -421,9 +423,13 @@ h3 > strong {
     width: 50vw;
     margin-top: -5rem;
   }
+  .project-grid-container {
 
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   .project-card {
     width: 100%;
+    
   }
   .mainContainer {
     margin: 5rem 0;
