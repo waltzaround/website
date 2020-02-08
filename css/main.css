@@ -299,11 +299,11 @@ h3 > strong {
  width: 100%;
  overflow: hidden;
  height: 100%;
-
+ transition: all 0.25s;
 }
 
 .project-card:hover {
-  transition: all 0.25s;
+
   transform: scale(1.1);
   border-radius: 8px;
   
