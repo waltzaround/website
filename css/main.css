@@ -278,7 +278,7 @@ h3 > strong {
   position: relative;
   margin: auto;
   height: auto;
-  width: 100vw;
+  width: 90vw;
   justify-content: center;
 }
 
@@ -291,7 +291,8 @@ h3 > strong {
 .project-grid-container {
   display: grid;
   align-items: top;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 5rem;
 }
 
 .project-card {
@@ -310,7 +311,7 @@ h3 > strong {
   width: 80%;
   max-width: 1280px;
   height: auto;
-  text-align: left;
+  text-align: center;
   margin: 4rem auto;
 }
 
@@ -424,7 +425,6 @@ h3 > strong {
     margin-top: -5rem;
   }
   .project-grid-container {
-
     grid-template-columns: 1fr 1fr 1fr;
   }
   .project-card {
@@ -514,13 +514,19 @@ font-size: 2rem;
   .grid-container {
     grid-template-columns: 1fr;
   }
-
+  .project-container { 
+    width: 100vw;
+  }
   .project-card {
     width: 100vw;
   }
 
   .project-title {
     font-size: 2rem;
+  }
+  .project-grid-container {
+
+    grid-template-columns: 1fr;
   }
 
   .project-title-container {
