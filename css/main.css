@@ -13,8 +13,8 @@ a {
 
 h1 {
   margin: initial;
-  font-size: 3.5rem;
-  letter-spacing: -2.5px;
+  font-size: 2.5rem;
+  letter-spacing: -2px;
   font-weight: 400;
   line-height: 1.4;
   text-rendering: optimizeLegibility;
@@ -27,8 +27,8 @@ h1>strong{
 h2 {
   margin-top: 0;
   line-height: 1.4;
-  letter-spacing: -1.6px;
-  font-weight: 700;
+  letter-spacing: -1.8px;
+  font-weight: 400;
   font-size: 2.5rem;
   text-rendering: optimizeLegibility;
 }
@@ -80,13 +80,13 @@ ul {
   
 }
 
-.mainMenu {
+.main-menu {
   top: 0px;
   left: 0px;
-  width: 100vw;
-  position: fixed;
+  width: calc(100vw - 40px);
+
   padding: 20px;
-  z-index: 9000;
+
   background-color: white;
 }
 
@@ -185,7 +185,14 @@ h3 > strong {
 
 .herocontainer {
   width: 100vw;
+}
 
+.hero-title {
+  line-height: 1.7;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: -0.7px;
+  margin-bottom: 1.5rem;
 }
 
 .heroHeaderText {
@@ -234,9 +241,7 @@ h3 > strong {
   box-sizing: border-box;
 }
 
-.aboutText {
-  padding-left: 2.5rem;
-}
+
 
 .primary-button {
   height: 4.5rem;
@@ -286,6 +291,7 @@ h3 > strong {
   display: grid;
   align-items: top;
   grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
 }
 
 .project-grid-container {
@@ -335,6 +341,10 @@ h3 > strong {
   background-size: contain;
   overflow: hidden;
 }
+
+.about {
+  width: 100%;
+}
 /* Case study Section */
 
 .case-study-title {
@@ -371,6 +381,7 @@ h3 > strong {
 }
 
 .case-study-container-triple-grid {
+  margin-top: 2.5rem;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2.5rem;
