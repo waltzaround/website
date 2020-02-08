@@ -133,6 +133,21 @@ ul {
 
 }
 
+.text-image-centered {
+  text-align: center;
+  margin: initial;
+  font-size: 0.8rem;
+}
+
+
+.hero-title {
+  line-height: 1.7;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: -0.7px;
+  margin-bottom: 1.5rem;
+}
+
 .case-study-info {
   font-weight:300;
 }
@@ -187,13 +202,6 @@ h3 > strong {
   width: 100vw;
 }
 
-.hero-title {
-  line-height: 1.7;
-  font-weight: 300;
-  font-size: 2rem;
-  letter-spacing: -0.7px;
-  margin-bottom: 1.5rem;
-}
 
 .heroHeaderText {
   top: 0;
@@ -351,9 +359,7 @@ h3 > strong {
   margin: 2rem 0;
 
 }
-.case-study-image {
-  margin-bottom: 2rem;
-}
+
 
 .case-study-container {
   margin: 4rem 0;
@@ -366,9 +372,7 @@ h3 > strong {
   object-fit: cover;
 }
 
-.case-study-copy {
-  
-}
+
 
 .case-study-skills {
   width:70%;
@@ -376,14 +380,23 @@ h3 > strong {
  
 .case-study-container-double-grid {
   display:grid;
+  margin: 10rem 0;
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
 }
 
 .case-study-container-triple-grid {
-  margin-top: 2.5rem;
+  margin: 10rem 0;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem;
+
+}
+
+.case-study-container-five-grid {
+  margin-top: 2.5rem;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 2.5rem;
 
 }
