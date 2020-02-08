@@ -86,7 +86,7 @@ ul {
   width: calc(100vw - 40px);
 
   padding: 20px;
-
+  
   background-color: white;
 }
 
@@ -300,12 +300,13 @@ h3 > strong {
   align-items: top;
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 .project-grid-container {
   display: grid;
   align-items: top;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin-bottom: 5rem;
 }
 
@@ -364,6 +365,8 @@ h3 > strong {
 .case-study-container {
   margin: 4rem 0;
 }
+
+
 
 .case-study-img-full {
   width: 100vw;
@@ -473,6 +476,7 @@ h3 > strong {
 
   .grid-container {
     grid-template-columns: 1fr 1fr;
+
   }
 
   /* END TABLET*/
