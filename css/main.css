@@ -304,7 +304,9 @@ h3 > strong {
 
 .project-card:hover {
   transition: all 0.25s;
-  transform: scale(1.05);
+  transform: scale(1.1);
+  border-radius: 8px;
+  
 }
 
 .project-title-container {
