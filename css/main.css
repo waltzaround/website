@@ -304,6 +304,13 @@ h3 > strong {
   justify-content: center;
 }
 
+.hero-grid-container {
+  display: grid;
+  align-items: top;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
 .grid-container {
   display: grid;
   align-items: top;
@@ -443,6 +450,10 @@ h3 > strong {
   h3 { 
     font-size: 3rem;
   }
+
+  .mainContainer{
+    margin-top: 0;
+  }
   .Container {
     z-index: 1;
     position: relative;
@@ -470,7 +481,7 @@ h3 > strong {
 
   video {
     width: 50vw;
-    margin-top: -5rem;
+    
   }
   .project-grid-container {
     grid-template-columns: 1fr 1fr 1fr;
@@ -479,9 +490,7 @@ h3 > strong {
     width: 100%;
     
   }
-  .mainContainer {
-    margin: 5rem 0;
-  }
+
   
 
   .fullWidthImg {
@@ -493,9 +502,15 @@ h3 > strong {
     text-align: center;
   }
 
+
+  .hero-grid-container {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0;
+  }
+
   .grid-container {
     grid-template-columns: 1fr 1fr;
-
+    margin-top: 2rem;
   }
 
   /* END TABLET*/
@@ -544,6 +559,9 @@ font-size: 2rem;
 .case-study-about {
   margin: 1rem;
 }
+.case-study-info {
+  padding-left: 1rem;
+}
 
 .case-study-image {
   width: 100%;
@@ -556,18 +574,31 @@ font-size: 2rem;
     opacity: 0;
   }
 
+  .main-menu {
+    display: none;
+  }
+
   .heroSpacer {
     margin-top: 0px;
   }
-
+  .hero-grid-container {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
   .grid-container {
     grid-template-columns: 1fr;
+    margin-top: 0;
   }
   .project-container { 
     width: 100vw;
   }
   .project-card {
+    
+    display: grid;
     width: 100vw;
+
+  
+
   }
 
   .project-title {
@@ -602,6 +633,30 @@ font-size: 2rem;
     padding-left: 0;
     text-align: left;
   }
+
+  .voluntarily-bg {
+  
+    padding: 2rem 0;
+  }
+  
+  .ubiquity-bg {
+   
+    padding: 2rem 0;
+  }
+  .qrious-bg {
+ 
+    padding: 2rem 0;
+  }
+  .flatbot-bg {
+  
+    padding: 2rem 0;
+  }
+  
+  .mighway-bg {
+
+    padding: 2rem 0;
+  }
+
 } /*END SMALL SCREENS ROFL*/
 
 /* Utility classes - to be refactored out once style is solidified*/
