@@ -2,7 +2,7 @@
 
 New personal website
 - [x] Nicer layout CSS
-- [ ] Copywriting and images (and moar CSS)
+- [x] Landing Page Copywriting and images (and moar CSS)
 - [ ] Case study pages
 - [ ] bells and whistles (ie: txtwav, maybe some canvas or webgl crap to make it extra `poofy`)
 - [ ] WAI & ARIA cleanup (ie: alt tags, semantic evaluation, aria tags for accessibility reasons)
