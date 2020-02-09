@@ -74,10 +74,13 @@ ul {
 
 
 /* Primary Menu classes */
-.menuLink {
+.menu-link {
   color: black;
   text-decoration: none;
-  
+  transition: all 0.4s;
+}
+.menu-link:hover {
+  color: purple;
 }
 
 .main-menu {
@@ -186,7 +189,9 @@ h3 > strong {
   padding: 5rem 0;
 }
 /* End Background Styles */
-
+.text-case-title-container {
+  margin: 2.5rem 0;
+}
 
 .mainContainer {
   z-index: 1;
@@ -306,8 +311,9 @@ h3 > strong {
 .project-grid-container {
   display: grid;
   align-items: top;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
   margin-bottom: 5rem;
+
 }
 
 .project-card {
@@ -383,7 +389,7 @@ h3 > strong {
  
 .case-study-container-double-grid {
   display:grid;
-  margin: 10rem 0;
+  margin: 5rem 0 10rem 0;
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
 }
