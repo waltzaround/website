@@ -6,7 +6,7 @@ New vanilla web personal website - accessible at https://www.walt.online
  
  [70%] Case study pages
  
- [scapped] bells and whistles (ie: txtwav, maybe some canvas or webgl crap to make it extra `poofy`)
+ [scrapped] bells and whistles (ie: txtwav, maybe some canvas or webgl crap to make it extra `poofy`)
 
 - [ ] WAI & ARIA cleanup (ie: alt tags, semantic evaluation, aria tags for accessibility reasons)
 - [ ] Google/social meta crap (ie: schema.org tags, social preview, validation against twitter/fb/LinkedIn etc etc )
