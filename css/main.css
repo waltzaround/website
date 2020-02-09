@@ -112,8 +112,12 @@ ul {
 }
 .text-dark {
   color: #030303;
-
 }
+
+.text-subheading {
+  color: #727272;
+}
+
 .text-mighway {
   color: #246182;
 }
@@ -372,6 +376,10 @@ h3 > strong {
   margin: 4rem 0;
 }
 
+.case-study-credits-container {
+  margin: 0 auto 10rem 0;
+  text-align: left;
+}
 
 
 .case-study-img-full {
