@@ -387,7 +387,11 @@ h3 > strong {
   margin: 0 auto 10rem 0;
   text-align: left;
 }
+.case-study-image {
+  width: 100%;
+  object-fit: scale-down;
 
+}
 
 .case-study-img-full {
   width: 100vw;
@@ -468,6 +472,7 @@ h3 > strong {
     width: 100%;
     overflow: cover;
     margin-top: 2rem;
+    object-fit: scale-down;
 
   }
 
