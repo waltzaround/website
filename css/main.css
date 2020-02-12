@@ -431,13 +431,13 @@ h3 > strong {
 .case-study-triple-grid-item {
   width: 100%;
   height: 25rem;
-  background-color: red;
+  
   border: none;
 }
 .case-study-double-grid-item {
   width: 100%;
   height: 37.5rem;
-  background-color: red;
+ 
   border: none;
 }
 
