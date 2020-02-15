@@ -1,4 +1,3 @@
-
 /* Base element styling */
 html {
   scroll-behavior: smooth;
@@ -20,7 +19,7 @@ h1 {
   text-rendering: optimizeLegibility;
 }
 
-h1>strong{
+h1 > strong {
   font-weight: 500;
 }
 
@@ -67,11 +66,10 @@ p {
   margin: initial;
 }
 ul {
-  margin:  0.25rem 0 1rem 0;
+  margin: 0.25rem 0 1rem 0;
 }
 
 /* End base element styling */
-
 
 /* Primary Menu classes */
 .menu-link {
@@ -89,7 +87,7 @@ ul {
   width: calc(100vw - 40px);
 
   padding: 20px;
-  
+
   background-color: white;
 }
 
@@ -104,11 +102,8 @@ ul {
 
 /* Text styles */
 
-
 .text-white {
   color: white;
-
-
 }
 .text-dark {
   color: #030303;
@@ -123,21 +118,19 @@ ul {
 }
 
 .text-light-link {
-  color: white;  
+  color: white;
   transition: 0.5s;
 }
 .text-light-link:hover {
   color: pink;
-
 }
 
 .text-dark-link {
-  color: #030303;  
+  color: #030303;
   transition: 0.5s;
 }
 .text-dark-link:hover {
   color: darkred;
-
 }
 
 .text-image-centered {
@@ -145,7 +138,6 @@ ul {
   margin: initial;
   font-size: 0.8rem;
 }
-
 
 .hero-title {
   line-height: 1.7;
@@ -156,7 +148,7 @@ ul {
 }
 
 .case-study-info {
-  font-weight:300;
+  font-weight: 300;
 }
 
 .case-study-info-bold {
@@ -211,7 +203,6 @@ h3 > strong {
   width: 100vw;
 }
 
-
 .heroHeaderText {
   top: 0;
   position: relative;
@@ -257,8 +248,6 @@ h3 > strong {
   min-width: 320px;
   box-sizing: border-box;
 }
-
-
 
 .primary-button {
   height: 4.5rem;
@@ -322,23 +311,20 @@ h3 > strong {
 .project-grid-container {
   display: grid;
   align-items: top;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin-bottom: 5rem;
-
 }
 
 .project-card {
- width: 100%;
- overflow: hidden;
- height: 100%;
- transition: all 0.25s;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  transition: all 0.25s;
 }
 
 .project-card:hover {
-
   transform: scale(1.1);
   border-radius: 8px;
-  
 }
 
 .project-title-container {
@@ -375,9 +361,7 @@ h3 > strong {
 
 .case-study-title {
   margin: 2rem 0;
-
 }
-
 
 .case-study-container {
   margin: 4rem 0;
@@ -390,7 +374,6 @@ h3 > strong {
 .case-study-image {
   width: 100%;
   object-fit: scale-down;
-
 }
 
 .case-study-img-full {
@@ -400,14 +383,12 @@ h3 > strong {
   object-fit: cover;
 }
 
-
-
 .case-study-skills {
-  width:70%;
+  width: 70%;
 }
- 
+
 .case-study-container-double-grid {
-  display:grid;
+  display: grid;
   margin: 5rem 0 10rem 0;
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
@@ -415,18 +396,16 @@ h3 > strong {
 
 .case-study-container-triple-grid {
   margin: 10rem 0 0 0;
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2.5rem;
-
 }
 
 .case-study-container-five-grid {
   margin-top: 2.5rem;
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 2.5rem;
-
 }
 .case-study-triple-grid-item {
   width: 100%;
@@ -451,11 +430,11 @@ h3 > strong {
   h1 {
     font-size: 4rem;
   }
-  h3 { 
+  h3 {
     font-size: 3rem;
   }
 
-  .mainContainer{
+  .mainContainer {
     margin-top: 0;
   }
   .Container {
@@ -473,7 +452,6 @@ h3 > strong {
     overflow: cover;
     margin-top: 2rem;
     object-fit: scale-down;
-
   }
 
   .aboutText {
@@ -486,17 +464,13 @@ h3 > strong {
 
   video {
     width: 50vw;
-    
   }
   .project-grid-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .project-card {
     width: 100%;
-    
   }
-
-  
 
   .fullWidthImg {
     width: 100vw;
@@ -506,7 +480,6 @@ h3 > strong {
     margin: 4rem auto;
     text-align: center;
   }
-
 
   .hero-grid-container {
     grid-template-columns: 1fr 1fr;
@@ -525,9 +498,6 @@ h3 > strong {
   .mainContainer {
     height: auto;
   }
-
-
-
 }
 
 /*For extra small screens*/
@@ -538,7 +508,7 @@ h3 > strong {
   }
 
   h3 {
-font-size: 2rem;
+    font-size: 2rem;
   }
 
   .mainContainer {
@@ -553,39 +523,34 @@ font-size: 2rem;
     width: 100vw;
   }
   .case-study-container-double-grid {
-    display:grid;
+    display: grid;
     margin: 5rem 1rem 5rem 1rem;
     grid-template-columns: 1fr;
     gap: 0;
   }
-.case-study-title {
-  margin: 0 1rem;
-  letter-spacing: -1px;
-}
-.case-study-subtitle {
-  margin: 0 1rem;
-}
+  .case-study-title {
+    margin: 0 1rem;
+    letter-spacing: -1px;
+  }
+  .case-study-subtitle {
+    margin: 0 1rem;
+  }
 
-.case-study-about {
-  margin: 1rem;
-}
-.case-study-info {
-  padding-left: 1rem;
-}
+  .case-study-about {
+    margin: 1rem;
+  }
+  .case-study-info {
+    padding-left: 1rem;
+  }
 
-.case-study-image {
-  width: 100%;
-  overflow: cover;
-  margin-top: 2rem;
-
-}
-.case-study-container-triple-grid {
- 
-  grid-template-columns: 1fr;
- 
- 
-
-}
+  .case-study-image {
+    width: 100%;
+    overflow: cover;
+    margin-top: 2rem;
+  }
+  .case-study-container-triple-grid {
+    grid-template-columns: 1fr;
+  }
 
   .menuRight {
     opacity: 0;
@@ -606,23 +571,18 @@ font-size: 2rem;
     grid-template-columns: 1fr;
     margin-top: 0;
   }
-  .project-container { 
+  .project-container {
     width: 100vw;
   }
   .project-card {
-    
     display: grid;
     width: 100vw;
-
-  
-
   }
 
   .project-title {
     font-size: 2rem;
   }
   .project-grid-container {
-
     grid-template-columns: 1fr;
   }
 
@@ -652,36 +612,28 @@ font-size: 2rem;
   }
 
   .voluntarily-bg {
-  
     padding: 2rem 0;
   }
-  
+
   .ubiquity-bg {
-   
     padding: 2rem 0;
   }
   .qrious-bg {
- 
     padding: 2rem 0;
   }
   .flatbot-bg {
-  
     padding: 2rem 0;
   }
-  
+
   .mighway-bg {
-
     padding: 2rem 0;
   }
-
 } /*END SMALL SCREENS ROFL*/
 
 /* Utility classes - to be refactored out once style is solidified*/
 .top4 {
   padding-top: 4rem;
 }
-
-
 
 .case-study-subtitle {
   margin-bottom: 2rem;
