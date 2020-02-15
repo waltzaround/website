@@ -431,13 +431,13 @@ h3 > strong {
 .case-study-triple-grid-item {
   width: 100%;
   height: 25rem;
-  
+  object-fit: contain;
   border: none;
 }
 .case-study-double-grid-item {
   width: 100%;
   height: 37.5rem;
- 
+  object-fit: contain;
   border: none;
 }
 
@@ -552,7 +552,12 @@ font-size: 2rem;
   .fullWidthImg {
     width: 100vw;
   }
-
+  .case-study-container-double-grid {
+    display:grid;
+    margin: 5rem 1rem 5rem 1rem;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 .case-study-title {
   margin: 0 1rem;
   letter-spacing: -1px;
@@ -572,6 +577,13 @@ font-size: 2rem;
   width: 100%;
   overflow: cover;
   margin-top: 2rem;
+
+}
+.case-study-container-triple-grid {
+ 
+  grid-template-columns: 1fr;
+ 
+ 
 
 }
 
