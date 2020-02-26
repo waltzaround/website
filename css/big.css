@@ -533,6 +533,10 @@ h3 > strong {
   h3 {
     font-size: 2rem;
   }
+  video {
+  object-fit: cover;
+  }
+
 
   .mainContainer {
     margin-top: 0;
