@@ -1,0 +1,697 @@
+/* Base element styling */
+html {
+  scroll-behavior: smooth;
+
+  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  line-height: 0;
+}
+
+h1 {
+  margin: initial;
+  font-size: 2.5rem;
+  letter-spacing: -2px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-rendering: optimizeLegibility;
+}
+
+h1 > strong {
+  font-weight: 500;
+}
+
+h2 {
+  margin-top: 0;
+  line-height: 1.4;
+  letter-spacing: -1.8px;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-rendering: optimizeLegibility;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 4rem;
+  letter-spacing: -2px;
+  line-height: 1.35;
+  margin: 0;
+}
+
+h4 {
+  margin: initial;
+  line-height: 1.7;
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+}
+
+h6 {
+  margin: initial;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+video {
+  width: 100vw;
+  z-index: 1;
+  position: relative;
+}
+
+p {
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+  margin: initial;
+}
+ul {
+  margin: 0.25rem 0 1rem 0;
+}
+
+/* End base element styling */
+
+/* Primary Menu classes */
+.menu-link {
+  color: black;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+.menu-link:hover {
+  color: purple;
+}
+
+.main-menu {
+  top: 0px;
+  left: 0px;
+  width: calc(100vw - 40px);
+
+  padding: 20px;
+
+  background-color: white;
+}
+
+.rightMenu {
+  top: 0px;
+  right: 0px;
+  position: fixed;
+  z-index: 90001;
+  padding: 20px;
+}
+/* End Primary */
+
+/* Text styles */
+
+.text-white {
+  color: white;
+}
+.text-dark {
+  color: #030303;
+}
+
+.text-subheading {
+  color: #727272;
+}
+
+.text-mighway {
+  color: #246182;
+}
+
+.text-light-link {
+  color: white;
+  transition: 0.5s;
+}
+.text-light-link:hover {
+  color: pink;
+}
+
+.text-dark-link {
+  color: #030303;
+  transition: 0.5s;
+}
+.text-dark-link:hover {
+  color: darkred;
+}
+
+.text-image-centered {
+  text-align: center;
+  margin: initial;
+  font-size: 0.8rem;
+}
+
+.hero-title {
+  line-height: 1.7;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: -0.7px;
+  margin-bottom: 1.5rem;
+}
+.hero-desc {
+  font-weight: 700;
+}
+
+.case-study-info {
+  font-weight: 300;
+}
+
+.case-study-info-bold {
+  font-weight: 500;
+}
+
+h3 > strong {
+  font-weight: 500;
+}
+
+/* End text styles */
+.mobileAbout {
+  display: none;
+}
+
+/* Background styles */
+.voluntarily-bg {
+  background-color: #333;
+  padding: 5rem 0;
+}
+
+.ubiquity-bg {
+  background-color: #09002a;
+  padding: 5rem 0;
+}
+.qrious-bg {
+  background-color: #00f8b5;
+  padding: 5rem 0;
+}
+.flatbot-bg {
+  background-color: #6b44ff;
+  padding: 5rem 0;
+}
+
+.mighway-bg {
+  background-color: #f2e8e1;
+  padding: 5rem 0;
+}
+/* End Background Styles */
+.text-case-title-container {
+  margin: 2.5rem 0;
+}
+
+.mainContainer {
+  z-index: 2;
+  position: relative;
+  margin: 0;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+
+.herocontainer {
+  width: 100vw;
+}
+
+.heroHeaderText {
+  top: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 240px;
+  width: 100%;
+}
+.fullWidthImg {
+  width: 80rem;
+}
+
+.coolBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  padding-bottom: 4rem;
+}
+
+.mainContentContainer {
+  align-items: top;
+  top: 0;
+  margin-top: 0;
+  padding-top: 0;
+  position: relative;
+  margin: 5rem;
+  flex-direction: column;
+
+  text-align: left;
+
+  width: 80rem;
+}
+
+.about {
+  z-index: 3;
+  position: absolute;
+  margin-top: 5rem;
+  width: calc(100% - 10rem);
+
+}
+
+.primary-button {
+  height: 4.5rem;
+  padding: 0 2rem 0 2rem;
+  font-size: 2rem;
+  color: black;
+  background: none;
+  border: none;
+  font-weight: 700;
+}
+
+.primary-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.mainButtonContainer {
+  margin-top: 1rem;
+}
+
+.c-container {
+  vertical-align: middle;
+  margin-left: 2rem;
+  margin-top: 2%;
+}
+
+.Container {
+  z-index: 1;
+  position: relative;
+  margin: auto;
+  height: auto;
+  width: 100vw;
+  max-width: 80rem;
+  justify-content: center;
+}
+
+.project-container {
+  z-index: 1;
+  position: relative;
+  margin: auto;
+  height: auto;
+  width: 90vw;
+  justify-content: center;
+}
+
+.hero-grid-container {
+  display: grid;
+  align-items: top;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+.grid-container {
+  display: grid;
+  align-items: top;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.project-grid-container {
+  display: grid;
+  align-items: top;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 5rem;
+}
+
+.project-card {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  transition: all 0.25s;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+  border-radius: 8px;
+}
+
+.project-title-container {
+  width: 80%;
+  max-width: 1280px;
+  height: auto;
+  text-align: center;
+  margin: 4rem auto;
+}
+
+.project-title {
+  margin: 0;
+  height: auto;
+  margin: 2rem auto;
+}
+
+.heroSpacer {
+  margin-top: 120px;
+}
+
+.heroImg {
+  width: 100vw;
+  display: block;
+  position: relative;
+  object-fit: scale-down;
+  background-size: contain;
+  overflow: hidden;
+}
+
+/* Case study Section */
+
+.case-study-title {
+  margin: 2rem 0;
+}
+
+.case-study-container {
+  margin: 4rem 0;
+}
+
+.case-study-credits-container {
+  margin: 0 auto 10rem 0;
+  text-align: left;
+}
+.case-study-image {
+  width: 100%;
+  object-fit: scale-down;
+}
+
+.case-study-img-full {
+  width: 100vw;
+  height: 60vh;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.case-study-skills {
+  width: 70%;
+}
+
+.case-study-container-double-grid {
+  display: grid;
+  margin: 5rem 0 10rem 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.case-study-container-triple-grid {
+  margin: 10rem 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.case-study-container-five-grid {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2.5rem;
+}
+.case-study-triple-grid-item {
+  width: 100%;
+  height: 25rem;
+  object-fit: contain;
+  border: none;
+}
+.case-study-double-grid-item {
+  width: 100%;
+  height: 37.5rem;
+  object-fit: contain;
+  border: none;
+}
+
+.case-study-description {
+  align-content: center;
+  display: grid;
+}
+
+/*For Tablet Screens 640px - 1300px*/
+@media only screen and (min-width: 640px) and (max-width: 1300px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  .aboutText {
+    margin: 2rem;
+    left: 0;
+  }
+
+  .mainContainer {
+    margin-top: 0;
+
+  }
+  .Container {
+    z-index: 1;
+    position: relative;
+    margin: auto;
+    height: auto;
+    width: 90vw;
+
+    justify-content: center;
+  }
+
+  .case-study-image {
+    width: 100%;
+    overflow: cover;
+    margin-top: 2rem;
+    object-fit: scale-down;
+  }
+.hero-title {
+  line-height: 1.7;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: -0.2px;
+  margin-bottom: 1.5rem;
+}
+
+
+
+  .heroSpacer {
+    margin-top: 80px;
+  }
+
+  video {
+    width: 100vw;
+  }
+  .project-grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .project-card {
+    width: 100%;
+  }
+
+  .fullWidthImg {
+    width: 100vw;
+  }
+
+  .project-title-container {
+    margin: 4rem auto;
+    text-align: center;
+  }
+
+  .hero-grid-container {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+  }
+
+  
+  /* END TABLET*/
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1279px) {
+  .mainContainer {
+    height: auto;
+  }
+}
+
+/*For extra small screens*/
+@media screen and (min-width: 0px) and (max-width: 639px) {
+  h1 {
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .mainContainer {
+    margin-top: 0;
+  }
+  .mainContentContainer {
+    margin-top: 0rem;
+    width: calc(100vw - 2rem);
+  }
+
+  .fullWidthImg {
+    width: 100vw;
+  }
+  .case-study-container-double-grid {
+    display: grid;
+    margin: 5rem 1rem 5rem 1rem;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .case-study-title {
+    margin: 0 1rem;
+    letter-spacing: -1px;
+  }
+  .case-study-subtitle {
+    margin: 0 1rem;
+  }
+
+  .case-study-about {
+    margin: 1rem;
+  }
+  .case-study-info {
+    padding-left: 1rem;
+  }
+
+  .case-study-image {
+    width: 100%;
+    overflow: cover;
+    margin-top: 2rem;
+  }
+  .case-study-container-triple-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menuRight {
+    opacity: 0;
+  }
+
+  .main-menu {
+    display: none;
+  }
+  .mobileAbout {
+    position: initial;
+    display: inherit;
+padding: 1rem;
+  
+
+
+
+
+  }
+
+
+  .heroSpacer {
+    margin-top: 0px;
+  }
+  .hero-grid-container {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+  .project-container {
+    width: 100vw;
+  }
+  .project-card {
+    display: grid;
+    width: 100vw;
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+  .project-grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-title-container {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .aboutVideo {
+    padding: 0px 0px 0px 0px;
+  }
+
+  
+  .noMobile {
+    display: none;
+  }
+
+  video {
+    width: 100vw;
+  }
+
+  .primary-button {
+    height: 4.5rem;
+    width: 12rem;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .voluntarily-bg {
+    padding: 2rem 0;
+  }
+
+  .ubiquity-bg {
+    padding: 2rem 0;
+  }
+  .qrious-bg {
+    padding: 2rem 0;
+  }
+  .flatbot-bg {
+    padding: 2rem 0;
+  }
+
+  .mighway-bg {
+    padding: 2rem 0;
+  }
+} /*END SMALL SCREENS ROFL*/
+
+/* Utility classes - to be refactored out once style is solidified*/
+.top4 {
+  padding-top: 4rem;
+}
+
+.case-study-subtitle {
+  margin-bottom: 2rem;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+  height: 800px;
+}
+
+.Singledemo {
+  background-color: rgb(96, 93, 96);
+  height: 80rem;
+  width: 80rem;
+}
+.heroawesometext {
+  font-size: 12rem;
+  text-align: center;
+}
+
+.skew {
+  transform: rotate(5deg);
+}
