@@ -45,6 +45,13 @@ h3 {
   margin: 0;
 }
 
+h3 > strong {
+  font-weight: 700;
+  
+  letter-spacing: 0.5px;
+}
+
+
 h4 {
   margin: initial;
   line-height: 1.7;
@@ -71,9 +78,15 @@ p {
   line-height: 1.8;
   letter-spacing: 0.3px;
   margin: initial;
+  word-break: keep-all;
 }
 ul {
   margin: 0.25rem 0 1rem 0;
+}
+
+figcaption {
+  opacity: 0.6;
+  font-size: 1.5rem;
 }
 
 /* End base element styling */
@@ -152,9 +165,9 @@ ul {
 .hero-title {
   line-height: 1.7;
   font-weight: 700;
-  font-size: 1.8rem;
-  letter-spacing: -0.7px;
-  margin-bottom: 1.5rem;
+  font-size: 3.5rem;
+  letter-spacing: -2px;
+  margin-bottom: 0.5rem;
 }
 .hero-desc {
   font-weight: 700;
@@ -168,9 +181,6 @@ ul {
   font-weight: 500;
 }
 
-h3 > strong {
-  font-weight: 500;
-}
 
 /* End text styles */
 .mobileAbout {
@@ -265,8 +275,8 @@ h3 > strong {
 .about {
   z-index: 3;
   position: absolute;
-  margin-top: 5rem;
-  width: calc(100% - 10rem);
+  margin-top: 2rem;
+  width: calc(100% - 5rem);
 
 }
 
@@ -485,9 +495,13 @@ h3 > strong {
 .hero-title {
   line-height: 1.7;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   letter-spacing: -0.2px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  margin: 0;
 }
 
 
