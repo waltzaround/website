@@ -70,6 +70,8 @@ h6 {
 
 video {
   width: 100vw;
+  object-fit: cover;
+  height: 80vh;
   z-index: 1;
   position: relative;
 }
@@ -556,11 +558,17 @@ ul {
     letter-spacing: -1px;
   }
 
+  .hero-title {
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+  }
+
   h3 {
     font-size: 2rem;
   }
   video {
   object-fit: cover;
+  height: 50vw;
   }
 
 
