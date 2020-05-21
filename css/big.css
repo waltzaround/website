@@ -557,6 +557,9 @@ ul {
     font-size: 1.5rem;
     letter-spacing: -1px;
   }
+  h4 {
+    font-weight: 400;
+  }
 
   .hero-title {
     font-size: 2rem;
