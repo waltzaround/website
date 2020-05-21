@@ -578,6 +578,10 @@ ul {
   height: 50vw;
   }
 
+aside{
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
 
   .mainContainer {
     margin-top: 0;
@@ -659,7 +663,7 @@ padding: 1rem;
   }
 
   .project-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .project-grid-container {
     grid-template-columns: 1fr;
@@ -667,7 +671,8 @@ padding: 1rem;
 
   .project-title-container {
     margin: 0 auto;
-    text-align: center;
+    width: 95%;
+    text-align: left;
   }
 
   .aboutVideo {
