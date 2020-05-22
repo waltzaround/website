@@ -366,7 +366,8 @@ figcaption {
   max-width: 1280px;
   height: auto;
   text-align: center;
-  margin: 4rem auto;
+  margin: 0 auto;
+  padding: 4rem 0;
 }
 
 .project-title {
@@ -528,8 +529,9 @@ ul {
   }
 
   .project-title-container {
-    margin: 4rem auto;
+    margin: 0 auto;
     text-align: center;
+    padding: 2rem 0;
   }
 
   .hero-grid-container {
@@ -663,7 +665,7 @@ padding: 1rem;
   }
 
   .project-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .project-grid-container {
     grid-template-columns: 1fr;
@@ -671,8 +673,9 @@ padding: 1rem;
 
   .project-title-container {
     margin: 0 auto;
+    padding: 1rem 0;
     width: 95%;
-    text-align: left;
+    text-align: center;
   }
 
   .aboutVideo {
