@@ -406,6 +406,7 @@ figcaption {
 .case-study-image {
   width: 100%;
   object-fit: scale-down;
+  margin: 1rem 0;
 }
 
 .case-study-img-full {

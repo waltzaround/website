@@ -10,6 +10,11 @@ a {
   line-height: 0;
 }
 
+li>a:visited {
+  color: blue;
+  
+}
+
 h1 {
   margin: initial;
   font-size: 2.5rem;
@@ -40,12 +45,19 @@ h3 {
   margin: 0;
 }
 
+h3 > strong {
+  font-weight: 700;
+  
+  letter-spacing: 0.5px;
+}
+
+
 h4 {
   margin: initial;
   line-height: 1.7;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.4rem;
-  letter-spacing: -0.7px;
+  letter-spacing: -0.5px;
 }
 
 h6 {
@@ -57,20 +69,33 @@ h6 {
 }
 
 video {
-  width: 40rem;
+  width: 100vw;
+  object-fit: cover;
+  height: 80vh;
+  z-index: 1;
+  position: relative;
 }
 
 p {
   line-height: 1.8;
   letter-spacing: 0.3px;
   margin: initial;
+  word-break: keep-all;
 }
 ul {
   margin: 0.25rem 0 1rem 0;
 }
 
-/* End base element styling */
+figcaption {
+  opacity: 0.6;
+  font-size: 1.5rem;
+}
 
+/* End base element styling */
+.list {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
 /* Primary Menu classes */
 .menu-link {
   color: black;
@@ -141,10 +166,13 @@ ul {
 
 .hero-title {
   line-height: 1.7;
-  font-weight: 300;
-  font-size: 1.8rem;
-  letter-spacing: -0.7px;
-  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 3.5rem;
+  letter-spacing: -2px;
+  margin-bottom: 0.5rem;
+}
+.hero-desc {
+  font-weight: 700;
 }
 
 .case-study-info {
@@ -155,15 +183,19 @@ ul {
   font-weight: 500;
 }
 
-h3 > strong {
-  font-weight: 500;
-}
 
 /* End text styles */
+.mobileAbout {
+  display: none;
+}
 
 /* Background styles */
 .voluntarily-bg {
   background-color: #333;
+  padding: 5rem 0;
+}
+.swiftly-bg {
+  background-color: #fff;
   padding: 5rem 0;
 }
 
@@ -190,10 +222,11 @@ h3 > strong {
 }
 
 .mainContainer {
-  z-index: 1;
+  z-index: 2;
   position: relative;
-  margin: 10rem 0;
+  margin: 0;
   width: 100vw;
+  height: auto;
   display: flex;
   background-color: white;
   justify-content: center;
@@ -214,7 +247,7 @@ h3 > strong {
   width: 100%;
 }
 .fullWidthImg {
-  width: 80rem;
+  width: 100vw;
 }
 
 .coolBackground {
@@ -242,11 +275,11 @@ h3 > strong {
 }
 
 .about {
-  width: 50vw;
+  z-index: 3;
+  position: absolute;
+  margin-top: 2rem;
+  width: calc(100% - 5rem);
 
-  max-width: 640px;
-  min-width: 320px;
-  box-sizing: border-box;
 }
 
 .primary-button {
@@ -312,6 +345,7 @@ h3 > strong {
   display: grid;
   align-items: top;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
   margin-bottom: 5rem;
 }
 
@@ -332,7 +366,8 @@ h3 > strong {
   max-width: 1280px;
   height: auto;
   text-align: center;
-  margin: 4rem auto;
+  margin: 0 auto;
+  padding: 4rem 0;
 }
 
 .project-title {
@@ -354,9 +389,6 @@ h3 > strong {
   overflow: hidden;
 }
 
-.about {
-  width: 100%;
-}
 /* Case study Section */
 
 .case-study-title {
@@ -374,6 +406,7 @@ h3 > strong {
 .case-study-image {
   width: 100%;
   object-fit: scale-down;
+  margin: 1rem 0;
 }
 
 .case-study-img-full {
@@ -430,12 +463,23 @@ h3 > strong {
   h1 {
     font-size: 4rem;
   }
+
   h3 {
     font-size: 3rem;
   }
 
+  h4 {
+    font-size: 1rem;
+  }
+
+  .aboutText {
+    margin: 2rem;
+    left: 0;
+  }
+
   .mainContainer {
     margin-top: 0;
+
   }
   .Container {
     z-index: 1;
@@ -450,20 +494,29 @@ h3 > strong {
   .case-study-image {
     width: 100%;
     overflow: cover;
-    margin-top: 2rem;
+    margin-top: 1rem;
     object-fit: scale-down;
   }
+.hero-title {
+  line-height: 1.7;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: -1.5px;
+  margin-bottom: 0.5rem;
+}
 
-  .aboutText {
-    padding-right: 1rem;
-  }
+ul {
+  margin: 0;
+}
+
+
 
   .heroSpacer {
     margin-top: 80px;
   }
 
   video {
-    width: 50vw;
+    width: 100vw;
   }
   .project-grid-container {
     grid-template-columns: 1fr 1fr 1fr;
@@ -477,8 +530,9 @@ h3 > strong {
   }
 
   .project-title-container {
-    margin: 4rem auto;
+    margin: 0 auto;
     text-align: center;
+    padding: 2rem 0;
   }
 
   .hero-grid-container {
@@ -491,12 +545,16 @@ h3 > strong {
     margin-top: 2rem;
   }
 
+  
   /* END TABLET*/
 }
 
 @media only screen and (min-width: 640px) and (max-width: 1279px) {
   .mainContainer {
     height: auto;
+  }
+  .case-study-title {
+    margin: 0;
   }
 }
 
@@ -506,10 +564,27 @@ h3 > strong {
     font-size: 1.5rem;
     letter-spacing: -1px;
   }
+  h4 {
+    font-weight: 400;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+  }
 
   h3 {
     font-size: 2rem;
   }
+  video {
+  object-fit: cover;
+  height: 50vw;
+  }
+
+aside{
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
 
   .mainContainer {
     margin-top: 0;
@@ -546,7 +621,7 @@ h3 > strong {
   .case-study-image {
     width: 100%;
     overflow: cover;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .case-study-container-triple-grid {
     grid-template-columns: 1fr;
@@ -559,6 +634,17 @@ h3 > strong {
   .main-menu {
     display: none;
   }
+  .mobileAbout {
+    position: initial;
+    display: inherit;
+padding: 1rem;
+  
+
+
+
+
+  }
+
 
   .heroSpacer {
     margin-top: 0px;
@@ -588,6 +674,8 @@ h3 > strong {
 
   .project-title-container {
     margin: 0 auto;
+    padding: 1rem 0;
+    width: 95%;
     text-align: center;
   }
 
@@ -595,9 +683,9 @@ h3 > strong {
     padding: 0px 0px 0px 0px;
   }
 
-  .aboutText {
-    width: 100vw;
-    padding: 1rem;
+  
+  .noMobile {
+    display: none;
   }
 
   video {
@@ -612,6 +700,9 @@ h3 > strong {
   }
 
   .voluntarily-bg {
+    padding: 2rem 0;
+  }
+  .swiftly-bg {
     padding: 2rem 0;
   }
 
