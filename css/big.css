@@ -344,7 +344,7 @@ figcaption {
 .project-grid-container {
   display: grid;
   align-items: top;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 
   margin-bottom: 5rem;
 }
@@ -456,6 +456,14 @@ figcaption {
 .case-study-description {
   align-content: center;
   display: grid;
+}
+@media only screen and (min-width: 1920px) {
+  
+.project-grid-container {
+ 
+  grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
+
+}
 }
 
 /*For Tablet Screens 640px - 1300px*/
