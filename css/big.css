@@ -69,7 +69,8 @@ h6 {
 }
 
 video {
-  width: 100vw;
+
+  width: 100%;
   object-fit: cover;
   height: 80vh;
   z-index: 1;
@@ -225,7 +226,6 @@ figcaption {
   z-index: 2;
   position: relative;
   margin: 0;
-  width: 100vw;
   height: auto;
   display: flex;
   background-color: white;
@@ -489,10 +489,12 @@ figcaption {
     margin-top: 0;
 
   }
+
+
   .Container {
     z-index: 1;
     position: relative;
-    margin: auto;
+    margin:  auto;
     height: auto;
     width: 90vw;
 
@@ -524,7 +526,7 @@ ul {
   }
 
   video {
-    width: 100vw;
+    width: 100%;
   }
   .project-grid-container {
     grid-template-columns: 1fr 1fr 1fr;
@@ -534,7 +536,7 @@ ul {
   }
 
   .fullWidthImg {
-    width: 100vw;
+    width: 100%;
   }
 
   .project-title-container {
@@ -599,11 +601,12 @@ aside{
   }
   .mainContentContainer {
     margin-top: 0rem;
-    width: calc(100vw - 2rem);
+    width: calc(100% - 2rem);
   }
 
   .fullWidthImg {
-    width: 100vw;
+    
+    width: 100%;
   }
   .case-study-container-double-grid {
     display: grid;
@@ -697,7 +700,8 @@ padding: 1rem;
   }
 
   video {
-    width: 100vw;
+  
+    width: 100%;
   }
 
   .primary-button {
