@@ -98,6 +98,7 @@ figcaption {
 .list {
   line-height: 1.8;
   font-size: 1.1rem;
+  padding-left: 1.5rem;
 }
 /* Primary Menu classes */
 .menu-link {
@@ -579,6 +580,7 @@ ul {
     letter-spacing: -1px;
   }
   h4 {
+    font-size: 1.25rem;
     font-weight: 400;
   }
 
@@ -630,6 +632,12 @@ aside{
     margin: 1rem;
   }
   .case-study-info {
+    padding-left: 1rem;
+  }
+
+  .list {
+    line-height: 1.8;
+    font-size: 1.1rem;
     padding-left: 1rem;
   }
 
