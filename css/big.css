@@ -668,6 +668,11 @@ padding: 1rem;
 
   }
 
+  .project-card:hover {
+    transform: none;
+    border-radius: 8px;
+  }
+  
 
   .heroSpacer {
     margin-top: 0px;
@@ -685,7 +690,11 @@ padding: 1rem;
   }
   .project-card {
     display: grid;
-    width: 100vw;
+    /* width: 100%; */
+    
+    width: calc(100% - 4rem);
+    padding: 1rem 2rem;
+
   }
 
   .project-title {
