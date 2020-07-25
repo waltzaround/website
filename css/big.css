@@ -1,9 +1,53 @@
 /* To whomever reads this, please excuse this ungodly mess of horrible, horrible technical debt - It's horrifc and disgusting and i don't have time to clean it up atm :( */
 
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 200;
+  src:  url('/assets/fonts/SpaceGrotesk-Light.woff2') format('woff2'),
+  url('/assets/fonts/SpaceGrotesk-Light.woff') format('woff');
+       
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+  src:  url('/assets/fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
+  url('/assets/fonts/SpaceGrotesk-Regular.woff') format('woff');
+       
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 500;
+  src:  url('/assets/fonts/SpaceGrotesk-Medium.woff2') format('woff2'),
+  url('/assets/fonts/SpaceGrotesk-Medium.woff') format('woff');
+       
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 600;
+  src:  url('/assets/fonts/SpaceGrotesk-Semibold.woff2') format('woff2'),
+  url('/assets/fonts/SpaceGrotesk-Semibold.woff') format('woff');
+       
+}
+
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  src:  url('/assets/fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
+  url('/assets/fonts/SpaceGrotesk-Bold.woff') format('woff');
+       
+}
+
+
+
+
+
 /* Base element styling */
 html {
   scroll-behavior: smooth;
-  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
 
 }
 
@@ -81,6 +125,7 @@ video {
 
 p {
   line-height: 1.8;
+  font-size: 1.25rem;
   letter-spacing: 0.3px;
   margin: initial;
   word-break: keep-all;
@@ -88,9 +133,13 @@ p {
 ul {
   margin: 0.25rem 0 1rem 0;
 }
+li {
+  
+  font-size: 1.25rem;
+}
 
 figcaption {
-  opacity: 0.6;
+  opacity: 0.8;
   font-size: 1.5rem;
 }
 
@@ -338,9 +387,9 @@ figcaption {
 }
 .grid-container {
   display: grid;
-  align-items: top;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
+  
+  grid-template-columns: 2fr 1fr;
+  gap: 8rem;
   margin-top: 2.5rem;
 }
 
@@ -525,7 +574,7 @@ ul {
 
   video {
     width: 100%;
-    height: 40rem;
+    height: 45rem;
   }
   .project-grid-container {
     grid-template-columns: 1fr 1fr 1fr;
@@ -565,8 +614,13 @@ ul {
   .case-study-title {
     margin: 0;
   }
+
+  .grid-container {
+    grid-template-columns: 1.25fr 1fr;
+    gap: 2rem;
+  }
   video {
-    height: 28rem;
+    height: 40rem;
   }
   .aboutText {
     margin-top: 1rem;
@@ -585,9 +639,17 @@ ul {
   }
 
   .hero-title {
+    
+    line-height: 1.25;
     font-size: 2rem;
     letter-spacing: -0.5px;
+    margin: 1rem 0;
   }
+
+ .noMobileBR {
+   display:
+ }
+
 
   h3 {
     font-size: 2rem;
@@ -684,6 +746,7 @@ padding: 1rem;
   .grid-container {
     grid-template-columns: 1fr;
     margin-top: 0;
+    gap: 1rem;
   }
   .project-container {
     width: 100vw;
