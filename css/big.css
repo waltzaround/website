@@ -3,6 +3,7 @@
 @font-face {
   font-family: 'Space Grotesk';
   font-weight: 200;
+  font-display: auto;
   src:  url('/assets/fonts/SpaceGrotesk-Light.woff2') format('woff2'),
   url('/assets/fonts/SpaceGrotesk-Light.woff') format('woff');
        
@@ -10,6 +11,7 @@
 @font-face {
   font-family: 'Space Grotesk';
   font-weight: 400;
+  font-display: auto;
   src:  url('/assets/fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
   url('/assets/fonts/SpaceGrotesk-Regular.woff') format('woff');
        
@@ -18,6 +20,7 @@
 @font-face {
   font-family: 'Space Grotesk';
   font-weight: 500;
+  font-display: auto;
   src:  url('/assets/fonts/SpaceGrotesk-Medium.woff2') format('woff2'),
   url('/assets/fonts/SpaceGrotesk-Medium.woff') format('woff');
        
@@ -26,6 +29,7 @@
 @font-face {
   font-family: 'Space Grotesk';
   font-weight: 600;
+  font-display: auto;
   src:  url('/assets/fonts/SpaceGrotesk-Semibold.woff2') format('woff2'),
   url('/assets/fonts/SpaceGrotesk-Semibold.woff') format('woff');
        
@@ -35,6 +39,7 @@
 @font-face {
   font-family: 'Space Grotesk';
   font-weight: 700;
+  font-display: auto;
   src:  url('/assets/fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
   url('/assets/fonts/SpaceGrotesk-Bold.woff') format('woff');
        
@@ -83,7 +88,7 @@ h2 {
   text-rendering: optimizeLegibility;
 }
 
-h3 {
+h2 {
   font-weight: 300;
   font-size: 4rem;
   letter-spacing: -2px;
@@ -91,7 +96,7 @@ h3 {
   margin: 0;
 }
 
-h3 > strong {
+h2 > strong {
   font-weight: 700;
   
   letter-spacing: 0.5px;
@@ -519,7 +524,7 @@ figcaption {
     font-size: 4rem;
   }
 
-  h3 {
+  h2 {
     font-size: 3rem;
   }
 
@@ -651,7 +656,7 @@ ul {
  }
 
 
-  h3 {
+  h2 {
     font-size: 2rem;
   }
   video {
