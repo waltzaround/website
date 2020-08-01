@@ -3,40 +3,80 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Gradient test</title>
-<!-- 
-    original from
-https://www.html5canvastutorials.com/advanced/html5-canvas-animated-gradient-background/ -->
+<title>💻&nbsp; Walt's Web Thing</title>
 <style type="text/css">
+
+html {
+
+font-family: "Space Grotesk";
+}
 body {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   overflow: hidden;
 }
 
 canvas {
-  width: 100vw;
-  height: 50vh;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+}
+
+h1 {
+font-size: 16rem;
+line-height: 1.2;
+margin: 0;
+font-weight: 700;
+letter-spacing: -8px;
+
+opacity: 0.7;
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: 500;
+
+letter-spacing: -3px;
+margin: 0;
+padding-top: 4rem;
+
+}
+
+.primary-container {
+    position: absolute;
+    z-index: 1;
+    margin: 4rem;
+}
+.secondary-container {
+    position: fixed;
+    bottom: 4rem;
 }
 </style>
 
 <body>
-	
-<canvas id="canv" width="320" height="320">
+<div class="primary-container">
+    <h1>Walter Lim is not a <i>real designer™</i></h1>
+    <div class='secondary-container'>
+    <h2>> About me</h2>
+    <h2>> See my work</h2>
+    <h2>> Weird projects</h2>
+</div>
+</div>
+<canvas id="canv" width="32" height="32">
+    <section><p>aaaDesignerDesignerDesignerDesignerDesignerDesigneraa</p></section>
+
 
 	
 
 <script type="text/javascript">
+// code from https://www.html5canvastutorials.com/advanced/html5-canvas-animated-gradient-background/
 var c = document.getElementById('canv');
 var $ = c.getContext('2d');
-var canvasWidth = window.innerWidth;
-var canvasHeight = window.innerHeight;
-    
 
 
 var col = function(x, y, r, g, b) {
   $.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
-  $.fillRect(x, y, canvasWidth, canvasHeight);
+  $.fillRect(x, y, 1,1);
 }
 var R = function(x, y, t) {
   return( Math.floor(192 + 64*Math.cos( (x*x-y*y)/300 + t )) );
@@ -47,18 +87,18 @@ var G = function(x, y, t) {
 }
 
 var B = function(x, y, t) {
-  return( Math.floor(192 + 64*Math.sin( 5*Math.sin(t/9) + ((x-100)*(x-100)+(y-100)*(y-100))/300) ));
+  return( Math.floor(192 + 64*Math.sin( 5*Math.sin(t/9) + ((x-100)*(x-100)+(y-100)*(y-100))/1100) ));
 }
 
 var t = 0;
 
 var run = function() {
-  for(x=0;x<=canvasWidth;x++) {
+  for(x=0;x<=35;x++) {
     for(y=0;y<=35;y++) {
       col(x, y, R(x,y,t), G(x,y,t), B(x,y,t));
     }
   }
-  t = t + 0.0120;
+  t = t + 0.0520;
   window.requestAnimationFrame(run);
 }
 
