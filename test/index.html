@@ -11,9 +11,7 @@ html {
 font-family: "Space Grotesk";
 }
 body {
-  width: 100%;
   margin: 0;
-  overflow: hidden;
 }
 
 canvas {
@@ -22,24 +20,43 @@ canvas {
   z-index: -2;
 }
 
+
 h1 {
 font-size: 16rem;
-line-height: 1.2;
+line-height: 1;
 margin: 0;
 font-weight: 700;
 letter-spacing: -8px;
 
-opacity: 0.7;
+}
+i {
+opacity: 0.75;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+
+transition: all 0.3s;
+
 }
 
 h2 {
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 500;
 
 letter-spacing: -3px;
 margin: 0;
 padding-top: 4rem;
 
+}
+/* 
+hero components
+*/
+.hero {
+    width: 100%;
+  height: 100vh;
+  position: absolute;
 }
 
 .primary-container {
@@ -48,63 +65,110 @@ padding-top: 4rem;
     margin: 4rem;
 }
 .secondary-container {
-    position: fixed;
-    bottom: 4rem;
+    bottom: 0;
+    margin: 4rem;
+    position: absolute;
+ 
+    
+}
+
+.placeholder {
+    width: 100vw;
+    height: 100vh;
+    background-color: plum;
+    display: grid;
+}
+.placeholderTitle {
+    display: grid;
+    place-self: center;
+    font-size: 4rem;
+    filter: invert(100%);
+
+}
+.placeholder2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: purple;
+    display: grid;
+}
+
+@media only screen and (max-width: 1800px) {
+    h1 {
+        font-size: 8rem;
+        letter-spacing: -2px;
+    }
+    h2 {
+        padding-top: 1.5rem;
+        font-size: 3.5rem;
+    }
+    .secondary-container {
+        margin-top: 2rem;
+    }
+
 }
 </style>
 
 <body>
+    <section class='hero'>
 <div class="primary-container">
-    <h1>Walter Lim is not a <i>real designer™</i></h1>
-    <div class='secondary-container'>
-    <h2>> About me</h2>
-    <h2>> See my work</h2>
-    <h2>> Weird projects</h2>
+    <h1>Walter Lim is a<br/>ux designer</h1>
+    
 </div>
+<div class='secondary-container'>
+    <h2><a href='/'>> About me</a></h2>
+    <h2><a href='/'>> See my work</a></h2>
+    <h2><a href='/'>> Weird projects</a></h2>
 </div>
+</section>
 <canvas id="canv" width="32" height="32">
-    <section><p>aaaDesignerDesignerDesignerDesignerDesignerDesigneraa</p></section>
+</canvas>
 
 
-	
+<section class='placeholder'> <p class='placeholderTitle'>about me</p></section>
+<section class='placeholder2'><p class='placeholderTitle'>work high level</p></section>
+<section class='placeholder'> <p class='placeholderTitle'>stupid shit high level</p></section>
+
+<section class='placeholder2'> <p class='placeholderTitle'>footer</p></section>
+
+
+
 
 <script type="text/javascript">
-// code from https://www.html5canvastutorials.com/advanced/html5-canvas-animated-gradient-background/
-var c = document.getElementById('canv');
-var $ = c.getContext('2d');
-
-
-var col = function(x, y, r, g, b) {
-  $.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
-  $.fillRect(x, y, 1,1);
-}
-var R = function(x, y, t) {
-  return( Math.floor(192 + 64*Math.cos( (x*x-y*y)/300 + t )) );
-}
-
-var G = function(x, y, t) {
-  return( Math.floor(192 + 64*Math.sin( (x*x*Math.cos(t/4)+y*y*Math.sin(t/3))/300 ) ) );
-}
-
-var B = function(x, y, t) {
-  return( Math.floor(192 + 64*Math.sin( 5*Math.sin(t/9) + ((x-100)*(x-100)+(y-100)*(y-100))/1100) ));
-}
-
-var t = 0;
-
-var run = function() {
-  for(x=0;x<=35;x++) {
-    for(y=0;y<=35;y++) {
-      col(x, y, R(x,y,t), G(x,y,t), B(x,y,t));
+    // code from https://www.html5canvastutorials.com/advanced/html5-canvas-animated-gradient-background/
+    var c = document.getElementById('canv');
+    var $ = c.getContext('2d');
+    
+    
+    var col = function(x, y, r, g, b) {
+      $.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
+      $.fillRect(x, y, 1,1);
     }
-  }
-  t = t + 0.0520;
-  window.requestAnimationFrame(run);
-}
-
-run();
-
-
-  </script>
-	
+    var R = function(x, y, t) {
+      return( Math.floor(192 + 64*Math.cos( (x*x-y*y)/300 + t )) );
+    }
+    
+    var G = function(x, y, t) {
+      return( Math.floor(192 + 64*Math.sin( (x*x*Math.cos(t/4)+y*y*Math.sin(t/3))/300 ) ) );
+    }
+    
+    var B = function(x, y, t) {
+      return( Math.floor(192 + 64*Math.sin( 5*Math.sin(t/9) + ((x-100)*(x-100)+(y-100)*(y-100))/1100) ));
+    }
+    
+    var t = 0;
+    
+    var run = function() {
+      for(x=0;x<=35;x++) {
+        for(y=0;y<=35;y++) {
+          col(x, y, R(x,y,t), G(x,y,t), B(x,y,t));
+        }
+      }
+      t = t + 0.0520;
+      window.requestAnimationFrame(run);
+    }
+    
+    run();
+    
+    
+      </script>
 </body>      
