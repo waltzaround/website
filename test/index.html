@@ -6,256 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta charset="UTF-8">
 <title>💻&nbsp; Walt's Web Thing</title>
-<style type="text/css">
-/* 
-Base components
-*/
-
-@font-face {
-  font-family: 'Space Grotesk';
-  font-weight: 200;
-  font-display: auto;
-  src:  url('/assets/fonts/SpaceGrotesk-Light.woff2') format('woff2'),
-  url('/assets/fonts/SpaceGrotesk-Light.woff') format('woff');
-       
-}
-@font-face {
-  font-family: 'Space Grotesk';
-  font-weight: 400;
-  font-display: auto;
-  src:  url('/assets/fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
-  url('/assets/fonts/SpaceGrotesk-Regular.woff') format('woff');
-       
-}
-
-@font-face {
-  font-family: 'Space Grotesk';
-  font-weight: 500;
-  font-display: auto;
-  src:  url('/assets/fonts/SpaceGrotesk-Medium.woff2') format('woff2'),
-  url('/assets/fonts/SpaceGrotesk-Medium.woff') format('woff');
-       
-}
-
-@font-face {
-  font-family: 'Space Grotesk';
-  font-weight: 600;
-  font-display: auto;
-  src:  url('/assets/fonts/SpaceGrotesk-Semibold.woff2') format('woff2'),
-  url('/assets/fonts/SpaceGrotesk-Semibold.woff') format('woff');
-       
-}
 
 
-@font-face {
-  font-family: 'Space Grotesk';
-  font-weight: 700;
-  font-display: auto;
-  src:  url('/assets/fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
-  url('/assets/fonts/SpaceGrotesk-Bold.woff') format('woff');
-       
-}
+<link rel="stylesheet" href="style.css" />
 
 
-html {
-
-font-family: "Space Grotesk";
-}
-body {
-  margin: 0;
-}
-
-canvas {
-  width: 100%;
-  height: 100vh;
-  z-index: -2;
-  /* opacity: 0.7; */
-  margin-bottom: -6px;
-}
-
-
-h1 {
-font-size: 8rem;
-line-height: 1;
-margin: 0;
-font-weight: 700;
-letter-spacing: -4px;
-
-}
-i {
-opacity: 0.75;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-
-transition: all 0.3s;
-
-}
-
-h2 {
-    font-size: 6rem;
-    font-weight: 500;
-   
-
-letter-spacing: -3px;
-margin: 0;
-padding-top: 4rem;
-
-}
-/* 
-hero components
-*/
-.hero {
-    width: 100%;
-  height: 100vh;
-  position: absolute;
-}
-
-.primary-container {
-    position: absolute;
-    z-index: 1;
-    margin: 4rem;
-}
-.secondary-container {
-    bottom: 0;
-    margin: 4rem;
-    position: absolute;
- z-index: 1;
-    
-}
-
-.placeholder {
-    width: 100vw;
-    height: 100vh;
-    background-color: plum;
-    display: grid;
-}
-.placeholderTitle {
-    display: grid;
-    place-self: center;
-    font-size: 4rem;
-    filter: invert(100%);
-
-}
-.placeholder2 {
-    width: 100vw;
-    height: 100vh;
-    background-color: purple;
-    display: grid;
-}
-
-@media only screen and (max-width: 1920px) {
-    h1 {
-        font-size: 12rem;
-        letter-spacing: -2px;
-    }
-    h2 {
-        padding-top: 2.5rem;
-        font-size: 5rem;
-    }
-    .secondary-container {
-        margin-top: 2rem;
-    }
-
-}
-
-@media only screen and (max-width: 1600px) {
-    h1 {
-        font-size: 10rem;
-        letter-spacing: -2px;
-    }
-    h2 {
-        padding-top: 2rem;
-        font-size: 4rem;
-    }
-    .secondary-container {
-        margin-top: 2rem;
-    }
-
-}
-
-@media only screen and (max-width: 1280px) {
-    h1 {
-        font-size: 8rem;
-        letter-spacing: -2px;
-    }
-    h2 {
-        padding-top: 2rem;
-        font-size: 3rem;
-    }
-    .primary-container, .secondary-container {
-        margin: 3rem;
-    }
-
-}
-
-@media only screen and (max-width: 768px) {
-    h1 {
-        font-size: 6.5rem;
-        letter-spacing: -2px;
-    }
-    h2 {
-        padding-top: 2rem;
-        font-size: 3rem;
-    }
-    .primary-container, .secondary-container {
-        margin: 3rem;
-    }
-
-}
-
-@media only screen and (max-width: 500px) {
-    h1 {
-        font-size: 4rem;
-        letter-spacing: -2px;
-    }
-    h2 {
-        padding-top: 2rem;
-        font-size: 3rem;
-
-        letter-spacing: -2px;
-    }
-    .primary-container, .secondary-container {
-        margin: 1rem;
-    }
-    .secondary-container {
-        margin-bottom: 9rem;
-    }
-
-}
-
-
-@media only screen and (max-width: 320px) {
-    h1 {
-        font-size: 2.5rem;
-        letter-spacing: -2px;
-    }
-    h2 {
-        padding-top: 2rem;
-        font-size: 2rem;
-    }
-    .primary-container, .secondary-container {
-        margin: 1rem;
-    }
-    .secondary-container {
-        margin-bottom: 6rem;
-    }
-
-}
-
-
-</style>
 
 <body>
     <section class='hero'>
 <div class="primary-container">
-    <h1>Walter Lim is a<br/>ux designer</h1>
+    <h1>Walter Lim is a<br/>ux designer </h1>
     
 </div>
 <div class='secondary-container'>
-    <h2><a href='/'>> About</a></h2>
+    <h2><a href='#about'>> About</a></h2>
     <h2><a href='/'>> See work</a></h2>
     <h2><a href='/'>> Weird projects</a></h2>
 </div>
@@ -263,8 +27,64 @@ hero components
 <canvas id="canv" width="32" height="32">
 </canvas>
 
+<section class='container-about' id='about'>
+    <div class="container-about-grid">
+        <div>
+            <video class='potato' autoplay loop muted playsinline aria-hidden="true" >
+                <source src="../assets/walt_2.mp4" type="video/mp4" aria-hidden="true"  />
+                <track src="../assets/walt.vtt" kind="captions" srclang='en' label='english_captions'>
+              </video>
+    </div>
+        <div><aside>About</aside><h2>Walter is a UX generalist who works primarily between <i>research, design, code,</i> and <i> experimental tech</i> to build things that help people.</h2>
+        <strong>    Walter is currently working on:      </strong> 
+    </p>
+    <ul class='list'>
+       
+      <li><a href='https://swiftly.nz' rel="noopener noreferrer" target='_blank'><strong>Swiftly:</strong> an online store builder for small stores</a></li>
+      <br/><li> <a target="_blank" href="https://github.com/voluntarily/vly2"  rel="noopener noreferrer"
+      ><strong>Voluntarily:</strong> an open-source volunteering platform
+        </a></li>
+    </ul>
+    <br />
+ 
+    <p class='links'>
+  
+      
+        <a href="https://behance.net/waltzaround"target="_blank" rel="noopener noreferrer"
+          >Behance</a
+        >
+        /
+        <a href="https://dribbble.com/waltzaround" target="_blank"  rel="noopener noreferrer"
+          >Dribbble</a
+        > / 
+        <a href="https://github.com/waltzaround" target="_blank"  rel="noopener noreferrer"
+          >GitHub</a
+        >
+        /
+        <a href="https://waltzaround.itch.io/" rel="noopener noreferrer" target="_blank">itch.io</a>
+        /
+        <a href="https://twitter.com/iwaltzaround" target="_blank"  rel="noopener noreferrer"
+          >Twitter</a
+        >
+        /
+        <a href="https://instagram.com/iwaltzaround" target="_blank"  rel="noopener noreferrer"
+          >Instagram</a
+        >
+        /
+        <a href="https://linkedin.com/in/waltzaround" target="_blank"  rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        /
+        <a href="https://m.me/waltzaround" rel="noopener noreferrer" target="_blank">Messenger</a>
+    
+    </p>
+    </div>
+   
 
-<section class='placeholder'> <p class='placeholderTitle'>about me</p></section>
+    </div>
+    
+</section>
+
 <section class='placeholder2'><p class='placeholderTitle'>work high level</p></section>
 <section class='placeholder'> <p class='placeholderTitle'>stupid shit high level</p></section>
 <section class='placeholder2'><p class='placeholderTitle'>case study 1</p></section>
@@ -277,7 +97,8 @@ hero components
 
 
 <script type="text/javascript">
-    // code from https://www.html5canvastutorials.com/advanced/html5-canvas-animated-gradient-background/
+    // code adapted from https://www.html5canvastutorials.com/advanced/html5-canvas-animated-gradient-background/
+    // LOL Stripe hype
     var c = document.getElementById('canv');
     var $ = c.getContext('2d');
     
