@@ -51,6 +51,7 @@ Base components
   html {
     scroll-behavior: smooth;
   font-family: "Space Grotesk";
+  transition: all 0.3s;
   }
   body {
     margin: 0;
@@ -74,12 +75,12 @@ Base components
   
   }
   i {
-  opacity: 0.55;
+  opacity: 0.75;
   }
   
   a {
       text-decoration: none;
-      color: darkmagenta;
+      color: blue;
   
   transition: all 0.3s;
   
@@ -91,6 +92,7 @@ Base components
       letter-spacing: -2px;
         margin: 0;
         line-height: 1.25;
+        padding-top: 2rem;
   }
 
 
@@ -135,11 +137,20 @@ Base components
   }
 
   .hero-link {
-    color: black;
 
-    padding-top: 4rem;
+
+    line-height: 1.25;
+    padding-bottom: 1rem;
+    transition: all 0.5s;
+    transform-origin: left;
 }
+.hero-link a {
+    color: black;
+}
+.hero-link:hover {
+    transform: scale(1.15, 1.25);
 
+}
     /* 
   about components
   */
@@ -160,6 +171,7 @@ Base components
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 .list-title {
     margin-top: 5rem;
@@ -169,6 +181,21 @@ Base components
     font-size: 2rem;
     line-height: 1.5;
 }
+
+.container-summary {
+    background-color: #fff;
+}
+.container-summary-grid {
+max-width: 1600px;
+height: 400px;
+padding: 4rem auto;
+margin: 4rem auto;
+color: black;
+text-align: center;
+}
+
+
+
 
   @media only screen and (max-width: 1920px) {
       h1 {
@@ -246,10 +273,13 @@ Base components
           letter-spacing: -2px;
       }
       h2 {
-          padding-top: 2rem;
+          padding-top: 1rem;
           font-size: 1.75rem;
   
           letter-spacing: -0.5px;
+      }
+      aside {
+          margin-bottom: 0;
       }
       .primary-container, .secondary-container {
           margin: 1rem;
@@ -259,7 +289,7 @@ Base components
       }
 
       .container-about-grid div:nth-child(2){
-        margin: 1rem;
+        margin: 1.5rem;
     }
 
     .links {
@@ -267,10 +297,10 @@ Base components
        
     }
     .list-title {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     .list {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         line-height: 1.25;
     }
   }
@@ -282,7 +312,6 @@ Base components
           letter-spacing: -2px;
       }
       h2 {
-          padding-top: 2rem;
           font-size: 1.5rem;
           letter-spacing: -0.6px;
       }
