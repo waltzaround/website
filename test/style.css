@@ -233,6 +233,7 @@ Base components
     line-height: 1.5;
 }
 
+
 .container-summary {
 
     color: black;
@@ -260,7 +261,7 @@ Base components
 /* //projects */
 
 .container-project-template-1 {
-    margin: 8rem 4rem;
+    margin: 16rem 4rem;
 }
 
 .container-project-grid {
