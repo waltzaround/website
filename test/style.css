@@ -52,6 +52,7 @@ Base components
     scroll-behavior: smooth;
   font-family: "Space Grotesk";
   transition: all 0.3s;
+  
   }
   body {
     margin: 0;
@@ -75,7 +76,7 @@ Base components
   
   }
   i {
-  opacity: 0.75;
+color: #666;
   }
   p {
       margin: 0;
@@ -89,11 +90,12 @@ Base components
   transition: all 0.15s;
   
   }
+
   
   h2 {
       font-size: 4rem;
-      font-weight: 500;
-      letter-spacing: -2px;
+      font-weight: 700;
+      letter-spacing: -1px;
         margin: 0;
         line-height: 1.35;
   }
@@ -144,7 +146,7 @@ Base components
     padding-top: 2.5rem;
     line-height: 1.25;
     padding-bottom: 1rem;
-    transition: all 0.5s;
+    transition: all 0.2s;
     transform-origin: left;
 }
 .hero-link a {
@@ -211,7 +213,7 @@ Base components
     padding: 0;
 }
 .container-about-grid-content{
-
+    transform: rotate3d(1, 1, 1, 5deg);
  
     margin: 4rem;
     display: grid;
@@ -223,6 +225,7 @@ Base components
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transform: rotate3d(1, -1, 1, -5deg);
 }
 .list-title {
     margin-top: 5rem;
@@ -270,6 +273,8 @@ Base components
     grid-template-columns: 1fr 2fr;
     max-width: 1920px;
     margin: 2rem auto;
+
+    padding-top: 2rem;
 }
 .container-project-content {
     max-width: 1000px;
@@ -339,6 +344,10 @@ Base components
           margin: 3rem;
       }
 
+.container-project-grid { 
+    column-gap: 2rem;
+}
+
       
 .container-about-grid-content{
 
@@ -349,6 +358,14 @@ Base components
     grid-template-columns: 1fr;
 }
   
+  }
+
+  @media screen and (max-width: 1024px) {
+      .container-project-grid {
+          grid-template-columns: 1fr;
+          row-gap: 2rem;
+          margin-top: 0;
+      }
   }
   
   @media only screen and (max-width: 768px) {
@@ -367,7 +384,9 @@ Base components
         line-height: 2.5;
       }
 
-  
+      .container-project-template-1 {
+        margin: 6rem 2rem;
+    }
   }
   
   @media only screen and (max-width: 601px) {
@@ -378,7 +397,7 @@ Base components
       }
       h2 {
         
-          font-size: 1.25rem;
+          font-size: 2.5rem;
   
           letter-spacing: -0.5px;
       }
@@ -406,9 +425,14 @@ Base components
           margin-bottom: 9rem;
       }
 
+      .container-about-grid { 
+          margin: 2rem auto;
+          padding: 2rem;
+      }
       .container-about-grid-content{
         margin: 2rem;
     }
+
     .container-about-video-container {
 padding: 0;
     }
@@ -427,7 +451,7 @@ padding: 0;
     }
 
     .container-project-template-1 {
-        margin: 0rem;
+        margin: 6rem 2rem;
         
         
     }
