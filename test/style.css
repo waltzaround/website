@@ -94,7 +94,7 @@ color: #666;
   
   h2 {
       font-size: 4rem;
-      font-weight: 700;
+      font-weight: 500;
       letter-spacing: -1px;
         margin: 0;
         line-height: 1.35;
@@ -270,7 +270,7 @@ color: #666;
 .container-project-grid {
     margin-top: 4rem;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 27rem 1fr;
     max-width: 1920px;
     margin: 2rem auto;
 
@@ -361,6 +361,16 @@ color: #666;
   }
 
   @media screen and (max-width: 1024px) {
+   
+      canvas {
+          min-height: 650px;
+      }
+      .secondary-container {
+        position: relative;
+        display: block;
+        z-index: 1;
+        top: 15rem;
+    }
       .container-project-grid {
           grid-template-columns: 1fr;
           row-gap: 2rem;
@@ -430,7 +440,8 @@ color: #666;
           padding: 2rem;
       }
       .container-about-grid-content{
-        margin: 2rem;
+        margin: initial;
+        margin-bottom: 2rem;
     }
 
     .container-about-video-container {
@@ -451,12 +462,14 @@ padding: 0;
     }
 
     .container-project-template-1 {
-        margin: 6rem 2rem;
-        
-        
+        margin: 6rem 0rem;
     }
-
-
+    .container-project-grid {
+        margin: 0 2rem;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
 
   }
   
@@ -476,6 +489,8 @@ padding: 0;
       .secondary-container {
           margin-bottom: 6rem;
       }
+
+   
   
   }  
   
