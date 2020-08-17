@@ -77,7 +77,11 @@ Base components
   i {
   opacity: 0.75;
   }
-  
+  p {
+      margin: 0;
+      font-size: 1.5rem;
+      line-height: 1.5;
+  }
   a {
       text-decoration: none;
       color: blue;
@@ -154,6 +158,46 @@ Base components
   transition-timing-function: cubic-bezier(.22,1.16,.84,-0.46);
 
 }
+/* 
+//disgusting hack to remove the menu overflow
+*/
+
+@media screen and (min-width: 1920px) and (max-height: 1080px ) {
+    canvas {
+        min-height: 1080px;
+    }
+    .secondary-container {
+        position: relative;
+        z-index: 1;
+        top: 30rem;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-height: 768px ) {
+    canvas {
+        min-height: 768px;
+    }
+    .secondary-container {
+        position: relative;
+        z-index: 1;
+        top: 25rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-height: 1024px ) {
+    canvas {
+        min-height: 768px;
+    }
+    .secondary-container {
+        position: relative;
+        z-index: 1;
+        top: 25rem;
+    }
+}
+
+
+
+
     /* 
   about components
   */
@@ -166,7 +210,7 @@ Base components
     margin: 0;
     padding: 0;
 }
-.container-about-grid div:nth-child(2){
+.container-about-grid-content{
 
  
     margin: 4rem;
@@ -174,7 +218,7 @@ Base components
     align-items: center;
 }
 
-.container-about-grid div video{
+.container-about-grid-video{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -207,14 +251,27 @@ Base components
     max-width: 1200px;
 
 }
+.container-about-video-container { padding: 4rem;}
+
 .container-summary-grid img {
     width: 100%;
 }
 
+/* //projects */
+
 .container-project-template-1 {
-    margin: 4rem;
-    
-    
+    margin: 8rem 4rem;
+}
+
+.container-project-grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1920px;
+    margin: 2rem auto;
+}
+.container-project-content {
+    max-width: 1000px;
 }
 
 .container-project-img-1 { 
@@ -224,24 +281,12 @@ Base components
     max-width: 1920px;
 }
 
-
-
-@media screen and (max-height: 900px) and (min-width: 1900px) {
-    canvas {
-        min-height: 900px;
-    }
-.secondary-container {
-    bottom: 0;
-    position: relative;
- z-index: 1;
-}
-.primary-container {
-    position: relative;
-    z-index: 1;
+.project-info-side {
+    color: #555;
 }
 
 
-}
+
 
 
   @media only screen and (max-width: 1920px) {
@@ -271,23 +316,30 @@ Base components
       .secondary-container {
           margin-top: 2rem;
       }
+      .hero-link {
+          padding-top: 1.5rem;
+      }
   
   }
   
   @media only screen and (max-width: 1280px) {
       h1 {
-          font-size: 8rem;
+          font-size: 6rem;
           letter-spacing: -2px;
       }
       h2 {
-          padding-top: 2rem;
+         
           font-size: 3rem;
+      }
+      .hero-link {
+        padding-top: 2rem;
       }
       .primary-container, .secondary-container {
           margin: 3rem;
       }
 
-      .container-about-grid div:nth-child(2){
+      
+.container-about-grid-content{
 
         order: -1;
       }
@@ -300,11 +352,11 @@ Base components
   
   @media only screen and (max-width: 768px) {
       h1 {
-          font-size: 6rem;
+          font-size: 5rem;
           letter-spacing: -2px;
       }
       h2 {
-          padding-top: 2rem;
+          
           font-size: 3rem;
       }
       .primary-container, .secondary-container {
@@ -317,16 +369,31 @@ Base components
   
   }
   
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 601px) {
+  
       h1 {
           font-size: 3rem;
           letter-spacing: -2px;
       }
       h2 {
-          padding-top: 1rem;
-          font-size: 1.5rem;
+        
+          font-size: 1.25rem;
   
           letter-spacing: -0.5px;
+      }
+      .secondary-container {
+          top: 10rem;
+          bottom: initial;
+          position: relative;
+      }
+      .hero-link {
+        padding-top: 1rem;
+      }
+      .hero {
+          min-height: 600px;
+      }
+      canvas {
+          min-height: 600px;
       }
       aside {
           margin-bottom: 0;
@@ -338,9 +405,13 @@ Base components
           margin-bottom: 9rem;
       }
 
-      .container-about-grid div:nth-child(2){
-        margin: 1.5rem;
+      .container-about-grid-content{
+        margin: 2rem;
     }
+    .container-about-video-container {
+padding: 0;
+    }
+  
 
     .links {
         font-size: 1.25rem;
@@ -353,6 +424,15 @@ Base components
         font-size: 1.25rem;
         line-height: 1.25;
     }
+
+    .container-project-template-1 {
+        margin: 0rem;
+        
+        
+    }
+
+
+
   }
   
   
@@ -362,7 +442,7 @@ Base components
           letter-spacing: -2px;
       }
       h2 {
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           letter-spacing: -0.6px;
       }
       .primary-container, .secondary-container {
