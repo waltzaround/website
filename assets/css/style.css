@@ -412,6 +412,10 @@ stupid crap grid
     max-width: initial;
   
   }
+
+  .container-project-grid {
+    column-gap: 0rem;
+  }
   }
 
   @media screen and (max-width: 1024px) {
