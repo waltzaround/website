@@ -272,7 +272,7 @@ stupid crap grid
   
 .project-container {
     margin: 0 auto;
-    max-width: 1920px;
+   
     width: 90vw;
     padding: 4rem;
 }
@@ -328,6 +328,12 @@ stupid crap grid
 
 
 
+@media only screen and (min-width: 1920px) {
+    .project-grid-container {
+        
+  grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
+    }
+}
 
   @media only screen and (max-width: 1920px) {
       h1 {
