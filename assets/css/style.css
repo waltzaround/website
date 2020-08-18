@@ -120,6 +120,10 @@ color: #666;
       font-size: 2rem;
  
   }
+
+ .BR-mobile-only {
+     display: none;
+ }
   /* 
   hero components
   */
@@ -559,6 +563,11 @@ padding: 0;
     .project-card:hover {
         transform: none;
       }
+
+      .BR-mobile-only {
+        display: block;
+    }
+
   }
   
   
