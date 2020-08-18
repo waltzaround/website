@@ -403,7 +403,7 @@ stupid crap grid
 }
 .project-container {
     width: auto;
-    margin: 2rem;
+    margin: 1.5rem;
     padding: 0;
 }
 .project-grid-container {
@@ -498,10 +498,10 @@ stupid crap grid
           margin-bottom: 0;
       }
       .primary-container, .secondary-container {
-          margin: 1rem;
+          margin: 1.5rem;
       }
       .secondary-container {
-          margin-bottom: 9rem;
+          margin-bottom: 12rem;
       }
 
       .container-about-grid { 
@@ -516,7 +516,7 @@ stupid crap grid
     .project-grid-container {
   
         grid-template-columns: 1fr;
-        row-gap: 2rem;
+        row-gap: 1.5rem;
       
       
       }
