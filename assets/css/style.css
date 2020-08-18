@@ -567,7 +567,9 @@ padding: 0;
       .BR-mobile-only {
         display: block;
     }
-
+    .container-summary  {
+        text-align: left;
+    }
   }
   
   
