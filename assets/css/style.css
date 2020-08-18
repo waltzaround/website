@@ -311,7 +311,7 @@ stupid crap grid
     grid-template-columns: 27rem 1fr;
     max-width: 1920px;
     margin: 2rem auto;
-
+    column-gap: 4rem;
     padding-top: 2rem;
 }
 .container-project-content {
