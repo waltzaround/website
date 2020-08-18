@@ -551,6 +551,7 @@ padding: 0;
     }
     .hero-title {
         font-size: 2rem;
+        max-width: 80vw;
     }
     .container-summary {margin: 2rem}
 
@@ -589,7 +590,9 @@ padding: 0;
           margin-bottom: 6rem;
       }
 
-   
+   .hero-title {
+       font-size: 1.25rem;
+   }
   
   }  
 
