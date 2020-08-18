@@ -62,7 +62,7 @@ Base components
     width: 100%;
     height: 100vh;
     z-index: -2;
-     opacity: 0.5; 
+     opacity: 0.8; 
     margin-bottom: -6px;
   }
   
@@ -213,7 +213,7 @@ color: #666;
     padding: 0;
 }
 .container-about-grid-content{
-    transform: rotate3d(1, 1, 1, 5deg);
+    transform: rotate3d(1, 1, 1, -7deg);
  
     margin: 4rem;
     display: grid;
@@ -225,7 +225,7 @@ color: #666;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    transform: rotate3d(1, -1, 1, -5deg);
+    transform: rotate3d(-1, -1, 1, 7deg);
 }
 .list-title {
     margin-top: 5rem;
@@ -395,8 +395,13 @@ color: #666;
       }
 
       .container-project-template-1 {
-        margin: 6rem 2rem;
+        margin: 6rem 0rem;
     }
+    .container-project-grid {
+
+        padding-top: 1rem;
+        margin: 1rem 1.5rem;
+      }
   }
   
   @media only screen and (max-width: 601px) {
@@ -410,6 +415,9 @@ color: #666;
           font-size: 2.5rem;
   
           letter-spacing: -0.5px;
+      }
+      p {
+          font-size: 1.25rem;
       }
       .secondary-container {
           top: 10rem;
@@ -439,6 +447,7 @@ color: #666;
           margin: 2rem auto;
           padding: 2rem;
       }
+    
       .container-about-grid-content{
         margin: initial;
         margin-bottom: 2rem;
@@ -448,6 +457,12 @@ color: #666;
 padding: 0;
     }
   
+    .container-project-template-1 {
+        margin: 6rem 0rem;
+    }
+    .container-project-grid {
+        margin: 0 2rem;
+    }
 
     .links {
         font-size: 1.25rem;
@@ -465,10 +480,18 @@ padding: 0;
         margin: 6rem 0rem;
     }
     .container-project-grid {
-        margin: 0 2rem;
+        margin: 0 1.5rem;
     }
     .hero-title {
         font-size: 2rem;
+    }
+    .container-summary {margin: 2rem}
+
+    .hero-link:hover {
+        transform: scale(1.25, 1.15);
+    
+      transition-timing-function: cubic-bezier(.22,1.16,.84,-0.46);
+    
     }
 
   }
@@ -493,6 +516,7 @@ padding: 0;
    
   
   }  
+
   
   
   
