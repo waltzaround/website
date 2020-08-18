@@ -266,7 +266,8 @@ stupid crap grid
 .project-title {
   
     height: auto;
-    margin: 2rem auto;
+    margin: 2rem auto 0 auto;
+    padding: 2rem 0;
     text-align: center;
   }
   
@@ -278,7 +279,6 @@ stupid crap grid
 }
 .project-grid-container {
     display: grid;
-    align-items: top;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
