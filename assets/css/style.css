@@ -389,6 +389,9 @@ stupid crap grid
       .hero-link {
           padding-top: 1.5rem;
       }
+      .project-card-content {
+        font-size: 1.25rem;
+      }
   
   }
   
