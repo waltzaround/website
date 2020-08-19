@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"[javascript]": {
+		  "editor.defaultFormatter": "esbenp.prettier-vscode",
+		  // Configures if the built-in HTML language suggests HTML5 tags, properties and values.
+		
+		},
+		"html.suggest.html5": true
+		
+	  }
+}
