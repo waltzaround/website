@@ -49,7 +49,6 @@ Base components
   
   
   html {
-    scroll-behavior: smooth;
   font-family: "Space Grotesk";
   transition: all 0.3s;
   
@@ -165,7 +164,7 @@ color: #666;
 
 }
 .hero-link:hover {
-    transform: scale(1.55, 1.15);
+    transform: scale(1.25, 1.15);
 
 
 }
@@ -275,7 +274,7 @@ stupid crap grid
 .project-title-container {
   
     height: auto;
-    margin: 2rem auto 0 auto;
+    margin: 2rem auto;
     padding: 2rem;
     text-align: center;
    
@@ -294,7 +293,7 @@ stupid crap grid
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1920px;
-    margin: 0 auto;
+    margin: 0 auto 10rem auto;
     column-gap: 4rem;
     row-gap: 6rem;
     

@@ -1,15 +1,60 @@
 /* To whomever reads this, please excuse this ungodly mess of horrible, horrible technical debt - It's horrifc and disgusting and i don't have time to clean it up atm :( */
 
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 200;
+  font-display: auto;
+  src:  url('/assets/fonts/SpaceGrotesk-Light.woff2') format('woff2'),
+  url('/assets/fonts/SpaceGrotesk-Light.woff') format('woff');
+       
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+  font-display: auto;
+  src:  url('/assets/fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
+  url('/assets/fonts/SpaceGrotesk-Regular.woff') format('woff');
+       
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 500;
+  font-display: auto;
+  src:  url('/assets/fonts/SpaceGrotesk-Medium.woff2') format('woff2'),
+  url('/assets/fonts/SpaceGrotesk-Medium.woff') format('woff');
+       
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 600;
+  font-display: auto;
+  src:  url('/assets/fonts/SpaceGrotesk-Semibold.woff2') format('woff2'),
+  url('/assets/fonts/SpaceGrotesk-Semibold.woff') format('woff');
+       
+}
+
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  font-display: auto;
+  src:  url('/assets/fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
+  url('/assets/fonts/SpaceGrotesk-Bold.woff') format('woff');
+       
+}
 /* Base element styling */
 html {
   scroll-behavior: smooth;
 
-  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 a {
   text-decoration: none;
   line-height: 0;
+  color: blue;
 }
 
 li>a:visited {
@@ -80,6 +125,7 @@ video {
 }
 
 p {
+  font-size: 1.25rem;
   line-height: 1.8;
   letter-spacing: 0.3px;
   margin: initial;
@@ -154,7 +200,7 @@ figcaption {
 }
 
 .text-dark-link {
-  color: #030303;
+  color: #blue;
   transition: 0.5s;
 }
 .text-dark-link:hover {
@@ -316,7 +362,7 @@ figcaption {
   margin: auto;
   height: auto;
   width: 100vw;
-  max-width: 80rem;
+  max-width: 1280px;
   justify-content: center;
 }
 
@@ -340,8 +386,8 @@ figcaption {
   display: grid;
   align-items: top;
   grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  margin-top: 2.5rem;
+  gap: 4rem;
+  margin: 4rem 0;
 }
 
 .project-grid-container {
@@ -408,7 +454,7 @@ figcaption {
 }
 .case-study-image {
   width: 100%;
-  object-fit: scale-down;
+  object-fit: cover;
   margin: 1rem 0;
 }
 
@@ -534,6 +580,7 @@ ul {
   .fullWidthImg {
   
     width: 100%;
+
   }
 
   .project-title-container {
@@ -549,7 +596,7 @@ ul {
 
   .grid-container {
     grid-template-columns: 1fr 1fr;
-    margin-top: 2rem;
+    margin: 2rem 0;
   }
 
   
