@@ -572,24 +572,3 @@ stupid crap grid
 		font-size: 1.25rem;
 	}
 }
-
-.placeholder {
-	width: 100vw;
-	height: 100vh;
-	background-color: plum;
-	display: grid;
-}
-
-.placeholderTitle {
-	display: grid;
-	place-self: center;
-	font-size: 4rem;
-	filter: invert(100%);
-}
-
-.placeholder2 {
-	width: 100vw;
-	height: 100vh;
-	background-color: purple;
-	display: grid;
-}
