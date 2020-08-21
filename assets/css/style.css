@@ -39,7 +39,8 @@ Base components
 
 html {
 	font-family: "Space Grotesk";
-	transition: all 0.3s;
+    transition: all 0.3s;
+    scroll-behavior: auto;
 }
 
 body {
