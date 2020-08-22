@@ -336,7 +336,9 @@ stupid crap grid
 .project-info-side {
 	color: #555;
 }
-
+.project-link {
+    padding: 0.5rem 0;
+}
 
 /* @media only screen and (min-width: 1920px) {
     .project-grid-container {
