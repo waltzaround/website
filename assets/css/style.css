@@ -51,10 +51,14 @@ body {
 canvas {
 	width: 100%;
 	height: 100vh;
-	z-index: -2;
+	z-index: 2;
 	opacity: 0.5;
 	margin-bottom: -6px;
 	position: fixed;
+}
+.safariHack {
+	z-index: 30;
+	position: absolute;
 }
 
 h1 {
@@ -218,8 +222,8 @@ li {
 .container-about-grid-video {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
-	object-position: center;
+	object-fit: ;
+	object-position: top;
 	transform: rotate3d(-1, -1, 1, 7deg);
 }
 
@@ -236,7 +240,7 @@ li {
 .container-summary {
 	color: black;
 	text-align: center;
-	margin: 4rem;
+	margin: 2rem;
 }
 
 .container-summary h2 {
@@ -384,7 +388,7 @@ stupid crap grid
 
 @media only screen and (max-width: 1280px) {
 	h1 {
-		font-size: 6rem;
+		font-size: 5rem;
 		letter-spacing: -2px;
 	}
 	h2 {
@@ -400,9 +404,7 @@ stupid crap grid
 	.container-about-grid-content {
 		order: 1;
 	}
-	.container-about-grid {
-		grid-template-columns: 1fr;
-	}
+	
 	.project-container {
 		width: auto;
 		margin: 1.5rem;
@@ -418,9 +420,7 @@ stupid crap grid
 }
 
 @media screen and (max-width: 1024px) {
-	canvas {
-		min-height: 650px;
-	}
+
 	.secondary-container {
 		position: relative;
 		display: block;
@@ -431,6 +431,9 @@ stupid crap grid
 		grid-template-columns: 1fr;
 		row-gap: 2rem;
 		margin-top: 0;
+	}
+	.container-about-grid {
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -460,7 +463,7 @@ stupid crap grid
 
 @media only screen and (max-width: 601px) {
 	h1 {
-		font-size: 3rem;
+		font-size: 2.5rem;
 		letter-spacing: -1px;
 	}
 	h2 {
@@ -490,10 +493,7 @@ stupid crap grid
 	aside {
 		margin-bottom: 0;
 	}
-	.primary-container,
-	.secondary-container {
-		margin: 1.5rem;
-	}
+
 	.secondary-container {
 		margin-bottom: 12rem;
 	}
@@ -556,21 +556,21 @@ stupid crap grid
 
 @media only screen and (max-width: 320px) {
 	h1 {
-		font-size: 2.5rem;
+		font-size: 2rem;
 		letter-spacing: -2px;
 	}
 	h2 {
 		font-size: 1.25rem;
 		letter-spacing: -0.6px;
 	}
-	.primary-container,
-	.secondary-container {
-		margin: 1rem;
-	}
+	
+
 	.secondary-container {
 		margin-bottom: 6rem;
 	}
+
 	.hero-title {
 		font-size: 1.25rem;
 	}
+
 }
