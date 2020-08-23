@@ -512,6 +512,7 @@ h1 {
 	.project-grid-container {
 		grid-template-columns: 1fr;
 		row-gap: 1.5rem;
+		margin: 0;
 	}
 	.container-about-video-container {
 		padding: 0rem;
