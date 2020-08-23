@@ -461,7 +461,7 @@ stupid crap grid
 @media only screen and (max-width: 601px) {
 	h1 {
 		font-size: 3rem;
-		letter-spacing: -2px;
+		letter-spacing: -1px;
 	}
 	h2 {
 		font-size: 2.5rem;
