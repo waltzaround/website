@@ -222,7 +222,7 @@ li {
 .container-about-grid-video {
 	width: 100%;
 	height: 100%;
-	object-fit: ;
+
 	object-position: top;
 	transform: rotate3d(-1, -1, 1, 7deg);
 }
