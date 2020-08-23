@@ -52,16 +52,17 @@ canvas {
 	width: 100%;
 	height: 100vh;
 	z-index: -2;
-	opacity: 0.8;
+	opacity: 0.5;
 	margin-bottom: -6px;
+	position: fixed;
 }
 
 h1 {
-	font-size: 10rem;
+	font-size: 8rem;
 	line-height: 1.25;
 	margin: 0;
-	font-weight: 600;
-	letter-spacing: -6px;
+	font-weight: 700;
+	letter-spacing: -4px;
 }
 
 h2 {
@@ -125,12 +126,13 @@ li {
 	width: 100%;
 	height: 100vh;
 	position: absolute;
+	z-index: -100;
 }
 
 .primary-container {
-	position: absolute;
-	z-index: 1;
-	margin: 4rem;
+
+
+	margin-bottom: 2rem;
 }
 
 .secondary-container {
@@ -160,7 +162,7 @@ li {
 /* 
 //disgusting hack to remove the menu overflow
 */
-
+/* 
 @media screen and (min-width: 1920px) and (max-height: 1080px) {
 	canvas {
 		min-height: 1080px;
@@ -192,7 +194,7 @@ li {
 		z-index: 1;
 		top: 25rem;
 	}
-}
+} */
 
 
 /* 
@@ -349,7 +351,7 @@ stupid crap grid
 
 @media only screen and (max-width: 1920px) {
 	h1 {
-		font-size: 8rem;
+		font-size: 6.5rem;
 		letter-spacing: -2px;
 	}
 	h2 {
@@ -363,7 +365,7 @@ stupid crap grid
 
 @media only screen and (max-width: 1600px) {
 	h1 {
-		font-size: 7rem;
+		font-size: 5rem;
 		letter-spacing: -2px;
 	}
 	h2 {
@@ -391,15 +393,12 @@ stupid crap grid
 	.hero-link {
 		padding-top: 2rem;
 	}
-	.primary-container,
-	.secondary-container {
-		margin: 3rem;
-	}
+
 	.container-project-grid {
 		column-gap: 2rem;
 	}
 	.container-about-grid-content {
-		order: -1;
+		order: 1;
 	}
 	.container-about-grid {
 		grid-template-columns: 1fr;
@@ -437,16 +436,13 @@ stupid crap grid
 
 @media only screen and (max-width: 768px) {
 	h1 {
-		font-size: 5rem;
+		font-size: 4rem;
 		letter-spacing: -2px;
 	}
 	h2 {
 		font-size: 3rem;
 	}
-	.primary-container,
-	.secondary-container {
-		margin: 3rem;
-	}
+
 	.links {
 		line-height: 2.5;
 	}
@@ -485,6 +481,9 @@ stupid crap grid
 	.hero {
 		min-height: 600px;
 	}
+	.hero-title {
+		margin-top: 2rem;
+	}
 	canvas {
 		min-height: 600px;
 	}
@@ -499,7 +498,7 @@ stupid crap grid
 		margin-bottom: 12rem;
 	}
 	.container-about-grid {
-		margin: 2rem auto;
+	
 		padding: 2rem;
 	}
 	.container-about-grid-content {
@@ -511,7 +510,7 @@ stupid crap grid
 		row-gap: 1.5rem;
 	}
 	.container-about-video-container {
-		padding: 0;
+		padding: 1rem;
 	}
 	.container-project-template-1 {
 		margin: 6rem 0rem;
@@ -537,7 +536,6 @@ stupid crap grid
 	}
 	.hero-title {
 		font-size: 2rem;
-		max-width: 80vw;
 	}
 	.container-summary {
 		margin: 2rem
