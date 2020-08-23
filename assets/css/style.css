@@ -388,11 +388,11 @@ stupid crap grid
 
 @media only screen and (max-width: 1280px) {
 	h1 {
-		font-size: 5rem;
+		font-size: 3.5rem;
 		letter-spacing: -2px;
 	}
 	h2 {
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
 	.hero-link {
 		padding-top: 2rem;
@@ -462,10 +462,7 @@ stupid crap grid
 }
 
 @media only screen and (max-width: 601px) {
-	h1 {
-		font-size: 2.5rem;
-		letter-spacing: -1px;
-	}
+
 	h2 {
 		font-size: 2.5rem;
 		letter-spacing: -0.5px;
