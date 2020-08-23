@@ -240,7 +240,7 @@ li {
 .container-summary {
 	color: black;
 	text-align: center;
-	margin: 2rem;
+	margin: 1rem;
 }
 
 .container-summary h2 {
@@ -384,6 +384,9 @@ stupid crap grid
 	.project-card-content {
 		font-size: 1.25rem;
 	}
+	.container-about-video-container {
+		padding: 2rem;
+	}
 }
 
 @media only screen and (max-width: 1280px) {
@@ -462,7 +465,10 @@ stupid crap grid
 }
 
 @media only screen and (max-width: 601px) {
-
+h1 {
+	font-size: 2.5rem;
+	letter-spacing: -1px;
+}
 	h2 {
 		font-size: 2.5rem;
 		letter-spacing: -0.5px;
@@ -483,6 +489,7 @@ stupid crap grid
 	}
 	.hero-title {
 		margin-top: 2rem;
+		font-size: 2rem;
 	}
 	canvas {
 		min-height: 600px;
@@ -507,7 +514,7 @@ stupid crap grid
 		row-gap: 1.5rem;
 	}
 	.container-about-video-container {
-		padding: 1rem;
+		padding: 0rem;
 	}
 	.container-project-template-1 {
 		margin: 6rem 0rem;
@@ -531,9 +538,7 @@ stupid crap grid
 	.container-project-grid {
 		margin: 0 1.5rem;
 	}
-	.hero-title {
-		font-size: 2rem;
-	}
+	
 	.container-summary {
 		margin: 2rem
 	}
