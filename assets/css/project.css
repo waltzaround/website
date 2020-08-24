@@ -200,7 +200,7 @@ figcaption {
 }
 
 .text-dark-link {
-  color: #blue;
+  color: blue;
   transition: 0.5s;
 }
 .text-dark-link:hover {
