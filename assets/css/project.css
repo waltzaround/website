@@ -445,8 +445,9 @@ figcaption {
 }
 
 .case-study-container {
-  margin: 4rem 0;
+  margin: 4rem 1.5rem;
 }
+
 
 .case-study-credits-container {
   margin: 0 auto 10rem 0;
