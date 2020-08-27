@@ -478,7 +478,7 @@ stupid crap grid
 @media only screen and (max-width: 601px) {
 	h1 {
 		font-size: 2rem;
-		letter-spacing: -1px;
+		letter-spacing: -1.2px;
 	}
 	h2 {
 		font-size: 2.5rem;
@@ -498,7 +498,9 @@ stupid crap grid
 	.hero {
 		min-height: 600px;
 	}
-	
+	.hero-title {
+		margin-top: 2rem;
+		
 	
 	}
 	canvas {
@@ -580,6 +582,8 @@ stupid crap grid
 		margin-bottom: 6rem;
 	}
 
-
+	.hero-title {
+		font-size: 1.25rem;
+	}
 
 }
