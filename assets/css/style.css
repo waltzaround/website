@@ -135,8 +135,6 @@ li {
 
 
 .primary-container {
-
-
 	margin-bottom: 2rem;
 }
 
@@ -278,6 +276,7 @@ stupid crap grid
 
 .project-title {
 	margin-bottom: 1rem;
+	font-size: 6rem;
 }
 
 .project-container {
@@ -454,7 +453,6 @@ stupid crap grid
 @media only screen and (max-width: 768px) {
 	h1 {
 		font-size: 2.5rem;
-		letter-spacing: -2px;
 	}
 	h2 {
 		font-size: 3rem;
@@ -473,12 +471,17 @@ stupid crap grid
 	.project-grid-container {
 		grid-template-columns: 1fr;
 	}
+	.project-title {
+	
+		font-size: 3rem;
+	}
+	
 }
 
 @media only screen and (max-width: 601px) {
 	h1 {
-		font-size: 2rem;
-		letter-spacing: -1.2px;
+		font-size: 1.5rem;
+		letter-spacing: -1px;
 	}
 	h2 {
 		font-size: 2.5rem;
@@ -564,13 +567,17 @@ stupid crap grid
 	.BR-mobile-only {
 		display: block;
 	}
+	.project-title {
+	
+		font-size: 2rem;
+	}
 
 }
 
 @media only screen and (max-width: 320px) {
 	h1 {
 		font-size: 2rem;
-		letter-spacing: -2px;
+		letter-spacing: -0.5px;
 	}
 	h2 {
 		font-size: 1.25rem;
