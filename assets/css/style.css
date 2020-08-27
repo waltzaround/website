@@ -62,11 +62,11 @@ canvas {
 }
 
 h1 {
-	font-size: 8rem;
+	font-size: 4rem;
 	line-height: 1.25;
 	margin: 0;
-	font-weight: 700;
-	letter-spacing: -4px;
+	font-weight: 400;
+	letter-spacing: -2px;
 }
 
 h2 {
@@ -132,6 +132,7 @@ li {
 	position: absolute;
 	z-index: -100;
 }
+
 
 .primary-container {
 
@@ -213,7 +214,7 @@ li {
 }
 
 .container-about-grid-content {
-	transform: rotate3d(1, 1, 1, -7deg);
+	
 	margin: 4rem;
 	display: grid;
 	align-items: center;
@@ -224,7 +225,7 @@ li {
 	height: 100%;
 
 	object-position: top;
-	transform: rotate3d(-1, -1, 1, 7deg);
+
 }
 
 .list-title {
@@ -355,7 +356,7 @@ stupid crap grid
 
 @media only screen and (max-width: 1920px) {
 	h1 {
-		font-size: 6.5rem;
+		font-size: 3rem;
 		letter-spacing: -2px;
 	}
 	h2 {
@@ -369,7 +370,7 @@ stupid crap grid
 
 @media only screen and (max-width: 1600px) {
 	h1 {
-		font-size: 5rem;
+		font-size: 3rem;
 		letter-spacing: -2px;
 	}
 	h2 {
@@ -387,12 +388,14 @@ stupid crap grid
 	.container-about-video-container {
 		padding: 2rem;
 	}
+	.container-about-grid-content {
+		margin: 2rem;
 }
 
 @media only screen and (max-width: 1280px) {
 	h1 {
-		font-size: 3.5rem;
-		letter-spacing: -2px;
+		font-size: 2.25rem;
+		letter-spacing: -1px;
 	}
 	h2 {
 		font-size: 2.5rem;
@@ -438,11 +441,19 @@ stupid crap grid
 	.container-about-grid {
 		grid-template-columns: 1fr;
 	}
+	.container-project-template-1 {
+		margin: 4rem 2rem;
+	}
+	.container-summary {
+		text-align: left;
+		margin-left: 2rem;
+		
+	}
 }
 
 @media only screen and (max-width: 768px) {
 	h1 {
-		font-size: 4rem;
+		font-size: 2.5rem;
 		letter-spacing: -2px;
 	}
 	h2 {
@@ -465,10 +476,10 @@ stupid crap grid
 }
 
 @media only screen and (max-width: 601px) {
-h1 {
-	font-size: 2.5rem;
-	letter-spacing: -1px;
-}
+	h1 {
+		font-size: 2rem;
+		letter-spacing: -1px;
+	}
 	h2 {
 		font-size: 2.5rem;
 		letter-spacing: -0.5px;
@@ -487,9 +498,8 @@ h1 {
 	.hero {
 		min-height: 600px;
 	}
-	.hero-title {
-		margin-top: 2rem;
-		font-size: 2rem;
+	
+	
 	}
 	canvas {
 		min-height: 600px;
@@ -552,9 +562,7 @@ h1 {
 	.BR-mobile-only {
 		display: block;
 	}
-	.container-summary {
-		text-align: left;
-	}
+
 }
 
 @media only screen and (max-width: 320px) {
@@ -572,8 +580,6 @@ h1 {
 		margin-bottom: 6rem;
 	}
 
-	.hero-title {
-		font-size: 1.25rem;
-	}
+
 
 }
