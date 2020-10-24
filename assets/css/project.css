@@ -4,50 +4,41 @@
   font-family: 'Space Grotesk';
   font-weight: 200;
   font-display: auto;
-  src:  url('/assets/fonts/SpaceGrotesk-Light.woff2') format('woff2'),
-  url('/assets/fonts/SpaceGrotesk-Light.woff') format('woff');
-       
+  src: url('/assets/fonts/SpaceGrotesk-Light.woff2') format('woff2'), url('/assets/fonts/SpaceGrotesk-Light.woff') format('woff');
 }
+
 @font-face {
   font-family: 'Space Grotesk';
   font-weight: 400;
   font-display: auto;
-  src:  url('/assets/fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
-  url('/assets/fonts/SpaceGrotesk-Regular.woff') format('woff');
-       
+  src: url('/assets/fonts/SpaceGrotesk-Regular.woff2') format('woff2'), url('/assets/fonts/SpaceGrotesk-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Space Grotesk';
   font-weight: 500;
   font-display: auto;
-  src:  url('/assets/fonts/SpaceGrotesk-Medium.woff2') format('woff2'),
-  url('/assets/fonts/SpaceGrotesk-Medium.woff') format('woff');
-       
+  src: url('/assets/fonts/SpaceGrotesk-Medium.woff2') format('woff2'), url('/assets/fonts/SpaceGrotesk-Medium.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Space Grotesk';
   font-weight: 600;
   font-display: auto;
-  src:  url('/assets/fonts/SpaceGrotesk-Semibold.woff2') format('woff2'),
-  url('/assets/fonts/SpaceGrotesk-Semibold.woff') format('woff');
-       
+  src: url('/assets/fonts/SpaceGrotesk-Semibold.woff2') format('woff2'), url('/assets/fonts/SpaceGrotesk-Semibold.woff') format('woff');
 }
-
 
 @font-face {
   font-family: 'Space Grotesk';
   font-weight: 700;
   font-display: auto;
-  src:  url('/assets/fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
-  url('/assets/fonts/SpaceGrotesk-Bold.woff') format('woff');
-       
+  src: url('/assets/fonts/SpaceGrotesk-Bold.woff2') format('woff2'), url('/assets/fonts/SpaceGrotesk-Bold.woff') format('woff');
 }
+
 /* Base element styling */
+
 html {
   scroll-behavior: smooth;
-
   font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -59,7 +50,6 @@ a {
 
 li>a:visited {
   color: blue;
-  
 }
 
 h1 {
@@ -71,7 +61,7 @@ h1 {
   text-rendering: optimizeLegibility;
 }
 
-h1 > strong {
+h1>strong {
   font-weight: 500;
 }
 
@@ -92,12 +82,10 @@ h3 {
   margin: 0;
 }
 
-h3 > strong {
+h3>strong {
   font-weight: 700;
-  
   letter-spacing: 0.5px;
 }
-
 
 h4 {
   margin: initial;
@@ -116,7 +104,6 @@ h6 {
 }
 
 video {
-  
   width: 100%;
   object-fit: cover;
   height: 80vh;
@@ -131,6 +118,7 @@ p {
   margin: initial;
   word-break: keep-all;
 }
+
 ul {
   margin: 0.25rem 0 1rem 0;
 }
@@ -141,16 +129,20 @@ figcaption {
 }
 
 /* End base element styling */
+
 .list {
   line-height: 1.8;
   font-size: 1.1rem;
 }
+
 /* Primary Menu classes */
+
 .menu-link {
   color: black;
   text-decoration: none;
   transition: all 0.4s;
 }
+
 .menu-link:hover {
   color: purple;
 }
@@ -159,9 +151,7 @@ figcaption {
   top: 0px;
   left: 0px;
   width: calc(100vw - 40px);
-
   padding: 20px;
-
   background-color: white;
 }
 
@@ -172,6 +162,7 @@ figcaption {
   z-index: 90001;
   padding: 20px;
 }
+
 /* End Primary */
 
 /* Text styles */
@@ -179,9 +170,8 @@ figcaption {
 .text-white {
   color: white;
 }
-.text-dark {
-  color: #030303;
-}
+
+.text-dark {}
 
 .text-subheading {
   color: #727272;
@@ -195,6 +185,7 @@ figcaption {
   color: white;
   transition: 0.5s;
 }
+
 .text-light-link:hover {
   color: pink;
 }
@@ -203,6 +194,7 @@ figcaption {
   color: blue;
   transition: 0.5s;
 }
+
 .text-dark-link:hover {
   color: darkred;
 }
@@ -220,6 +212,7 @@ figcaption {
   letter-spacing: -2px;
   margin-bottom: 0.5rem;
 }
+
 .hero-desc {
   font-weight: 700;
 }
@@ -232,17 +225,19 @@ figcaption {
   font-weight: 500;
 }
 
-
 /* End text styles */
+
 .mobileAbout {
   display: none;
 }
 
 /* Background styles */
+
 .voluntarily-bg {
   background-color: #333;
   padding: 5rem 0;
 }
+
 .swiftly-bg {
   background-color: #fff;
   padding: 5rem 0;
@@ -252,10 +247,12 @@ figcaption {
   background-color: #09002a;
   padding: 5rem 0;
 }
+
 .qrious-bg {
   background-color: #00f8b5;
   padding: 5rem 0;
 }
+
 .flatbot-bg {
   background-color: #6b44ff;
   padding: 5rem 0;
@@ -265,7 +262,9 @@ figcaption {
   background-color: #f2e8e1;
   padding: 5rem 0;
 }
+
 /* End Background Styles */
+
 .text-case-title-container {
   margin: 2.5rem 0;
 }
@@ -294,8 +293,8 @@ figcaption {
   height: 240px;
   width: 100%;
 }
+
 .fullWidthImg {
-  
   width: 100%;
 }
 
@@ -305,7 +304,6 @@ figcaption {
   left: 0;
   height: 100%;
   width: 100%;
-
   padding-bottom: 4rem;
 }
 
@@ -317,9 +315,7 @@ figcaption {
   position: relative;
   margin: 5rem;
   flex-direction: column;
-
   text-align: left;
-
   width: 80rem;
 }
 
@@ -328,14 +324,12 @@ figcaption {
   position: absolute;
   margin-top: 2rem;
   width: calc(100% - 5rem);
-
 }
 
 .primary-button {
   height: 4.5rem;
   padding: 0 2rem 0 2rem;
   font-size: 2rem;
-  color: black;
   background: none;
   border: none;
   font-weight: 700;
@@ -382,6 +376,7 @@ figcaption {
   gap: 2.5rem;
   margin-top: 2.5rem;
 }
+
 .grid-container {
   display: grid;
   align-items: top;
@@ -394,7 +389,6 @@ figcaption {
   display: grid;
   align-items: top;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
   margin-bottom: 5rem;
 }
 
@@ -448,11 +442,11 @@ figcaption {
   margin: 4rem 1.5rem;
 }
 
-
 .case-study-credits-container {
   margin: 0 auto 10rem 0;
   text-align: left;
 }
+
 .case-study-image {
   width: 100%;
   object-fit: cover;
@@ -490,12 +484,14 @@ figcaption {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 2.5rem;
 }
+
 .case-study-triple-grid-item {
   width: 100%;
   height: 25rem;
   object-fit: contain;
   border: none;
 }
+
 .case-study-double-grid-item {
   width: 100%;
   height: 37.5rem;
@@ -509,19 +505,17 @@ figcaption {
 }
 
 /*For Tablet Screens 640px - 1300px*/
+
 @media only screen and (min-width: 640px) and (max-width: 1300px) {
   h1 {
     font-size: 4rem;
   }
-
   h3 {
     font-size: 3rem;
   }
-
   h4 {
     font-size: 1rem;
   }
-
   .aboutText {
     margin: 2rem;
     left: 0;
@@ -529,10 +523,8 @@ figcaption {
   .case-container {
     margin-top: 2rem;
   }
-
   .mainContainer {
     margin-top: 0;
-
   }
   .Container {
     z-index: 1;
@@ -540,34 +532,27 @@ figcaption {
     margin: auto;
     height: auto;
     width: 90vw;
-
     justify-content: center;
   }
-
   .case-study-image {
     width: 100%;
     overflow: cover;
     margin-top: 1rem;
     object-fit: scale-down;
   }
-.hero-title {
-  line-height: 1.7;
-  font-weight: 700;
-  font-size: 3rem;
-  letter-spacing: -1.5px;
-  margin-bottom: 0.5rem;
-}
-
-ul {
-  margin: 0;
-}
-
-
-
+  .hero-title {
+    line-height: 1.7;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: -1.5px;
+    margin-bottom: 0.5rem;
+  }
+  ul {
+    margin: 0;
+  }
   .heroSpacer {
     margin-top: 80px;
   }
-
   video {
     width: 100%;
   }
@@ -577,30 +562,22 @@ ul {
   .project-card {
     width: 100%;
   }
-
   .fullWidthImg {
-  
     width: 100%;
-
   }
-
   .project-title-container {
     margin: 0 auto;
     text-align: center;
     padding: 2rem 0;
   }
-
   .hero-grid-container {
     grid-template-columns: 1fr 1fr;
     margin-top: 0;
   }
-
   .grid-container {
     grid-template-columns: 1fr 1fr;
     margin: 2rem 0;
   }
-
-  
   /* END TABLET*/
 }
 
@@ -614,6 +591,7 @@ ul {
 }
 
 /*For extra small screens*/
+
 @media screen and (min-width: 0px) and (max-width: 639px) {
   h1 {
     font-size: 1.5rem;
@@ -622,28 +600,24 @@ ul {
   h4 {
     font-weight: 400;
   }
-
   .hero-title {
     font-size: 2rem;
     letter-spacing: -0.5px;
   }
-
   h3 {
     font-size: 2rem;
   }
   video {
-  object-fit: cover;
-  height: 50vw;
+    object-fit: cover;
+    height: 50vw;
   }
-
-aside{
-  margin-bottom: 2rem;
-  line-height: 1.5;
-}
-.case-container {
-  margin-top: 1rem;
-}
-
+  aside {
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  .case-container {
+    margin-top: 1rem;
+  }
   .mainContainer {
     margin-top: 0;
   }
@@ -651,7 +625,6 @@ aside{
     margin-top: 0rem;
     width: calc(100% - 2rem);
   }
-
   .fullWidthImg {
     width: 100%;
   }
@@ -668,14 +641,12 @@ aside{
   .case-study-subtitle {
     margin: 0 1rem;
   }
-
   .case-study-about {
     margin: 1rem;
   }
   .case-study-info {
     padding-left: 1rem;
   }
-
   .case-study-image {
     width: 100%;
     overflow: cover;
@@ -684,26 +655,17 @@ aside{
   .case-study-container-triple-grid {
     grid-template-columns: 1fr;
   }
-
   .menuRight {
     opacity: 0;
   }
-
   .main-menu {
     display: none;
   }
   .mobileAbout {
     position: initial;
     display: inherit;
-padding: 1rem;
-  
-
-
-
-
+    padding: 1rem;
   }
-
-
   .heroSpacer {
     margin-top: 0px;
   }
@@ -722,48 +684,39 @@ padding: 1rem;
     display: grid;
     width: 100vw;
   }
-
   .project-title {
     font-size: 2rem;
   }
   .project-grid-container {
     grid-template-columns: 1fr;
   }
-
   .project-title-container {
     margin: 0 auto;
     padding: 1rem 0;
     width: 95%;
     text-align: center;
   }
-
   .aboutVideo {
     padding: 0px 0px 0px 0px;
   }
-
-  
   .noMobile {
     display: none;
   }
-
   video {
     width: 100%;
   }
-
   .primary-button {
     height: 4.5rem;
     width: 12rem;
     padding-left: 0;
     text-align: left;
   }
-
   .voluntarily-bg {
     padding: 2rem 0;
   }
   .swiftly-bg {
     padding: 2rem 0;
   }
-
   .ubiquity-bg {
     padding: 2rem 0;
   }
@@ -773,13 +726,15 @@ padding: 1rem;
   .flatbot-bg {
     padding: 2rem 0;
   }
-
   .mighway-bg {
     padding: 2rem 0;
   }
-} /*END SMALL SCREENS ROFL*/
+}
+
+/*END SMALL SCREENS ROFL*/
 
 /* Utility classes - to be refactored out once style is solidified*/
+
 .top4 {
   padding-top: 4rem;
 }
@@ -802,6 +757,7 @@ padding: 1rem;
   height: 80rem;
   width: 80rem;
 }
+
 .heroawesometext {
   font-size: 12rem;
   text-align: center;
@@ -809,4 +765,23 @@ padding: 1rem;
 
 .skew {
   transform: rotate(5deg);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: rgb(32, 32, 32);
+    color: white;
+  }
+  canvas {
+    opacity: 0.15;
+  }
+  i {
+    color: #888;
+  }
+  .text-dark-link {
+    color: rgb(97, 113, 252);
+  }
+  .project-info-side {
+    color: #999;
+  }
 }

@@ -1,197 +1,213 @@
 <!DOCTYPE HTML>
 <html lang='en'>
-   <head>
-      <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦄</text></svg>">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-      <meta
-         name="description"
-         content="Walter Lim is a designer from New Zealand. He works somewhere between design, code, and lots of experimental crap to make things that help people. He also dislikes buzzwords. Find him by clicking on this link lol. "
-         />
-      <meta name="theme-color" content="#fafafa" />
-      <meta charset="UTF-8">
-      <title> Walter Lim</title>
-      <link rel="preload" href="/assets/fonts/SpaceGrotesk-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-      <link rel="preload" href="/assets/fonts/SpaceGrotesk-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-      <link rel="preload" href="/assets/fonts/SpaceGrotesk-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-      <link rel="preload" href="/assets/fonts/SpaceGrotesk-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-      <link rel="preload" href="/assets/fonts/SpaceGrotesk-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-      <link rel="stylesheet" href="/assets/css/style.css" />
-      <meta property="og:title" content="Walter Lim is a designer lol">
-      <meta property="twitter:title" content="Walter Lim is a designer lol">
-      <meta property="og:description" content="Walter works somewhere between design, code, and lots of experimental crap to make things that help users.">
-      <meta property="twitter:description" content="Walter works somewhere between design, code, and lots of experimental crap to make things that help users.">
-      <meta property="og:image" content="https://walt.online/assets/social.png">
-      <meta name="twitter:image" content="https://walt.online/assets/social.png">
-      <meta name="twitter:card" content="summary_large_image">
-      <meta property="og:url" content="https://walt.online">
-   </head>
+
+<head>
+   <link rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦄</text></svg>">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+   <meta name="description"
+      content="Walter Lim is a designer from New Zealand. He works somewhere between design, code, and lots of experimental crap to make things that help people. He also dislikes buzzwords. Find him by clicking on this link lol. " />
+   <meta name="theme-color" content="#fafafa" />
+   <meta charset="UTF-8">
+   <title> Walter Lim</title>
+   <link rel="preload" href="/assets/fonts/SpaceGrotesk-Light.woff2" as="font" type="font/woff2"
+      crossorigin="anonymous">
+   <link rel="preload" href="/assets/fonts/SpaceGrotesk-Regular.woff2" as="font" type="font/woff2"
+      crossorigin="anonymous">
+   <link rel="preload" href="/assets/fonts/SpaceGrotesk-Medium.woff2" as="font" type="font/woff2"
+      crossorigin="anonymous">
+   <link rel="preload" href="/assets/fonts/SpaceGrotesk-SemiBold.woff2" as="font" type="font/woff2"
+      crossorigin="anonymous">
+   <link rel="preload" href="/assets/fonts/SpaceGrotesk-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="stylesheet" href="/assets/css/style.css" />
+   <meta property="og:title" content="Walter Lim is a designer lol">
+   <meta property="twitter:title" content="Walter Lim is a designer lol">
+   <meta property="og:description"
+      content="Walter works somewhere between design, code, and lots of experimental crap to make things that help users.">
+   <meta property="twitter:description"
+      content="Walter works somewhere between design, code, and lots of experimental crap to make things that help users.">
+   <meta property="og:image" content="https://walt.online/assets/social.png">
+   <meta name="twitter:image" content="https://walt.online/assets/social.png">
+   <meta name="twitter:card" content="summary_large_image">
+   <meta property="og:url" content="https://walt.online">
+</head>
 <!-- 
    Please forgive me for there is a lot of crap still left to clean up... 
    Hell, even the attempt to conform to BEM was overriden by the need to ship quickly 
    Will eventually clean this up when I have time 😅
 -->
 
-   <body>
-      
-      <canvas id="canv" width="32" height="32"></canvas>
-      <div class='safariHack'>
+<body>
+
+   <canvas id="canv" width="32" height="32"></canvas>
+   <div class='safariHack'>
       <section class='container-about' id='about'>
          <div class="container-about-grid">
             <div class='container-about-video-container'>
-           
-               <video class='potato container-about-grid-video' autoplay loop muted playsinline aria-hidden="true" >
-                  <source src="../assets/walt_2.mp4" type="video/mp4" aria-hidden="true"  />
+
+               <video class='potato container-about-grid-video' autoplay loop muted playsinline aria-hidden="true">
+                  <source src="../assets/walt_2.mp4" type="video/mp4" aria-hidden="true" />
                   <track src="../assets/walt.vtt" kind="captions" srclang='en' label='english_captions'>
                </video>
             </div>
             <div class='container-about-grid-content'>
-               <h1 class='hero-title'>Hi! I'm Walter, a UX designer based in New Zealand.<br/><br/> I work between <i>research, <a href="#work">design</a>, <a href='https://github.com/waltzaround'   target="_blank"
-                  rel="noopener noreferrer">code</a>,</i> and lots of <i> <a href="#crap">experimental tech</a></i> to build and ship things that help people.</h1>
+               <h1 class='hero-title'>Hi! I'm Walter, a UX designer based in New Zealand.<br /><br /> I work between
+                  <i>research, <a href="#work">design</a>, <a href='https://github.com/waltzaround' target="_blank"
+                        rel="noopener noreferrer">code</a>,</i> and lots of <i> <a href="#crap">experimental
+                        tech</a></i> to build and ship things that help people.</h1>
             </div>
          </div>
       </section>
       <section class='container-summary'>
-         <p><strong>on the interwebs</strong><br/><br class='BR-mobile-only'/> <a href="https://behance.net/waltzaround"target="_blank" rel="noopener noreferrer"
-            >Behance</a
-            >
+         <p><strong>on the interwebs</strong><br /><br class='BR-mobile-only' /> <a
+               href="https://behance.net/waltzaround" target="_blank" rel="noopener noreferrer">Behance</a>
             /
-            <a href="https://dribbble.com/waltzaround" target="_blank"  rel="noopener noreferrer"
-               >Dribbble</a
-               > / 
-            <a href="https://github.com/waltzaround" target="_blank"  rel="noopener noreferrer"
-               >GitHub</a
-               >
+            <a href="https://dribbble.com/waltzaround" target="_blank" rel="noopener noreferrer">Dribbble</a> /
+            <a href="https://github.com/waltzaround" target="_blank" rel="noopener noreferrer">GitHub</a>
             /
             <a href="https://waltzaround.itch.io/" rel="noopener noreferrer" target="_blank">itch.io</a>
-           <br/><br class='BR-mobile-only'/>
-            <a href="https://twitter.com/iwaltzaround" target="_blank"  rel="noopener noreferrer"
-               >Twitter</a
-               >
+            <br /><br class='BR-mobile-only' />
+            <a href="https://twitter.com/iwaltzaround" target="_blank" rel="noopener noreferrer">Twitter</a>
             /
-            <a href="https://instagram.com/iwaltzaround" target="_blank"  rel="noopener noreferrer"
-               >Instagram</a
-               >
+            <a href="https://instagram.com/iwaltzaround" target="_blank" rel="noopener noreferrer">Instagram</a>
             /
-            <a href="https://linkedin.com/in/waltzaround" target="_blank"  rel="noopener noreferrer"
-               >LinkedIn</a
-               >
+            <a href="https://linkedin.com/in/waltzaround" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             /
             <a href="https://m.me/waltzaround" rel="noopener noreferrer" target="_blank">Messenger</a>
          </p>
       </section>
 
-      <section class="container-project-template-1" >
+      <section class="container-project-template-1">
          <div id="work" class="project-title-container">
             <h2 class="project-title">
                Work
             </h2>
             <p>Featured work &amp; projects</p>
          </div><a href='/projects/swiftly' target='_blank' rel="noopener noreferrer">
-         <img class='container-project-img-1' src='/assets/project-2/swiftly.png' alt='The Swiftly website in use' /></a>
-         <div class='container-project-grid' >
+            <img class='container-project-img-1' src='/assets/project-2/swiftly.png'
+               alt='The Swiftly website in use' /></a>
+         <div class='container-project-grid'>
             <div>
                <h2>Swiftly</h2>
                <p class='project-info-side'>
-                  Online Store Builder<br/>Apr 2020 →  Now<br/><br/> <a href='https://swiftly.nz'  target="_blank"
-                     rel="noopener noreferrer">→ swiftly.nz</a><br/>
-                     <a href='/projects/swiftly'  target="_blank"
-                     rel="noopener noreferrer">→ Case study</a>
+                  Online Store Builder<br />Apr 2020 → Now<br /><br /> <a href='https://swiftly.nz' target="_blank"
+                     rel="noopener noreferrer">→ swiftly.nz</a><br />
+                  <a href='/projects/swiftly' target="_blank" rel="noopener noreferrer">→ Case study</a>
                   <!-- <br/> <a href='/'>Case Study (coming soon) →</a></p> -->
             </div>
             <div class='container-project-content'>
-               <p>    Swiftly is a simple web app that helps small stores start selling online in minutes. Responsible for UX research, design, and frontend in a team of three.<br/><br/>As of August 2020, Swiftly has helped 850+ small businesses in New Zealand collectively earn over $200,000 NZD since launching at a hackathon on the 24<sup>th</sup> of April 2020. <br/><br/>
+               <p> Swiftly is a simple web app that helps small stores start selling online in minutes. Responsible for
+                  UX research, design, and frontend in a team of three.<br /><br />As of August 2020, Swiftly has helped
+                  850+ small businesses in New Zealand collectively earn over $200,000 NZD since launching at a
+                  hackathon on the 24<sup>th</sup> of April 2020. <br /><br />
                   <i>User Research / UX Design / Frontend Development</i>
                </p>
             </div>
          </div>
       </section>
       <section class="container-project-template-1">
-         <img class='container-project-img-1' src='/assets/project-2/vly.png' loading="lazy" alt='The Voluntarily website on Desktop, Mobile, and Tablet'/>
+         <img class='container-project-img-1' src='/assets/project-2/vly.png' loading="lazy"
+            alt='The Voluntarily website on Desktop, Mobile, and Tablet' />
          <div class='container-project-grid'>
             <div>
                <h2>Voluntarily</h2>
-               <p class='project-info-side'>Open Source<br class='BR-mobile-only'/> Volunteering<br/>Jan 2019 → Aug 2020<br/><br/> <a href='https://voluntarily.nz'>→ voluntarily.nz</a>
-                  <br/> <a href='https://github.com/voluntarily/vly2'  target="_blank"
-                     rel="noopener noreferrer">→ GitHub Repository</a>
+               <p class='project-info-side'>FOSS Volunteering Platform<br />Jan 2019 → Aug 2020<br /><br /> <a
+                     href='https://voluntarily.nz'>→ voluntarily.nz</a>
+                  <br /> <a href='https://github.com/voluntarily/vly2' target="_blank" rel="noopener noreferrer">→
+                     GitHub Repository</a>
                </p>
             </div>
             <div class='container-project-content'>
-               <p> Voluntarily is an open source web app that connects skilled volunteers with classrooms to teach science, technology, engineering, entrepreneurship, arts and design in schools.<br/><br/>As a design lead, I was responsible for UX research, design, and a good chunk of frontend development on the platform. Trained junior developers and designers who contributed work to the open source project, and reviewed PRs on production code.<br/><br/>
-                  <i>User Research / UX Design / Frontend Development<br/><br class='BR-mobile-only'/></i>
+               <p> Voluntarily is an open source web app that connects skilled volunteers with classrooms to teach
+                  science, technology, engineering, entrepreneurship, arts and design in schools.<br /><br />As a design
+                  lead, I was responsible for UX research, design, and a good chunk of frontend development on the
+                  platform. Trained junior developers and designers who contributed work to the open source project, and
+                  reviewed PRs on production code.<br /><br />
+                  <i>User Research / UX Design / Frontend Development<br /><br class='BR-mobile-only' /></i>
                </p>
             </div>
          </div>
       </section>
       <section class="container-project-template-1">
-         <img class='container-project-img-1' src='/assets/project-2/ubi.png' alt='a snapshot of my work around ubiquity marketing software'  loading="lazy" />
+         <img class='container-project-img-1' src='/assets/project-2/ubi.png'
+            alt='a snapshot of my work around ubiquity marketing software' loading="lazy" />
          <div class='container-project-grid'>
             <div>
                <h2>Ubiquity</h2>
-               <p class='project-info-side'>Marketing Automation Tool<br/>Nov 2017 → Jan 2019<br/><br/>    <a
-                  href="https://www.qrious.co.nz/engage/ubiquity"
-                  target='_blank'
-                  rel="noopener noreferrer"
-                  >→  ubiquity.co.nz</a></p>
+               <p class='project-info-side'>Marketing Automation Tool<br />Nov 2017 → Jan 2019<br /><br /> <a
+                     href="https://www.qrious.co.nz/engage/ubiquity" target='_blank' rel="noopener noreferrer">→
+                     ubiquity.co.nz</a></p>
             </div>
             <div class='container-project-content'>
-               <p> UbiQuity is a marketing automation platform. It programatically sends emails, texts, push notifications, forms, surveys, chat messages, etc to customers on behalf of companies you interact with daily.
-                  <br/><br/>
-                  As a UX designer, I explored new features, designed platform usability improvements, and transitioned the design team out of Adobe suite into Sketch + Abstract + Invision for prototyping, testing, and handoff.<br/><br/>
+               <p> UbiQuity is a marketing automation platform. It programatically sends emails, texts, push
+                  notifications, forms, surveys, chat messages, etc to customers on behalf of companies you interact
+                  with daily.
+                  <br /><br />
+                  As a UX designer, I explored new features, designed platform usability improvements, and transitioned
+                  the design team out of the Adobe suite into Sketch + Abstract + Invision for prototyping, testing, and
+                  handoff.<br /><br />
                   <i>UX Research & Design / Data Visualization / Tutorial Development</i>
                </p>
             </div>
          </div>
       </section>
       <section class="container-project-template-1">
-         <img class='container-project-img-1' src='/assets/project-2/flatbot.png' alt='Three screenshots of flatbot in use'  loading="lazy" /> 
+         <img class='container-project-img-1' src='/assets/project-2/flatbot.png'
+            alt='Three screenshots of flatbot in use' loading="lazy" />
          <div class='container-project-grid'>
             <div>
                <h2>Flatbot</h2>
-               <p class='project-info-side'>Sniper Chatbot<br/>Dec 2017 → Jul 2019</p>
+               <p class='project-info-side'>Sniper Chatbot<br />Dec 2017 → Jul 2019</p>
             </div>
             <div class='container-project-content'>
-               <p>Flatbot is a chatbot that helps friends and colleagues spend less time for a place to rent. Performs auction sniping on desirable rental listings. Developed on the Facebook messenger platform. Responsible for design.
-                  <br/><br/>
-                  Peaked at 100+ users on Messenger purely through word of mouth, but ended up neglected as we explored other pursuits and projects. Discontinued July 2019.<br/><br/>
+               <p>Flatbot is a chatbot that helps friends and colleagues spend less time for a place to rent. Performs
+                  auction sniping on desirable rental listings. Developed on the Facebook messenger platform.
+                  Responsible for design.
+                  <br /><br />
+                  Peaked at 100+ users on Messenger purely through word of mouth, but ended up neglected as we explored
+                  other pursuits and projects. Discontinued July 2019.<br /><br />
                   <i>Chatbot UX & Design</i>
                </p>
             </div>
          </div>
       </section>
       <section class="container-project-template-1">
-         <img class='container-project-img-1' src='/assets/project-2/qrious.png' alt='Data visualization work'  loading="lazy" />
+         <img class='container-project-img-1' src='/assets/project-2/qrious.png' alt='Data visualization work'
+            loading="lazy" />
          <div class='container-project-grid'>
             <div>
                <h2>Qrious</h2>
-               <p class='project-info-side'>Multiple Teams & Projects<br/>Jan 2017 → Jan 2019<br/><br/>    
-                  <a
-                     target='_blank'
-                     rel="noopener noreferrer"
-                     >→ qrious.co.nz</a
-                     >
+               <p class='project-info-side'>Multiple Teams & Projects<br />Jan 2017 → Jan 2019<br /><br />
+                  <a target='_blank' rel="noopener noreferrer">→ qrious.co.nz</a>
                </p>
             </div>
             <div class='container-project-content'>
-               <p> Qrious helps organisations utilize spatial information to create human-friendly insights into how people use the space around them. Most of the work we did benefited local government, as well tourism and transport sector customers.<br/><br/>
-                  As their first design hire, I supported multiple internal and external product teams by improving UX processes, as well as facillitating faster design decisions.<br/><br/>
+               <p> Qrious helps organisations utilize spatial information to create human-friendly insights into how
+                  people use the space around them. Most of the work we did benefited local government, as well tourism
+                  and transport sector customers.<br /><br />
+                  As their first design hire, I supported multiple internal and external product teams by improving UX
+                  processes, as well as facillitating faster design decisions.<br /><br />
                   <i>UX Research & Design / Data Visualization / REDACTED</i>
                </p>
             </div>
          </div>
       </section>
       <section class="container-project-template-1">
-         <img class='container-project-img-1' src='/assets/project-2/mighway.png' alt='the mighway landing page' loading="lazy" />
+         <img class='container-project-img-1' src='/assets/project-2/mighway.png' alt='the mighway landing page'
+            loading="lazy" />
          <div class='container-project-grid'>
             <div>
                <h2>Mighway</h2>
-               <p class='project-info-side'>Campervan Rental Platform<br/>Mar 2016 → Jan 2017<br/><br/><a href='https://mighway.com'  target="_blank"
-                  rel="noopener noreferrer">→ mighway.com</a></p>
+               <p class='project-info-side'>Campervan Rental Platform<br />Mar 2016 → Jan 2017<br /><br /><a
+                     href='https://mighway.com' target="_blank" rel="noopener noreferrer">→ mighway.com</a></p>
             </div>
             <div class='container-project-content'>
-               <p> 
-                  Mighway is a peer-to-peer motorhome platform that connects motorhome owners with tourists who wanted to rent their vehicles.
-                  <br/><br/>
-                  As a design intern, I negotiated designs between product, development and marketing teams on a redesign of their onboarding, booking, and internal systems.<br/><br/>
+               <p>
+                  Mighway is a peer-to-peer motorhome platform that connects motorhome owners with tourists who wanted
+                  to rent their vehicles.
+                  <br /><br />
+                  As a design intern, I negotiated designs between product, development and marketing teams on a
+                  redesign of their onboarding, booking, and internal systems.<br /><br />
                   <i>UX Research & Design</i>
                </p>
             </div>
@@ -207,227 +223,154 @@
          <div class="project-grid-container">
             <!--Checkon Community Status-->
             <div>
-               <a
-                  href="https://github.com/StatuspageNZ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-         
-                  >
-               <img
-                  loading="lazy"
-                  class="project-card"
-                  src="/assets/crap/checkon.png"
-                  alt="status page demonstration"
-                  />
+               <a href="https://github.com/StatuspageNZ" target="_blank" rel="noopener noreferrer">
+                  <img loading="lazy" class="project-card" src="/assets/crap/checkon.png"
+                     alt="status page demonstration" />
                </a>
                <h3 class='project-card-title'>Check On</h3>
-               <p class='project-card-content'>Emergency dashboard that keeps communities informed. It aggregates data from public and private data sources. Built to learn about public datasets for the GovHack 2020 hackathon. 
+               <p class='project-card-content'>Emergency dashboard that keeps communities informed. It aggregates data
+                  from public and private data sources. Built to learn about public datasets for the GovHack 2020
+                  hackathon.
                </p>
-               <a
-                  href="https://checkon.life"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  
-                  >
+               <a href="https://checkon.life" target="_blank" rel="noopener noreferrer">
                   <p class='project-link'>Demo site </p>
                </a>
-               <a
-                  href="https://github.com/StatuspageNZ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  
-                  >
+               <a href="https://github.com/StatuspageNZ" target="_blank" rel="noopener noreferrer">
                   <p class='project-link'>Source code </p>
                </a>
             </div>
             <!--Swearsies-->
             <div>
                <a href="https://github.com/waltzaround/swearsies" rel="noopener noreferrer" target="_blank">
-               <img
-                  loading="lazy"
-                  class="project-card"
-                  src="/assets/crap/swearsies.png"
-                  alt="a swearing robot monkey that takes away $5 of your money every time you swear"
-                  />   </a>
+                  <img loading="lazy" class="project-card" src="/assets/crap/swearsies.png"
+                     alt="a swearing robot monkey that takes away $5 of your money every time you swear" /> </a>
                <h3 class='project-card-title'>Swearsies</h3>
-               <p class='project-card-content'>Swear jar that transfers $5 into your savings account every time your device hears you swear. Built to experiment with Google ML services, and banking APIs for the 2019 BankEngine Hackathon.
+               <p class='project-card-content'>Swear jar that transfers $5 into your savings account every time your
+                  device hears you swear. Built to experiment with Google ML services, and banking APIs for the 2019
+                  BankEngine Hackathon.
                </p>
-               <a href="https://www.youtube.com/watch?v=VUnafSNlgVY" rel="noopener noreferrer" target="_blank"  >
+               <a href="https://www.youtube.com/watch?v=VUnafSNlgVY" rel="noopener noreferrer" target="_blank">
                   <p class='project-link'>Video demo</p>
                </a>
-               <a href="https://github.com/waltzaround/swearsies" rel="noopener noreferrer" target="_blank"  >
+               <a href="https://github.com/waltzaround/swearsies" rel="noopener noreferrer" target="_blank">
                   <p class='project-link'>Source code</p>
                </a>
             </div>
             <!--Pew PEW VRRRR-->
             <div>
-               <a
-                  href="https://play.google.com/store/apps/details?id=com.pewpew.pewpewVR&hl=en"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-               <img
-                  loading="lazy"
-                  class="project-card"
-                  src="/assets/crap/pewpew.png"
-                  alt="online VR game with evil grumpy space cats"
-                  />
+               <a href="https://play.google.com/store/apps/details?id=com.pewpew.pewpewVR&hl=en" target="_blank"
+                  rel="noopener noreferrer">
+                  <img loading="lazy" class="project-card" src="/assets/crap/pewpew.png"
+                     alt="online VR game with evil grumpy space cats" />
                </a>
                <h3 class='project-card-title'>Pew Pew VR</h3>
-               <p class='project-card-content'>Mobile VR game where you make PEW PEW noises with your mouth to play. Available on the Play Store. Built to play with the unity microphone API at the KiwiJam 2019 Game Jam.
+               <p class='project-card-content'>Mobile VR game where you make PEW PEW noises with your mouth to play.
+                  Available on the Play Store. Built to play with the unity microphone API at the KiwiJam 2019 Game Jam.
                </p>
-               <a
-                  href="https://play.google.com/store/apps/details?id=com.pewpew.pewpewVR&hl=en"
-                  target="_blank"
-                 
-                  rel="noopener noreferrer"
-                  >
-                  <p  class='project-link'>Download Game </p>
+               <a href="https://play.google.com/store/apps/details?id=com.pewpew.pewpewVR&hl=en" target="_blank"
+                  rel="noopener noreferrer">
+                  <p class='project-link'>Download Game </p>
                </a>
-               <a href=https://github.com/waltzaround/Neon-Sunrise
-                  target="_blank"
-             
-                  rel="noopener noreferrer" >
+               <a href=https://github.com/waltzaround/Neon-Sunrise target="_blank" rel="noopener noreferrer">
                   <p class='project-link'>Source Code</p>
                </a>
             </div>
             <!--Quick maths-->
             <div>
-               <a
-                  href="https://quickmaths.online"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-               <img
-                  loading="lazy"
-                  class="project-card"
-                  src="/assets/crap/quickmafs.png"
-                  alt="online multiplayer game"
-                  /></a>
+               <a href="https://quickmaths.online" target="_blank" rel="noopener noreferrer">
+                  <img loading="lazy" class="project-card" src="/assets/crap/quickmafs.png"
+                     alt="online multiplayer game" /></a>
                <h3 class='project-card-title'>Quick Maths</h3>
-               <p class='project-card-content'>40-player educational multiplayer math deathmatch in the browser. Built to learn about Websockets and the Canvas API at the KiwiJam 2020 Game Jam
+               <p class='project-card-content'>40-player educational multiplayer math deathmatch in the browser. Built
+                  to learn about Websockets and the Canvas API at the KiwiJam 2020 Game Jam
                </p>
-               <a
-                  href="https://quickmaths.online"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
+               <a href="https://quickmaths.online" target="_blank" rel="noopener noreferrer">
                   <p class='project-link'>Play Game </p>
                </a>
-               <a
-                  href='https://github.com/waltzaround/Quickmaths'
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
+               <a href='https://github.com/waltzaround/Quickmaths' target="_blank" rel="noopener noreferrer">
                   <p class='project-link'>Source Code </p>
                </a>
             </div>
             <!--adblocker-->
             <div>
-               <a
-                  href="https://waltzaround.github.io/webcam-adblocker/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-               <img
-                  loading="lazy"
-                  class="project-card"
-                  src="/assets/crap/adblocker.png"
-                  alt="Anti Adblocking technology"
-                  /></a>
+               <a href="https://waltzaround.github.io/webcam-adblocker/" target="_blank" rel="noopener noreferrer">
+                  <img loading="lazy" class="project-card" src="/assets/crap/adblocker.png"
+                     alt="Anti Adblocking technology" /></a>
                <h3 class='project-card-title'>Webcam Anti-Adblocker</h3>
-               <p class='project-card-content'>Working browser implementation of the adblocker from the Black Mirror TV Show. Uses your webcam to tell you to keep watching ads if you stop watching.
+               <p class='project-card-content'>Working browser implementation of the adblocker from the Black Mirror TV
+                  Show. Uses your webcam to tell you to keep watching ads if you stop watching.
                </p>
-               <a
-                  href="https://waltzaround.github.io/webcam-adblocker/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-                  <p class='project-link'>Live demo  </p>
+               <a href="https://waltzaround.github.io/webcam-adblocker/" target="_blank" rel="noopener noreferrer">
+                  <p class='project-link'>Live demo </p>
                </a>
-               <a
-                  href='https://github.com/waltzaround/webcam-adblocker'
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
+               <a href='https://github.com/waltzaround/webcam-adblocker' target="_blank" rel="noopener noreferrer">
                   <p class='project-link'>Source Code </p>
                </a>
             </div>
             <!--Matter VRRRR-->
             <div>
-               <a
-                  href='https://github.com/waltzaround/Matter-VR'
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-               <img
-                  loading="lazy"
-                  class="project-card"
-                  src="/assets/crap/matter.png"
-                  alt="Virtual reality musical instrument"
-                  /></a>
+               <a href='https://github.com/waltzaround/Matter-VR' target="_blank" rel="noopener noreferrer">
+                  <img loading="lazy" class="project-card" src="/assets/crap/matter.png"
+                     alt="Virtual reality musical instrument" /></a>
                <h3 class='project-card-title'>Matter VR</h3>
-               <p class='project-card-content'>Unity VR experience where you make music with gestural hand controls using a Leap Motion sensor. Built as an excuse to experiment with hand tracking systems and VR.
+               <p class='project-card-content'>Unity VR experience where you make music with gestural hand controls
+                  using a Leap Motion sensor. Built as an excuse to experiment with hand tracking systems and VR.
                </p>
-               <a
-                  href='https://github.com/waltzaround/Matter-VR'
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
+               <a href='https://github.com/waltzaround/Matter-VR' target="_blank" rel="noopener noreferrer">
                   <p>Source Code </p>
                </a>
             </div>
-            </div>
-            <div id="crap" class="project-title-container">
-               <h2 class="project-title">
-                  <a href='/experiments/'    target="_blank"
-                  rel="noopener noreferrer">See more lulzy experiments 🤪</a>
-               </h2>
-               
-            </div>
-            </section>
-        
-     
+         </div>
+         <div id="crap" class="project-title-container">
+            <h2 class="project-title">
+               <a href='/experiments/' target="_blank" rel="noopener noreferrer">See more lulzy experiments 🤪</a>
+            </h2>
+
+         </div>
+      </section>
+
+
       <script type="text/javascript">
          // code adapted from https://www.html5canvastutorials.com/advanced/html5-canvas-animated-gradient-background/
          // LOL Stripe hype
          var c = document.getElementById('canv');
          var $ = c.getContext('2d');
-         
-         
-         var col = function(x, y, r, g, b) {
-           $.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
-           $.fillRect(x, y, 1,1);
+
+
+         var col = function (x, y, r, g, b) {
+            $.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
+            $.fillRect(x, y, 1, 1);
          }
-         var R = function(x, y, t) {
-           return( Math.floor(192 + 64*Math.cos( (x*x-y*y)/300 + t )) );
+         var R = function (x, y, t) {
+            return (Math.floor(192 + 64 * Math.cos((x * x - y * y) / 300 + t)));
          }
-         
-         var G = function(x, y, t) {
-           return( Math.floor(192 + 64*Math.sin( (x*x*Math.cos(t/4)+y*y*Math.sin(t/3))/300 ) ) );
+
+         var G = function (x, y, t) {
+            return (Math.floor(192 + 64 * Math.sin((x * x * Math.cos(t / 4) + y * y * Math.sin(t / 3)) / 300)));
          }
-         
-         var B = function(x, y, t) {
-           return( Math.floor(192 + 64*Math.sin( 5*Math.sin(t/9) + ((x-100)*(x-100)+(y-100)*(y-100))/1100) ));
+
+         var B = function (x, y, t) {
+            return (Math.floor(192 + 64 * Math.sin(5 * Math.sin(t / 9) + ((x - 100) * (x - 100) + (y - 100) * (y - 100)) / 1100)));
          }
-         
+
          var t = 0;
-         
-         var run = function() {
-           for(x=0;x<=35;x++) {
-             for(y=0;y<=35;y++) {
-               col(x, y, R(x,y,t), G(x,y,t), B(x,y,t));
-             }
-           }
-           t = t + 0.0420;
-           window.requestAnimationFrame(run);
+
+         var run = function () {
+            for (x = 0; x <= 35; x++) {
+               for (y = 0; y <= 35; y++) {
+                  col(x, y, R(x, y, t), G(x, y, t), B(x, y, t));
+               }
+            }
+            t = t + 0.0420;
+            window.requestAnimationFrame(run);
          }
-         
+
          run();
-         
-         
-           
+
+
+
       </script>
-      </div>
-   </body>
+   </div>
+</body>
+
 </html>
