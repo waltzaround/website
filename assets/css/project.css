@@ -1,45 +1,50 @@
 /* To whomever reads this, please excuse this ungodly mess of horrible, horrible technical debt - It's horrifc and disgusting and i don't have time to clean it up atm :( */
 
 @font-face {
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-weight: 200;
   font-display: auto;
-  src: url('/assets/fonts/SpaceGrotesk-Light.woff2') format('woff2'), url('/assets/fonts/SpaceGrotesk-Light.woff') format('woff');
+  src: url("/assets/fonts/SpaceGrotesk-Light.woff2") format("woff2"),
+    url("/assets/fonts/SpaceGrotesk-Light.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-weight: 400;
   font-display: auto;
-  src: url('/assets/fonts/SpaceGrotesk-Regular.woff2') format('woff2'), url('/assets/fonts/SpaceGrotesk-Regular.woff') format('woff');
+  src: url("/assets/fonts/SpaceGrotesk-Regular.woff2") format("woff2"),
+    url("/assets/fonts/SpaceGrotesk-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-weight: 500;
   font-display: auto;
-  src: url('/assets/fonts/SpaceGrotesk-Medium.woff2') format('woff2'), url('/assets/fonts/SpaceGrotesk-Medium.woff') format('woff');
+  src: url("/assets/fonts/SpaceGrotesk-Medium.woff2") format("woff2"),
+    url("/assets/fonts/SpaceGrotesk-Medium.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-weight: 600;
   font-display: auto;
-  src: url('/assets/fonts/SpaceGrotesk-Semibold.woff2') format('woff2'), url('/assets/fonts/SpaceGrotesk-Semibold.woff') format('woff');
+  src: url("/assets/fonts/SpaceGrotesk-Semibold.woff2") format("woff2"),
+    url("/assets/fonts/SpaceGrotesk-Semibold.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-weight: 700;
   font-display: auto;
-  src: url('/assets/fonts/SpaceGrotesk-Bold.woff2') format('woff2'), url('/assets/fonts/SpaceGrotesk-Bold.woff') format('woff');
+  src: url("/assets/fonts/SpaceGrotesk-Bold.woff2") format("woff2"),
+    url("/assets/fonts/SpaceGrotesk-Bold.woff") format("woff");
 }
 
 /* Base element styling */
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 a {
@@ -48,7 +53,7 @@ a {
   color: blue;
 }
 
-li>a:visited {
+li > a:visited {
   color: blue;
 }
 
@@ -61,7 +66,7 @@ h1 {
   text-rendering: optimizeLegibility;
 }
 
-h1>strong {
+h1 > strong {
   font-weight: 500;
 }
 
@@ -82,7 +87,7 @@ h3 {
   margin: 0;
 }
 
-h3>strong {
+h3 > strong {
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -170,7 +175,6 @@ figcaption {
 .text-white {
   color: white;
 }
-
 
 .text-subheading {
   color: #727272;
@@ -772,7 +776,7 @@ figcaption {
     color: white;
   }
   canvas {
-    opacity: 0.15;
+    opacity: 0.25;
   }
   i {
     color: #888;
