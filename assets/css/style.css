@@ -309,10 +309,6 @@ stupid crap grid
 
 /* //projects */
 
-.container-project-template-1 {
-  margin: 4rem;
-}
-
 .container-project-grid {
   margin-top: 4rem;
   display: grid;
@@ -428,7 +424,7 @@ stupid crap grid
   }
   .container-project-grid {
     grid-template-columns: 1fr;
-    row-gap: 2rem;
+    row-gap: 0.5rem;
     margin-top: 0;
   }
   .container-about-grid {
