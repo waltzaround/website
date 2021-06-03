@@ -6,35 +6,40 @@ Base components
   font-family: "Space Grotesk";
   font-weight: 200;
   font-display: fallback;
-  src: url("/assets/fonts/SpaceGrotesk-Light.woff2") format("woff2"), url("/assets/fonts/SpaceGrotesk-Light.woff") format("woff");
+  src: url("/assets/fonts/SpaceGrotesk-Light.woff2") format("woff2"),
+    url("/assets/fonts/SpaceGrotesk-Light.woff") format("woff");
 }
 
 @font-face {
   font-family: "Space Grotesk";
   font-weight: 400;
   font-display: fallback;
-  src: url("/assets/fonts/SpaceGrotesk-Regular.woff2") format("woff2"), url("/assets/fonts/SpaceGrotesk-Regular.woff") format("woff");
+  src: url("/assets/fonts/SpaceGrotesk-Regular.woff2") format("woff2"),
+    url("/assets/fonts/SpaceGrotesk-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Space Grotesk";
   font-weight: 500;
   font-display: fallback;
-  src: url("/assets/fonts/SpaceGrotesk-Medium.woff2") format("woff2"), url("/assets/fonts/SpaceGrotesk-Medium.woff") format("woff");
+  src: url("/assets/fonts/SpaceGrotesk-Medium.woff2") format("woff2"),
+    url("/assets/fonts/SpaceGrotesk-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: "Space Grotesk";
   font-weight: 600;
   font-display: fallback;
-  src: url("/assets/fonts/SpaceGrotesk-Semibold.woff2") format("woff2"), url("/assets/fonts/SpaceGrotesk-Semibold.woff") format("woff");
+  src: url("/assets/fonts/SpaceGrotesk-Semibold.woff2") format("woff2"),
+    url("/assets/fonts/SpaceGrotesk-Semibold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Space Grotesk";
   font-weight: 700;
   font-display: fallback;
-  src: url("/assets/fonts/SpaceGrotesk-Bold.woff2") format("woff2"), url("/assets/fonts/SpaceGrotesk-Bold.woff") format("woff");
+  src: url("/assets/fonts/SpaceGrotesk-Bold.woff2") format("woff2"),
+    url("/assets/fonts/SpaceGrotesk-Bold.woff") format("woff");
 }
 
 html {
@@ -63,15 +68,15 @@ canvas {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   line-height: 1.25;
   margin: 0;
   font-weight: 400;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 500;
   letter-spacing: -1px;
   margin: 0;
@@ -204,13 +209,13 @@ li {
 
 .container-about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 1fr;
   margin: 0;
   padding: 0;
 }
 
 .container-about-grid-content {
-  margin: 4rem;
+  margin: 3rem;
   display: grid;
   align-items: center;
 }
@@ -249,7 +254,7 @@ li {
 }
 
 .container-about-video-container {
-  padding: 4rem;
+  padding: 4rem 0 4rem 4rem;
 }
 
 .container-summary-grid img {
@@ -305,7 +310,7 @@ stupid crap grid
 /* //projects */
 
 .container-project-template-1 {
-  margin: 16rem 4rem;
+  margin: 4rem;
 }
 
 .container-project-grid {
@@ -346,7 +351,7 @@ stupid crap grid
 
 @media only screen and (max-width: 1920px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: -2px;
   }
   h2 {
@@ -571,7 +576,6 @@ stupid crap grid
     background-color: black;
     color: white;
   }
-
 
   canvas {
     opacity: 0.15;
