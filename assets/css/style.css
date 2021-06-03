@@ -72,7 +72,7 @@ h1 {
   line-height: 1.25;
   margin: 0;
   font-weight: 400;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
 }
 
 h2 {
@@ -352,7 +352,7 @@ stupid crap grid
 @media only screen and (max-width: 1920px) {
   h1 {
     font-size: 2rem;
-    letter-spacing: -2px;
+    letter-spacing: -0.5px;
   }
   h2 {
     font-size: 3rem;
