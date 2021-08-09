@@ -361,11 +361,11 @@ stupid crap grid
 
 @media only screen and (max-width: 1600px) {
   h1 {
-    font-size: 3rem;
-    letter-spacing: -2px;
+       font-size: 2rem;
+    letter-spacing: -1px;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .secondary-container {
     margin-top: 2rem;
