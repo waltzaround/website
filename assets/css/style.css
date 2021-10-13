@@ -57,9 +57,28 @@ canvas {
   position: fixed;
 }
 
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  justify-content: space-between;
+}
+
+.main-nav-title {
+  font-size: 1.2rem;
+}
+
+.main-nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .safariHack {
   z-index: 30;
   position: absolute;
+  width: 100%;
 }
 
 h1 {
@@ -75,7 +94,7 @@ h2 {
   font-weight: 500;
   letter-spacing: -1px;
   margin: 0;
-  line-height: 1.35;
+  line-height: 1.5;
 }
 
 h3 {
@@ -204,7 +223,8 @@ li {
 
 .container-about-grid {
   display: grid;
-  grid-template-columns: 2.5fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  gap: 0rem;
   margin: 0;
   padding: 0;
 }
@@ -214,6 +234,8 @@ li {
   display: grid;
   align-items: center;
 }
+
+
 
 .container-about-grid-video {
   width: 100%;
@@ -270,6 +292,7 @@ stupid crap grid
 .project-title {
   margin-bottom: 1rem;
   font-size: 6rem;
+  line-height: 1;
 }
 
 .project-container {
@@ -300,6 +323,7 @@ stupid crap grid
   overflow: hidden;
   transition: all 0.25s;
   object-fit: cover;
+  background-color:
 }
 
 /* //projects */
@@ -311,7 +335,7 @@ stupid crap grid
   max-width: 1920px;
   margin: 2rem auto;
   column-gap: 4rem;
-  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .container-project-content {
@@ -444,6 +468,9 @@ stupid crap grid
   }
   h2 {
     font-size: 3rem;
+  }
+  .main-nav {
+    display: none;
   }
   .links {
     line-height: 2.5;
@@ -578,7 +605,7 @@ stupid crap grid
     color: #888;
   }
   a {
-    color: rgb(97, 113, 252);
+    color: rgb(145, 156, 255);
   }
   .project-info-side {
     color: #999;
