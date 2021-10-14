@@ -4,40 +4,35 @@
   font-family: "Space Grotesk";
   font-weight: 200;
   font-display: auto;
-  src: url("/assets/fonts/SpaceGrotesk-Light.woff2") format("woff2"),
-    url("/assets/fonts/SpaceGrotesk-Light.woff") format("woff");
+  src: url("/assets/fonts/SpaceGrotesk-Light.woff2") format("woff2"), url("/assets/fonts/SpaceGrotesk-Light.woff") format("woff");
 }
 
 @font-face {
   font-family: "Space Grotesk";
   font-weight: 400;
   font-display: auto;
-  src: url("/assets/fonts/SpaceGrotesk-Regular.woff2") format("woff2"),
-    url("/assets/fonts/SpaceGrotesk-Regular.woff") format("woff");
+  src: url("/assets/fonts/SpaceGrotesk-Regular.woff2") format("woff2"), url("/assets/fonts/SpaceGrotesk-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Space Grotesk";
   font-weight: 500;
   font-display: auto;
-  src: url("/assets/fonts/SpaceGrotesk-Medium.woff2") format("woff2"),
-    url("/assets/fonts/SpaceGrotesk-Medium.woff") format("woff");
+  src: url("/assets/fonts/SpaceGrotesk-Medium.woff2") format("woff2"), url("/assets/fonts/SpaceGrotesk-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: "Space Grotesk";
   font-weight: 600;
   font-display: auto;
-  src: url("/assets/fonts/SpaceGrotesk-Semibold.woff2") format("woff2"),
-    url("/assets/fonts/SpaceGrotesk-Semibold.woff") format("woff");
+  src: url("/assets/fonts/SpaceGrotesk-Semibold.woff2") format("woff2"), url("/assets/fonts/SpaceGrotesk-Semibold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Space Grotesk";
   font-weight: 700;
   font-display: auto;
-  src: url("/assets/fonts/SpaceGrotesk-Bold.woff2") format("woff2"),
-    url("/assets/fonts/SpaceGrotesk-Bold.woff") format("woff");
+  src: url("/assets/fonts/SpaceGrotesk-Bold.woff2") format("woff2"), url("/assets/fonts/SpaceGrotesk-Bold.woff") format("woff");
 }
 
 /* Base element styling */
@@ -53,7 +48,7 @@ a {
   color: blue;
 }
 
-li > a:visited {
+li>a:visited {
   color: blue;
 }
 
@@ -66,7 +61,7 @@ h1 {
   text-rendering: optimizeLegibility;
 }
 
-h1 > strong {
+h1>strong {
   font-weight: 500;
 }
 
@@ -87,7 +82,7 @@ h3 {
   margin: 0;
 }
 
-h3 > strong {
+h3>strong {
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -166,6 +161,25 @@ figcaption {
   position: fixed;
   z-index: 90001;
   padding: 20px;
+}
+
+.stat-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.stat-container h3 {
+  line-height: 1;
+}
+
+.stat-divider {
+  display: block;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0 1.5rem;
 }
 
 /* End Primary */
@@ -623,6 +637,14 @@ figcaption {
   }
   .mainContainer {
     margin-top: 0;
+  }
+.stat-container {
+  flex-direction: column;
+}
+  .stat-divider {
+    height: 2px;
+    width: auto;
+    margin: 2rem 0;
   }
   .mainContentContainer {
     margin-top: 0rem;
