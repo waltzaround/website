@@ -223,14 +223,14 @@ li {
 
 .container-about-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1.25fr;
   gap: 0rem;
   margin: 0;
   padding: 0;
 }
 
 .container-about-grid-content {
-  margin: 3rem;
+  margin: 4rem;
   display: grid;
   align-items: center;
 }
@@ -323,7 +323,6 @@ stupid crap grid
   overflow: hidden;
   transition: all 0.25s;
   object-fit: cover;
-  background-color:
 }
 
 /* //projects */
@@ -433,7 +432,8 @@ stupid crap grid
 }
 
 .container-project-template-1 {
-  margin: 4rem;
+  margin: 0 auto;
+  padding: 4rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -452,7 +452,7 @@ stupid crap grid
     grid-template-columns: 1fr;
   }
   .container-project-template-1 {
-    margin: 4rem 2rem;
+    padding: 4rem 2rem;
   }
   .container-summary {
     text-align: left;
@@ -474,7 +474,7 @@ stupid crap grid
     line-height: 2.5;
   }
   .container-project-template-1 {
-    margin: 6rem 0rem;
+    padding: 6rem 0rem;
   }
   .container-project-grid {
     padding-top: 1rem;
@@ -536,7 +536,7 @@ stupid crap grid
     padding: 0rem;
   }
   .container-project-template-1 {
-    margin: 6rem 0rem;
+    padding: 6rem 0rem;
   }
   .container-project-grid {
     margin: 0 2rem;
@@ -551,9 +551,7 @@ stupid crap grid
     font-size: 1.25rem;
     line-height: 1.25;
   }
-  .container-project-template-1 {
-    margin: 6rem 0rem;
-  }
+
   .container-project-grid {
     margin: 0 1.5rem;
   }
