@@ -77,7 +77,7 @@ h2 {
 h3 {
   font-weight: 300;
   font-size: 4rem;
-  letter-spacing: -2px;
+  letter-spacing: -0.5px;
   line-height: 1.35;
   margin: 0;
 }
@@ -165,14 +165,19 @@ figcaption {
 
 .stat-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 2rem 0;
   text-align: center;
   padding-top: 2rem;
 }
 
+.stat-container div {
+  flex: 1;
+}
+
 .stat-container h3 {
   line-height: 1;
+  font-weight: 700;
 }
 
 .stat-divider {
@@ -180,6 +185,7 @@ figcaption {
   width: 2px;
   background-color: rgba(255, 255, 255, 0.1);
   margin: 0 1.5rem;
+  flex: initial !important;
 }
 
 /* End Primary */
@@ -638,9 +644,9 @@ figcaption {
   .mainContainer {
     margin-top: 0;
   }
-.stat-container {
-  flex-direction: column;
-}
+  .stat-container {
+    flex-direction: column;
+  }
   .stat-divider {
     height: 2px;
     width: auto;
@@ -808,5 +814,8 @@ figcaption {
   }
   .project-info-side {
     color: #999;
+  }
+  a {
+    color: rgb(97, 113, 252);
   }
 }

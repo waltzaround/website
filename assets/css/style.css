@@ -429,9 +429,7 @@ stupid crap grid
     grid-template-columns: 1fr 1fr;
     max-width: initial;
   }
-  .container-project-grid {
-    column-gap: 0rem;
-  }
+
 }
 
 .container-project-template-1 {

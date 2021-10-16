@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Vaxx.NZ</title>
+  <meta name="description"
+    content="Walter Lim is a designer from New Zealand. He works somewhere between design, code, and lots of experimental crap to make things that help people. He also dislikes buzzwords. Find him by clicking on this link lol. " />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <link rel="apple-touch-icon" href="icon.png" />
+  <link rel="stylesheet" href="/assets/css/normalize.css" />
+  <link rel="stylesheet" href="/assets/css/project.css" />
+  <meta name="theme-color" content="#fafafa" />
+</head>
+
+<body>
+  <img src='../../assets/Project/vaxx/vaxx-header.png' class='fullWidthImg' />
+  <div class="Container">
+    <div class="case-container">
+
+
+
+      <h3 class="case-study-title text-dark down">
+        <strong>Vaxx.nz</strong> <br />Helping kiwis find COVID-19 vaccinations
+      </h3>
+      <p><strong class="case-study-info-bold">Live Website: <a class="text-dark-link" href="https://vaxx.nz"
+            target="_blank" rel="noopener noreferrer">Vaxx.nz</a></strong><br />
+        <strong class="case-study-info-bold">Repo: <a class="text-dark-link"
+            href="https://github.com/CovidEngine/vaxxnz" target="_blank"
+            rel="noopener noreferrer">Github</a></strong><br />
+      </p>
+      <div class="grid-container">
+        <div>
+          <p class="case-study-info">
+
+
+          </p>
+          <p class="case-study-info">
+
+            <strong class="case-study-info-bold">Credits </strong>
+            <br />Walter Lim<i> — Product, UX, UI, Frontend</i>
+            <br />Will Seagar<i> — Product, Full stack dev</i>
+            <br />Matt Weston<i> — Infrastructure Architecture, AWS</i>
+            <br />Minh Phu Lai<i> — Full stack dev, Web Scraping</i>
+            <br />Ilia Sidorenko<i> — Full stack dev, Architecture</i>
+            <br />Molly Derecourt<i> — UX, UI, Social Media GTM</i>
+            <br />Jackson Lawrence<i> — Full stack dev, Geolocation</i>
+            <br />Oliver Cooper<i> — Full stack dev, Web accessibility</i>
+            <br />Olaf Wrieden<i> — Full stack dev, Internationalization</i>
+
+
+            <br /><br />
+          </p>
+          <p class="case-study-info">
+
+
+          </p>
+
+
+
+
+        </div>
+        <p class="case-study-about text-dark">
+          <strong>Challenge</strong><br />
+          New Zealanders were finding it frustrating to book their COVID-19 vaccinations. Existing services made it
+          difficult to search vaccination bookings by available time and this resulted in hundreds of additional clicks.
+          <br /><br />
+          <strong>Response</strong><br />
+          We reverse engineered and scraped vaccination booking data. We then designed and built a better search
+          experience for users in 48
+          hours. <a target='_blank' href='https://twitter.com/search?q=vaxx.nz&src=typed_query'>The
+            public </a>seems to
+          like it.
+        </p>
+
+
+      </div>
+      <section class='stat-container'>
+        <div>
+          <h3>76,000+</h3>
+          <p>people helped</p>
+        </div>
+        <div class='stat-divider'></div>
+        <div>
+          <h3>121,000+ </h3>
+          <p>user sessions</p>
+        </div>
+        <div class='stat-divider'></div>
+        <div>
+          <h3> 48 hours </h3>
+          <p>from idea to launch</p>
+        </div>
+      </section>
+      <style>
+        .embed-container {
+          position: relative;
+          padding-bottom: 56.25%;
+          height: 0;
+          overflow: hidden;
+          max-width: 100%;
+          border-radius: 12px;
+        }
+
+        .embed-container iframe,
+        .embed-container object,
+        .embed-container embed {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+      <div class='embed-container'><iframe src='https://www.youtube.com/embed//erZ6kTJTpmI' frameborder='0'
+          allowfullscreen></iframe></div>
+      <div class='case-study-container'>
+        <h3>Initial steps</h3>
+        <p><br />
+          A friend's wife complained about how hard it was to book a COVID-19 vaccine online.
+          <br /><br />
+          Every clinic and outlet close to her offering the vaccine had shown that the only bookings available were
+          months away, and having
+          to click through every outlet to see its individual availability was tiring.
+
+          We gathered some mates on Discord as we had just gone into another Lockdown in New Zealand, and got to
+          work.
+          <br /><br />
+          We did some technical scoping to see what was feasible with the data, and decided on a calendar approach to
+          test with users in
+          response. I opted for the bare minimum wireframing required to explain workflows and concepts and to keep
+          everyone on the same page.<br /><br />
+          <strong>Existing workflow:</strong> Search for a vaccination → 60 clicks through 30 different sites to check
+          individual site availability →
+          Make a booking<br />
+          <strong>Our workflow:</strong> Search for a vaccination → One click on the day you want to get vaccinated →
+          Make a booking
+
+
+
+
+        </p>
+      </div>
+      <img src="../../assets/Project/vaxx/vaxx-1.png" alt='Draft documentation' class="case-study-image" /><img
+        src="../../assets/Project/vaxx/vaxx-2.png" alt='Draft documentation' class="case-study-image" />
+      <div class='case-study-container'>
+        <h3>Designing in a dev environment</h3>
+        <p><br />
+          Given that our little project was heavily constrained by dirty data pulled by hackily scraping govt websites,
+          we had
+          to be pragmatic with our design process. There were disgusting regexes, and dirty, dirty hacks everywhere. It
+          was a painful balancing act in terms of product prioritization; on one hand you have the experience you want
+          to test with the user, and at the other you have to contend with reality and what you can actually ship in
+          a short amount of time. We ditched figma at this point and went straight into the frontend to save time on
+          implementation.
+        </p>
+      </div>
+      <img src="../../assets/Project/vaxx/vaxx-3.png" alt='Draft documentation' class="case-study-image" />
+      <div class='case-study-container'>
+        <h3>Initial launch</h3>
+        <p><br />
+          We launched on Twitter, Reddit and LinkedIn and gained a little bit of traffic initially, peaking at over
+          23,000 unique users in a single day. As feedback came in over twitter and emails, improvements were
+          prioritised using github projects. We started preparing to open the floodgates to contributors to scale as
+          an open source project over discord and GitHub. To remain focused, I put together a triage workflow using
+          Github issues and kanban boards.
+        </p>
+      </div>
+      <img src="../../assets/Project/Swiftly/swiftly-5.png" alt='Draft documentation' class="case-study-image" />
+
+      <div class='case-study-container'>
+        <h3>Media</h3>
+        <p><br />
+          Stuff New Zealand:
+          <a href='https://www.stuff.co.nz/national/health/coronavirus/126293947/covid19-hackathon-creates-faster-way-to-find-a-covid19-vaccine-near-you'
+            target="_blank">Covid-19: 'Hackathon' creates faster way to find a Covid-19 vaccine near
+            you</a><br>1 News (TVNZ):
+          <a href='https://www.tvnz.co.nz/one-news/new-zealand/kiwi-friends-build-website-help-speed-up-vaccinations'
+            target="_blank">Kiwi friends build website to help speed up
+            vaccinations</a><br>
+          NZ Business Desk:
+          <a href='https://businessdesk.co.nz/article/news-in-brief/developers-build-better-vaccine-booking-website'
+            target="_blank">Developers build better vaccine booking
+            website</a><br>
+
+
+          The Project:
+          <a href='https://www.youtube.com/watch?v=erZ6kTJTpmI' target="_blank">Developers build useful
+            vaccine booking
+            website</a>
+
+
+
+
+
+
+        </p>
+      </div>
+
+
+
+
+    </div>
+
+    <div>
+      <h3 class="project-title-container"><a href='/'>Go back to main page</a></h3>
+    </div>
+
+
+
+    <!--end case study 1 voluntarily-->
+</body>
+
+</html>
