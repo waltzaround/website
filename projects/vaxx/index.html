@@ -41,7 +41,7 @@
             <strong class="case-study-info-bold">Credits </strong>
             <br />Walter Lim<i> — Product, UX, UI, Frontend</i>
             <br />Will Seagar<i> — Product, Full stack dev</i>
-            <br />Matt Weston<i> — Infrastructure Architecture, AWS</i>
+            <br />Matt Weston<i> — Infrastructure, DevOps, AWS</i>
             <br />Minh Phu Lai<i> — Full stack dev, Web Scraping</i>
             <br />Ilia Sidorenko<i> — Full stack dev, Architecture</i>
             <br />Molly Derecourt<i> — UX, UI, Social Media GTM</i>
@@ -63,8 +63,8 @@
         </div>
         <p class="case-study-about text-dark">
           <strong>Challenge</strong><br />
-          New Zealanders were finding it frustrating to book their COVID-19 vaccinations. Existing services made it
-          difficult to search vaccination bookings by available time and this resulted in hundreds of additional clicks.
+          New Zealanders were finding it frustrating to book their COVID-19 vaccinations. Official services made it
+          difficult to search vaccination bookings by date and this resulted in hundreds of additional clicks.
           <br /><br />
           <strong>Response</strong><br />
           We reverse engineered and scraped vaccination booking data. We then designed and built a better search
@@ -119,21 +119,24 @@
         <p><br />
           A friend's wife complained about how hard it was to book a COVID-19 vaccine online.
           <br /><br />
-          Every clinic and outlet close to her offering the vaccine had shown that the only bookings available were
-          months away, and having
-          to click through every outlet to see its individual availability was tiring.
+          A quick user interview yielded that it was painful to search for bookings, and that
+          the only bookings she could find were months away.
 
-          We gathered some mates on Discord as we had just gone into another Lockdown in New Zealand, and got to
-          work.
+          We gathered some mates on Discord as we had just gone into another lockdown in New Zealand, and got to
+          work remotely to maintain social distancing.
           <br /><br />
-          We did some technical scoping to see what was feasible with the data, and decided on a calendar approach to
+          Some of our developers split off to do some scoping to see what was feasible with the data. After a few
+          technical discoveries and a little bit of journey mapping we decided on a calendar approach to
           test with users in
           response. I opted for the bare minimum wireframing required to explain workflows and concepts and to keep
           everyone on the same page.<br /><br />
-          <strong>Existing workflow:</strong> Search for a vaccination → 60 clicks through 30 different sites to check
-          individual site availability →
-          Make a booking<br />
-          <strong>Our workflow:</strong> Search for a vaccination → One click on the day you want to get vaccinated →
+          <strong>Existing workflow:</strong><br />→ Search for a vaccination<br /> → Click into an individual
+          vaccination site<br />→ See available vaccination bookings for that individual site<br />→ go back to the
+          search page and click on another vaccination site<br />→ Repeat this process 60+ times until you find an
+          appointment the same week<br />→
+          Make a booking<br /><br />
+          <strong>Our workflow:</strong><br />→ Search for a vaccination<br />→ One click on the day you want to get
+          vaccinated <br />→
           Make a booking
 
 
@@ -160,17 +163,36 @@
         <h3>Initial launch</h3>
         <p><br />
           We launched on Twitter, Reddit and LinkedIn and gained a little bit of traffic initially, peaking at over
-          23,000 unique users in a single day. As feedback came in over twitter and emails, improvements were
-          prioritised using github projects. We started preparing to open the floodgates to contributors to scale as
+          23,000 unique users in a single day. As feedback came in over twitter and emails, we had to make sure we were
+          ready to make improvements and scale.
+          prioritised. We started preparing to open the floodgates to contributors to scale as
           an open source project over discord and GitHub. To remain focused, I put together a triage workflow using
-          Github issues and kanban boards.
+          GitHub issues and GitHub kanban boards.
         </p>
       </div>
-      <img src="../../assets/Project/Swiftly/vaxx-4.png" alt='Draft documentation' class="case-study-image" />
+      <img src="../../assets/Project/vaxx/vaxx-4.png" alt='Draft documentation' class="case-study-image" />
 
       <div class='case-study-container'>
-        <h3>Media</h3>
-        <p><br />
+        <h3>Current State</h3>
+        <p>We've received some press, and maintain a public discord community with about 60 contributors. We've shipped
+          several big updates since launching, including internationalization and pulling walk-in venue locations where
+          people can get vaccinated without an appointment.<br /><br /> We run guerrilla usability testing every so
+          often to
+          test
+          new and existing workflows, and generally catch most of the issues that way. Anything that needs more design
+          or engineering work gets logged as an issue on GitHub, and open source contributors pick it up from
+          there.<br /><br />The site sees about a thousand unique users a day according to GA, and we're pretty happy as
+          a team as we know for a fact that the website we've built has helped a lot of people get vaxxed.
+        </p><br />
+        <br /><br />
+        <p><strong>Media</strong><br>
+
+
+          The Project:
+          <a href='https://www.youtube.com/watch?v=erZ6kTJTpmI' target="_blank">Developers build useful
+            vaccine booking
+            website</a>
+          <br />
           Stuff New Zealand:
           <a href='https://www.stuff.co.nz/national/health/coronavirus/126293947/covid19-hackathon-creates-faster-way-to-find-a-covid19-vaccine-near-you'
             target="_blank">Covid-19: 'Hackathon' creates faster way to find a Covid-19 vaccine near
@@ -181,14 +203,7 @@
           NZ Business Desk:
           <a href='https://businessdesk.co.nz/article/news-in-brief/developers-build-better-vaccine-booking-website'
             target="_blank">Developers build better vaccine booking
-            website</a><br>
-
-
-          The Project:
-          <a href='https://www.youtube.com/watch?v=erZ6kTJTpmI' target="_blank">Developers build useful
-            vaccine booking
             website</a>
-
 
 
 

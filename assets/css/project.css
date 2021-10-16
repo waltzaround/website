@@ -117,6 +117,11 @@ p {
   letter-spacing: 0.3px;
   margin: initial;
   word-break: keep-all;
+  font-weight: 300;
+}
+
+strong {
+  font-weight: 600;
 }
 
 ul {
