@@ -42,17 +42,20 @@ html {
   text-rendering: optimizeLegibility;
   transition: all 0.3s;
   scroll-behavior: auto;
+  background: black;
 }
 
 body {
   margin: 0;
+  background-color: black;
+  color: white;
 }
 
 canvas {
   width: 100%;
   height: 100vh;
   z-index: 2;
-  opacity: 0.5;
+  opacity: 0.4;
   margin-bottom: -6px;
   position: fixed;
 }
@@ -85,10 +88,11 @@ canvas {
 }
 
 h1 {
-  font-size: 2rem;
+
+  font-size: 5rem;
+  font-weight: 700;
   line-height: 1.25;
   margin: 0;
-  font-weight: 400;
   letter-spacing: -0.5px;
 }
 
@@ -118,9 +122,15 @@ p {
 
 a {
   text-decoration: none;
-  color: blue;
+
+  color: rgb(180, 187, 250);
   line-height: 0;
   transition: all 0.15s;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 aside {
@@ -164,6 +174,11 @@ li {
   margin: 4rem;
   position: absolute;
   z-index: 1;
+}
+
+.hero-title {
+  margin-top: 5rem;
+  text-align: center;
 }
 
 .hero-link {
@@ -223,28 +238,47 @@ li {
 /* 
   about components
   */
+.container-about {
+  height: 100vh;
+  display: block;
+}
 
 .container-about-grid {
   display: grid;
-  grid-template-columns: 2fr 1.25fr;
+  grid-template-columns: 1fr;
+  align-items: center;
   gap: 0rem;
   margin: 0;
   padding: 0;
 }
 
-.container-about-grid-content {
-  margin: 4rem;
-  display: grid;
-  align-items: center;
+.about-potato {
+  margin: 4rem 4rem;
 }
 
+.about-constrain {
+  max-width: 1080px;
+  margin: 0 auto;
+}
 
+.container-about-grid-content {
+  margin: 4rem;
+  margin-top: 32vh;
+}
+
+.container-about-video-container {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+}
 
 .container-about-grid-video {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-position: top;
-  border-radius: 1200px;
+  object-fit: cover;
+  opacity: 0.15
 }
 
 .list-title {
@@ -274,9 +308,7 @@ li {
   max-width: 1200px;
 }
 
-.container-about-video-container {
-  padding: 4rem 0 4rem 4rem;
-}
+
 
 .container-summary-grid img {
   width: 100%;
@@ -369,7 +401,7 @@ stupid crap grid
 
 @media only screen and (max-width: 1920px) {
   h1 {
-    font-size: 2rem;
+    font-size: 4rem;
     letter-spacing: -0.5px;
   }
 
@@ -405,13 +437,6 @@ stupid crap grid
     font-size: 1.25rem;
   }
 
-  .container-about-video-container {
-    padding: 2rem;
-  }
-
-  .container-about-grid-content {
-    margin: 2rem;
-  }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -442,10 +467,6 @@ stupid crap grid
     padding: 0;
   }
 
-  .project-grid-container {
-    grid-template-columns: 1fr 1fr;
-    max-width: initial;
-  }
 
 }
 
@@ -640,28 +661,16 @@ stupid crap grid
 
   .hero-title {
     font-size: 1.25rem;
+    text-align: center;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    background-color: black;
-    color: white;
-  }
+i {
+  color: rgb(199, 199, 199);
+}
 
-  canvas {
-    opacity: 0.15;
-  }
 
-  i {
-    color: #888;
-  }
 
-  a {
-    color: rgb(145, 156, 255);
-  }
-
-  .project-info-side {
-    color: #999;
-  }
+.project-info-side {
+  color: rgb(212, 212, 212);
 }
