@@ -252,7 +252,7 @@ li {
 }
 
 .about-potato {
-  margin: 4rem 4rem;
+  margin: 4rem;
 }
 
 .about-constrain {
@@ -541,6 +541,10 @@ stupid crap grid
   h1 {
     font-size: 2.5rem;
     letter-spacing: -1px;
+  }
+
+  .about-potato {
+    margin: 2rem;
   }
 
   .hero-title {
