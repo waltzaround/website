@@ -110,7 +110,7 @@ h3 {
 }
 
 i {
-  color: #666;
+  color: rgb(232, 232, 232);
 }
 
 p {
@@ -270,6 +270,7 @@ li {
   width: 100%;
   min-height: 100vh;
   top: 0;
+  z-index: -1;
 }
 
 .container-about-grid-video {
@@ -674,9 +675,6 @@ stupid crap grid
 
 }
 
-i {
-  color: #888;
-}
 
 
 
