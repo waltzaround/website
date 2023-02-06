@@ -129,7 +129,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-  font-weight: 700;
 }
 
 aside {
@@ -141,8 +140,56 @@ ul {
   margin: 0;
 }
 
-li {
+/* li {
   list-style: none;
+} */
+.about {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about h1 {
+  margin: 2rem 0 4rem 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.about-group {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2.5rem;
+  border-radius: 32px;
+  margin-bottom: 2rem;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  line-height: 1;
+}
+
+.about-group p {
+  list-style: disc;
+}
+
+.about-group aside {
+  color: rgb(178, 178, 178);
+  font-size: 1rem;
+}
+
+
+
+.about-media-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-media-item:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 
 .links {
@@ -192,9 +239,7 @@ li {
   color: black;
 }
 
-.hero-link:hover {
-  transform: scale(1.25, 1.15);
-}
+
 
 /* 
 //disgusting hack to remove the menu overflow
@@ -398,6 +443,8 @@ stupid crap grid
   grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
     }
 } */
+
+
 
 @media only screen and (max-width: 1920px) {
   h1 {
@@ -636,9 +683,7 @@ stupid crap grid
     margin: 2rem;
   }
 
-  .hero-link:hover {
-    transform: scale(1.25, 1.15);
-  }
+
 
   .project-card:hover {
     transform: none;
