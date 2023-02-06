@@ -73,8 +73,10 @@ canvas {
 
 
 
-.main-nav-title {
+h1.main-nav-title {
   font-size: 1.2rem;
+  letter-spacing: -0.1px;
+  font-weight: 500;
 }
 
 .main-nav-menu {
@@ -580,7 +582,7 @@ stupid crap grid
     font-size: 3rem;
   }
 
-  .main-nav {
+  .main-nav-menu {
     display: none;
   }
 
@@ -614,10 +616,6 @@ stupid crap grid
 
   .container-about-hero br {
     display: none;
-  }
-
-  .container-project-img-1 {
-    padding: 0 1.5rem;
   }
 
   h1 {
@@ -697,11 +695,15 @@ stupid crap grid
 
 
   .container-project-template-1 {
-    padding: 2rem 0rem;
+    padding: 0rem;
   }
-
+  .container-project-img-1 {
+    padding: 0;
+    border-radius: 0;
+  }
   .container-project-grid {
-    margin: 0 2rem;
+    margin: 0;
+    border-radius: 0;
   }
 
   .links {
@@ -717,9 +719,6 @@ stupid crap grid
     line-height: 1.25;
   }
 
-  .container-project-grid {
-    margin: 0 1.5rem;
-  }
 
   .container-summary {
     margin: 2rem;
@@ -743,7 +742,6 @@ stupid crap grid
 @media only screen and (max-width: 320px) {
   h1 {
     font-size: 2rem;
-    letter-spacing: -1px;
   }
 
   .hero-title {
@@ -752,7 +750,7 @@ stupid crap grid
   }
 
   h2 {
-    font-size: 1.25rem;
+    font-size: 2rem;
     letter-spacing: -0.6px;
   }
 
@@ -763,6 +761,15 @@ stupid crap grid
   .about-group {
     padding: 1rem;
   }
+  .container-project-grid {
+    padding: 1rem;
+  }
+  .about-potato {
+    margin: 1rem;
+ } 
+ .container-about-hero {
+  padding: 1rem;
+ }
 }
 
 
