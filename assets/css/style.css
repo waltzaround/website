@@ -420,7 +420,7 @@ stupid crap grid
   display: grid;
   grid-template-columns: 27rem 1fr;
   max-width: 1920px;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto;
   column-gap: 4rem;
   padding: 2.5rem;
   background-color: rgba(0, 0, 0, 0.2);
@@ -456,8 +456,24 @@ stupid crap grid
   grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
     }
 } */
-
-
+.quote {
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 0 4rem;
+}
+.quote-container {
+     background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 32px;
+    box-sizing: border-box; 
+    padding: 2.5rem
+}
+.quote-boy {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+q::before, q::after {
+  font-size: 2rem;
+}
 
 @media only screen and (max-width: 1920px) {
   h1 {
@@ -537,7 +553,7 @@ stupid crap grid
 
 .container-project-template-1 {
   margin: 0 auto;
-  padding: 4rem;
+  padding: 2.5rem 4rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -567,6 +583,9 @@ stupid crap grid
   .container-project-template-1 {
     padding: 2rem;
   }
+.quote {
+  padding: 2rem;
+}
 
   .container-summary {
     text-align: left;
