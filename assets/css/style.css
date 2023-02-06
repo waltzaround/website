@@ -370,6 +370,8 @@ stupid crap grid
   text-align: left;
 }
 
+
+
 .project-grid-mega {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -457,6 +459,8 @@ stupid crap grid
   grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
     }
 } */
+
+
 .quote {
   margin: 0 auto;
   max-width: 1440px;
