@@ -458,19 +458,22 @@ stupid crap grid
 } */
 .quote {
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: 1440px;
   padding: 0 4rem;
 }
+
 .quote-container {
-     background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 32px;
-    box-sizing: border-box; 
-    padding: 2.5rem
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 32px;
+  box-sizing: border-box;
+  padding: 2.5rem
 }
+
 .quote-boy {
   font-size: 1.5rem;
-  opacity: 0.9;
+  color: white;
 }
+
 q::before, q::after {
   font-size: 2rem;
 }
@@ -494,7 +497,7 @@ q::before, q::after {
 @media only screen and (min-width: 1600px) {
   .container-project-content {
     border-left: 1px solid rgba(255, 255, 255, 0.1);
-      padding-left: 2.5rem;
+    padding-left: 2.5rem;
   }
 }
 
@@ -567,9 +570,11 @@ q::before, q::after {
     z-index: 1;
     top: 15rem;
   }
+
   .project-grid-container {
     grid-template-columns: 1fr 1fr;
   }
+
   .container-project-grid {
     grid-template-columns: 1fr;
     row-gap: 0.5rem;
@@ -583,9 +588,10 @@ q::before, q::after {
   .container-project-template-1 {
     padding: 2rem;
   }
-.quote {
-  padding: 2rem;
-}
+
+  .quote {
+    padding: 2rem;
+  }
 
   .container-summary {
     text-align: left;
@@ -725,10 +731,12 @@ q::before, q::after {
   .container-project-template-1 {
     padding: 0rem;
   }
+
   .container-project-img-1 {
     padding: 0;
     border-radius: 0;
   }
+
   .container-project-grid {
     margin: 0;
     border-radius: 0;
@@ -789,15 +797,18 @@ q::before, q::after {
   .about-group {
     padding: 1rem;
   }
+
   .container-project-grid {
     padding: 1rem;
   }
+
   .about-potato {
     margin: 1rem;
- } 
- .container-about-hero {
-  padding: 1rem;
- }
+  }
+
+  .container-about-hero {
+    padding: 1rem;
+  }
 }
 
 
