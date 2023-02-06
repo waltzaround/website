@@ -415,13 +415,15 @@ stupid crap grid
 /* //projects */
 
 .container-project-grid {
-  margin-top: 4rem;
   display: grid;
   grid-template-columns: 27rem 1fr;
   max-width: 1920px;
-  margin: 2rem auto;
+  margin: 0 auto 2rem auto;
   column-gap: 4rem;
-  padding-bottom: 2rem;
+  padding: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 32px 32px;
+  box-sizing: border-box;
 }
 
 .container-project-content {
@@ -433,7 +435,10 @@ stupid crap grid
   width: 100%;
   display: block;
   max-width: 1920px;
+  border-radius: 32px 32px 0 0;
+  box-sizing: border-box;
 }
+
 
 .project-info-side {
   color: #555;
@@ -474,9 +479,7 @@ stupid crap grid
     letter-spacing: -1px;
   }
 
-  h2 {
-    font-size: 1.5rem;
-  }
+
 
   .secondary-container {
     margin-top: 2rem;
@@ -551,7 +554,7 @@ stupid crap grid
   }
 
   .container-project-template-1 {
-    padding: 4rem 2rem;
+    padding: 2rem;
   }
 
   .container-summary {
@@ -563,6 +566,10 @@ stupid crap grid
 @media only screen and (max-width: 768px) {
   .container-about-hero br {
     display: none;
+  }
+
+  .container-project-img-1 {
+    padding: 0 1.5rem;
   }
 
   h1 {
@@ -582,12 +589,12 @@ stupid crap grid
   }
 
   .container-project-template-1 {
-    padding: 6rem 0rem;
+    padding: 2rem 0rem;
   }
 
   .container-project-grid {
-    padding-top: 1rem;
-    margin: 1rem 1.5rem;
+
+    margin: 0rem 1.5rem;
   }
 
   .project-grid-container {
@@ -607,6 +614,10 @@ stupid crap grid
 
   .container-about-hero br {
     display: none;
+  }
+
+  .container-project-img-1 {
+    padding: 0 1.5rem;
   }
 
   h1 {
@@ -686,7 +697,7 @@ stupid crap grid
 
 
   .container-project-template-1 {
-    padding: 6rem 0rem;
+    padding: 2rem 0rem;
   }
 
   .container-project-grid {
