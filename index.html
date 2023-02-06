@@ -16,8 +16,8 @@
       crossorigin="anonymous">
    <link rel="preload" href="/assets/fonts/SpaceGrotesk-Medium.woff2" as="font" type="font/woff2"
       crossorigin="anonymous">
-   <link rel="preload" href="/assets/fonts/SpaceGrotesk-SemiBold.woff2" as="font" type="font/woff2"
-      crossorigin="anonymous">
+   <!-- <link rel="preload" href="/assets/fonts/SpaceGrotesk-SemiBold.woff2" as="font" type="font/woff2"
+      crossorigin="anonymous"> -->
    <link rel="preload" href="/assets/fonts/SpaceGrotesk-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
    <link rel="stylesheet" href="/assets/css/style.css" />
    <meta property="og:title" content="Walter Lim is a designer lol">
@@ -51,117 +51,104 @@
    <canvas id="canv" width="32" height="32"></canvas>
    <div class='safariHack'>
       <header class='main-nav'>
-         <h1 class='main-nav-title'><strong>Walter Lim</strong> </h1>
+         <h1 class='main-nav-title'><a href="/"><strong>Walter Lim</strong></a> </h1>
          <div class='main-nav-menu'>
-            <a href='#work' class='main-nav-item'>Work</a>
+
+            <a href='/about' class='main-nav-item'>About</a>
+            <a href='/#work' class='main-nav-item'>Work</a>
             <a href='/experiments' class='main-nav-item'>Experiments</a>
             <a href='/media' class='main-nav-item'>Media</a>
          </div>
-
       </header>
       <section class='container-about' id='about'>
-         <div class="container-about-grid">
 
-            <div class='container-about-grid-content'>
-               <h1 class='hero-title'>Walter Lim is a Product Designer + UX Engineer<br />
-                  based in Auckland New Zealand.
-               </h1>
+         <div class='container-about-hero'>
 
-            </div>
-
+            <h1 class='hero-title'><strong>Walter Lim </strong><br />is a Product Designer &amp; UX Engineer<br />
+               based in Auckland New Zealand.
+            </h1>
          </div>
-         <div class='container-about-video-container'>
-
-            <video class='potato container-about-grid-video' autoplay loop muted playsinline aria-hidden="true">
-               <source src="../assets/walt_2.mp4" type="video/mp4" aria-hidden="true" />
-               <track src="../assets/walt.vtt" kind="captions" srclang='en' label='english_captions'>
-            </video>
-         </div>
+         <!-- <div class="container-about-grid-video">
+               <video class='' autoplay loop muted playsinline aria-hidden="true">
+                  <source src="../assets/walt_2.mp4" type="video/mp4" aria-hidden="true" />
+                  <track src="../assets/walt.vtt" kind="captions" srclang='en' label='english_captions'>
+               </video>
+            </div> -->
 
       </section>
       <section class="about-potato">
-         <p class="about-constrain">
-            I’m a cross-functional designer with 7+ years of experience. <br /><br />I like solving problems, by making
-            things with
-            people. I’ve
-            worked
-            everywhere between
-            ux research, product design, and frontend engineering to deliver real working products that actually help
-            people. All of this in
-            organisations from big
-            to small.<br /><br />
-
-            My past work ranges from making big multinational corporates lots of money through the targeted design,
-            testing, and
-            implementation of simple consumer-facing usability + accessibility improvements, all the way to helping
-            b2b SaaS
-            startups reduce churn, and get new features to market quickly through the delivery of simultaneous
-            research,
-            design, and
-            code deliverables.<br /><br />
-
-            When I put my UX engineering hat on, I thoroughly understand the little nuances of design and
-            engineering collaboration. It saves a lot
-            of
-            time!<br /><br /> I’m the kind of
-            designer
-            that knows
-            that using margin instead of padding in your components means that users are going to have a bad time on
-            tablets and
-            mobile devices because it often shrinks the effective touchable tap target area, making your app harder to
-            interact with.<br /><br /> I'm the kind of
-            engineer
-            that
-            understands the
-            limitations and
-            tradeoffs
-            between unmoderated user research with a figma prototype, and moderated usability testing with a static
-            react prototype without a backend. users cant input text into figma prototypes, and this skews results
-            especially with forms and wizards that explicitly depend on accurate user input.<br /><br />
-
-            My guiding belief is that if you don’t deliver useful, impactful outcomes for your users, your company and
-            team haven’t
-            earned your social license to operate.<br /><br />I am currently a senior product designer at <a
-               href='https://goboxer.com' target="_blank" rel="noopener noreferrer">Boxer</a>, and volunteer my
-            spare time
-            designing and building things at <a href='https://haxx.nz' target="_blank"
-               rel="noopener noreferrer">haxx.nz</a><br /><br />
-            <br />Stalk me on the interwebs<br /> <a href="https://behance.net/waltzaround" target="_blank"
-               rel="noopener noreferrer">Behance</a>
-            /
-            <a href="https://dribbble.com/waltzaround" target="_blank" rel="noopener noreferrer">Dribbble</a> /
-            <a href="https://github.com/waltzaround" target="_blank" rel="noopener noreferrer">GitHub</a>
-            /
-            <a href="https://waltzaround.itch.io/" rel="noopener noreferrer" target="_blank">itch.io</a>
-            <br />
-            <a href="https://twitter.com/iwaltzaround" target="_blank" rel="noopener noreferrer">Twitter</a>
-            /
-            <a href="https://instagram.com/iwaltzaround" target="_blank" rel="noopener noreferrer">Instagram</a>
-            /
-            <a href="https://linkedin.com/in/waltzaround" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            /
-            <a href="https://m.me/waltzaround" rel="noopener noreferrer" target="_blank">Messenger</a>
-            /
-            <a href="https://www.youtube.com/channel/UCbSAF9R8VhlT29nh3-6mqmA" rel="noopener noreferrer"
-               target="_blank">Youtube</a>
-         </p>
+         <div>
+            <p class="about-constrain">
+               Walter Lim is a cross-functional designer with 7+ years of experience. <br /><br />He likes solving
+               problems, by making
+               things with
+               people. He's
+               worked
+               everywhere between
+               UX Research, Product Design, and UX Engineering to deliver real working products that actually help
+               people. All of this in
+               organisations from big multinational corporates
+               to small startups.
+               <br /><br />He is currently a Senior Product Designer at <a href='https://goboxer.com' target="_blank"
+                  rel="noopener noreferrer">Boxer</a>, and sometimes volunteers his
+               spare time
+               designing and building things at <a href='https://haxx.nz' target="_blank"
+                  rel="noopener noreferrer">haxx.nz</a><br />
+               <br />Stalk him on the interwebs<br /> <a href="https://behance.net/waltzaround" target="_blank"
+                  rel="noopener noreferrer">Behance</a>
+               /
+               <a href="https://dribbble.com/waltzaround" target="_blank" rel="noopener noreferrer">Dribbble</a> /
+               <a href="https://github.com/waltzaround" target="_blank" rel="noopener noreferrer">GitHub</a>
+               /
+               <a href="https://waltzaround.itch.io/" rel="noopener noreferrer" target="_blank">itch.io</a>
+               <br />
+               <a href="https://twitter.com/iwaltzaround" target="_blank" rel="noopener noreferrer">Twitter</a>
+               /
+               <a href="https://instagram.com/iwaltzaround" target="_blank" rel="noopener noreferrer">Instagram</a>
+               /
+               <a href="https://linkedin.com/in/waltzaround" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+               /
+               <a href="https://m.me/waltzaround" rel="noopener noreferrer" target="_blank">Messenger</a>
+               /
+               <a href="https://www.youtube.com/channel/UCbSAF9R8VhlT29nh3-6mqmA" rel="noopener noreferrer"
+                  target="_blank">Youtube</a>
+            </p>
       </section>
-
-
+      <div id="work" class="project-container">
+         <h2 class="project-title">
+            Work
+         </h2>
+         <p>Featured work &amp; projects</p>
+      </div>
       <section class="container-project-template-1">
-         <div id="work" class="project-title-container">
-            <h2 class="project-title">
-               Work
-            </h2>
-            <p>Featured work &amp; projects</p>
+
+
+         <img class='container-project-img-1' src='/projects/boxer/boxer.png' alt='Boxer Demo' />
+         <div class='container-project-grid'>
+            <div>
+               <h2>Boxer</h2>
+               <p class='project-info-side'>
+                  Global Product Cover<br />Senior Product Designer<br />Sep 2022 → Now<br /><br />
+            </div>
+            <div class='container-project-content'>
+
+               <p>Coming soon - too busy with work atm
+                  <br /><br />
+
+                  <i> UX Research / Product Design / Design Systems / Frontend Development </i>
+               </p>
+            </div>
          </div>
+      </section>
+      <section class="container-project-template-1">
+
 
          <img class='container-project-img-1' src='/projects/cin7/cin7.webp' alt='Cin7 Demo' />
          <div class='container-project-grid'>
             <div>
                <h2>Cin7</h2>
                <p class='project-info-side'>
-                  Omnichannel Inventory Systems<br />Nov 2020 → Now<br /><br />
+                  Omnichannel Inventory Systems<br />Senior Product Designer<br />Nov 2020 → Sep 2022<br /><br />
             </div>
             <div class='container-project-content'>
 
@@ -189,7 +176,9 @@
             <div>
                <h2>Samsung Electronics NZ</h2>
                <p class='project-info-side'>
-                  Ecommerce UX <br />Aug 2020 → Nov 2020<br /><br />
+
+                  Ecommerce Design Systems <br />UX Consultant + UX Engineer (Contract Role) <br />Aug 2020 → Nov
+                  2020<br /><br />
 
             </div>
             <div class='container-project-content'>
@@ -211,7 +200,7 @@
             <div>
                <h2>Vaxx.NZ</h2>
                <p class='project-info-side'>
-                  COVID Vaccination Finder<br />Sep 2021 → Now<br /><br />
+                  COVID Vaccination Finder<br />Designer + UX Engineer<br />Sep 2021 → Now<br /><br />
                   <a href='https://vaxx.nz' target="_blank" rel="noopener noreferrer">→ Live website</a><br />
                   <a href='/projects/vaxx' target="_blank" rel="noopener noreferrer">→ Case study</a>
             </div>
@@ -237,8 +226,8 @@
             <div>
                <h2>Swiftly</h2>
                <p class='project-info-side'>
-                  Online Store Builder<br />Apr 2020 → Now<br /><br /> <a href='https://swiftly.nz' target="_blank"
-                     rel="noopener noreferrer">→ swiftly.nz</a><br />
+                  Online Store Builder<br />Co-founder + Designer<br />Apr 2020 → Now<br /><br /> <a
+                     href='https://swiftly.nz' target="_blank" rel="noopener noreferrer">→ swiftly.nz</a><br />
                   <a href='/projects/swiftly' target="_blank" rel="noopener noreferrer">→ Case study</a>
 
             </div>
@@ -258,8 +247,8 @@
          <div class='container-project-grid'>
             <div>
                <h2>Voluntarily</h2>
-               <p class='project-info-side'>FOSS Volunteering Platform<br />Jan 2019 → Aug 2020<br /><br /> <a
-                     href='https://voluntarily.nz'>→ voluntarily.nz</a>
+               <p class='project-info-side'>School Volunteering Platform<br />Lead Designer <br />Jan 2019 → Aug
+                  2020<br /><br /> <a href='https://voluntarily.nz'>→ voluntarily.nz</a>
                   <br /> <a href='https://github.com/voluntarily/vly2' target="_blank" rel="noopener noreferrer">→
                      GitHub Repository</a>
                </p>
@@ -281,8 +270,9 @@
          <div class='container-project-grid'>
             <div>
                <h2>Ubiquity</h2>
-               <p class='project-info-side'>Marketing Automation Tool<br />Nov 2017 → Jan 2019<br /><br /> <a
-                     href="https://www.qrious.co.nz/engage/ubiquity" target='_blank' rel="noopener noreferrer">→
+               <p class='project-info-side'>Marketing Automation Tool<br />Product Designer<br />Nov 2017 → Jan
+                  2019<br /><br /> <a href="https://www.qrious.co.nz/engage/ubiquity" target='_blank'
+                     rel="noopener noreferrer">→
                      ubiquity.co.nz</a></p>
             </div>
             <div class='container-project-content'>
@@ -305,7 +295,7 @@
          <div class='container-project-grid'>
             <div>
                <h2>Flatbot</h2>
-               <p class='project-info-side'>Sniper Chatbot<br />Dec 2017 → Jul 2019</p>
+               <p class='project-info-side'>Sniper Chatbot<br />Product Designer<br />Dec 2017 → Jul 2019</p>
             </div>
             <div class='container-project-content'>
                <p>Flatbot is a chatbot that helps friends and colleagues spend less time for a place to rent. Performs
@@ -325,7 +315,8 @@
          <div class='container-project-grid'>
             <div>
                <h2>Qrious</h2>
-               <p class='project-info-side'>Multiple Teams & Projects<br />Jan 2017 → Jan 2019<br /><br />
+               <p class='project-info-side'>Multiple Teams & Projects<br />Product Designer<br />Jan 2017 → Jan
+                  2019<br /><br />
                   <a target='_blank' href='https://qrious.co.nz' rel="noopener noreferrer">→ qrious.co.nz</a>
                </p>
             </div>
@@ -346,8 +337,9 @@
          <div class='container-project-grid'>
             <div>
                <h2>Mighway</h2>
-               <p class='project-info-side'>Campervan Rental Platform<br />Mar 2016 → Jan 2017<br /><br /><a
-                     href='https://mighway.com' target="_blank" rel="noopener noreferrer">→ mighway.com</a></p>
+               <p class='project-info-side'>Campervan Rental Platform<br />Product Designer<br />Mar 2016 → Jan
+                  2017<br /><br /><a href='https://mighway.com' target="_blank" rel="noopener noreferrer">→
+                     mighway.com</a></p>
             </div>
             <div class='container-project-content'>
                <p>
@@ -361,7 +353,7 @@
             </div>
          </div>
       </section>
-      <div id="crap" class="project-title-container">
+      <div id="crap" class="project-container">
          <h2 class="project-title">
             Experiments
          </h2>
@@ -470,7 +462,8 @@
                </a>
             </div>
          </div>
-         <div id="crap" class="project-title-container">
+
+         <div class="project-title-container">
             <h2 class="project-title">
                <a href='/experiments/' target="_blank" rel="noopener noreferrer">See more experiments</a>
             </h2>

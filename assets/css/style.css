@@ -65,9 +65,10 @@ canvas {
   padding: 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.55);
   position: sticky;
   top: 0;
+  z-index: 5;
 }
 
 
@@ -100,7 +101,7 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: -1px;
   margin: 0;
   line-height: 1.5;
@@ -189,6 +190,12 @@ ul {
   margin-bottom: 1.5rem;
 }
 
+.about-media-item:first-of-type {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+
+}
+
 .about-media-item:last-of-type {
   border-bottom: none;
   padding-bottom: 0;
@@ -207,12 +214,6 @@ ul {
   hero components
   */
 
-.hero {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  z-index: -100;
-}
 
 .primary-container {
   margin-bottom: 2rem;
@@ -226,8 +227,11 @@ ul {
 }
 
 .hero-title {
-  margin-top: 5rem;
-  text-align: center;
+  text-align: left;
+  font-weight: 300;
+  word-break: keep-all;
+  white-space: wrap;
+
 }
 
 .hero-link {
@@ -286,7 +290,6 @@ ul {
   about components
   */
 .container-about {
-  height: 100vh;
   display: block;
 }
 
@@ -300,12 +303,13 @@ ul {
 }
 
 .about-potato {
-  margin: 4rem;
+  padding: 4rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .about-constrain {
-  max-width: 1080px;
-  margin: 0 auto;
+  max-width: 1000px;
+
 }
 
 .container-about-grid-content {
@@ -313,23 +317,14 @@ ul {
   margin-top: 32vh;
 }
 
-.container-about-video-container {
-  position: absolute;
-  width: 100%;
-  min-height: 100vh;
-  top: 0;
-  z-index: -1;
+.container-about-hero {
+  position: relative;
+  padding: 4rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  ;
 }
 
-.container-about-grid-video {
-  width: 100%;
-  height: 100vh;
-  object-position: top;
-  object-fit: cover;
-  opacity: 0.15
-}
-
-.list-title {
+container-about-hero .list-title {
   margin-top: 5rem;
   font-size: 2rem;
 }
@@ -369,8 +364,15 @@ stupid crap grid
 .project-title-container {
   height: auto;
   margin: 2rem auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 2rem 0;
+  text-align: left;
+}
+
+.project-grid-mega {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .project-title {
@@ -382,7 +384,8 @@ stupid crap grid
 .project-container {
   margin: 0 auto;
   width: 90vw;
-  padding: 4rem;
+  max-width: 1920px;
+  padding: 4rem 2rem 0 2rem;
 }
 
 .project-grid-container {
@@ -491,7 +494,7 @@ stupid crap grid
 
 @media only screen and (max-width: 1280px) {
   h1 {
-    font-size: 2.25rem;
+    font-size: 4rem;
     letter-spacing: -1px;
   }
 
@@ -526,6 +529,10 @@ stupid crap grid
 }
 
 @media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+
   .secondary-container {
     position: relative;
     display: block;
@@ -554,6 +561,10 @@ stupid crap grid
 }
 
 @media only screen and (max-width: 768px) {
+  .container-about-hero br {
+    display: none;
+  }
+
   h1 {
     font-size: 2.5rem;
   }
@@ -589,6 +600,15 @@ stupid crap grid
 }
 
 @media only screen and (max-width: 601px) {
+
+  .container-about-hero {
+    padding: 2rem;
+  }
+
+  .container-about-hero br {
+    display: none;
+  }
+
   h1 {
     font-size: 2.5rem;
     letter-spacing: -1px;
@@ -604,6 +624,7 @@ stupid crap grid
   }
 
   .about-potato {
+    padding: 0;
     margin: 2rem;
   }
 
@@ -662,9 +683,7 @@ stupid crap grid
     margin: 0;
   }
 
-  .container-about-video-container {
-    padding: 0rem;
-  }
+
 
   .container-project-template-1 {
     padding: 6rem 0rem;
