@@ -412,6 +412,7 @@ stupid crap grid
   overflow: hidden;
   transition: all 0.25s;
   object-fit: cover;
+  border-radius: 32px;
 }
 
 /* //projects */
