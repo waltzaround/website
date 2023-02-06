@@ -70,6 +70,8 @@ canvas {
   top: 0;
 }
 
+
+
 .main-nav-title {
   font-size: 1.2rem;
 }
@@ -79,6 +81,7 @@ canvas {
   align-items: center;
   gap: 1.5rem;
 }
+
 
 .safariHack {
   z-index: 30;
@@ -591,6 +594,15 @@ stupid crap grid
     letter-spacing: -1px;
   }
 
+  .about {
+    padding: 0.5rem;
+  }
+
+  .about-group {
+    border-radius: 16px;
+    margin-bottom: 1rem;
+  }
+
   .about-potato {
     margin: 2rem;
   }
@@ -718,6 +730,9 @@ stupid crap grid
     margin-bottom: 6rem;
   }
 
+  .about-group {
+    padding: 1rem;
+  }
 }
 
 
