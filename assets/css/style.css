@@ -475,6 +475,13 @@ stupid crap grid
   }
 }
 
+@media only screen and (min-width: 1600px) {
+  .container-project-content {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+      padding-left: 2.5rem;
+  }
+}
+
 @media only screen and (max-width: 1600px) {
   h1 {
     font-size: 3rem;
@@ -544,7 +551,9 @@ stupid crap grid
     z-index: 1;
     top: 15rem;
   }
-
+  .project-grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
   .container-project-grid {
     grid-template-columns: 1fr;
     row-gap: 0.5rem;
