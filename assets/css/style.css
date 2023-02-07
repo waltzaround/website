@@ -123,6 +123,11 @@ p {
   margin: 0;
   font-size: 1.5rem;
   line-height: 1.5;
+  font-weight: 200;
+}
+
+q {
+  font-weight: 200;
 }
 
 a {
