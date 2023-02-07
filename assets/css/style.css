@@ -166,6 +166,8 @@ ul {
   padding: 2.5rem;
   border-radius: 32px;
   margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.25);
 }
 
 .about-title {
@@ -429,6 +431,8 @@ stupid crap grid
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 0 0 32px 32px;
   box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.25);
 }
 
 .container-project-content {
@@ -442,6 +446,10 @@ stupid crap grid
   max-width: 1920px;
   border-radius: 32px 32px 0 0;
   box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -595,7 +603,7 @@ q::before, q::after {
   }
 
   .quote {
-    padding: 2rem;
+    padding: 0rem;
   }
 
   .container-summary {
