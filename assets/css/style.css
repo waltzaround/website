@@ -405,8 +405,8 @@ stupid crap grid
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 1920px;
   margin: 0 auto 10rem auto;
-  column-gap: 4rem;
-  row-gap: 6rem;
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
 }
 
 .project-card-title {
