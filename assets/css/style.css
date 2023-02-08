@@ -132,7 +132,7 @@ q {
 
 a {
   text-decoration: none;
-
+  font-weight: 400;
   color: rgb(180, 187, 250);
   line-height: 0;
   transition: all 0.15s;
