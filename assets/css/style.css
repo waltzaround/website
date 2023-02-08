@@ -103,7 +103,7 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: -1px;
   margin: 0;
   line-height: 1.5;
@@ -494,6 +494,22 @@ stupid crap grid
 
 q::before, q::after {
   font-size: 2rem;
+}
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 2.5rem;
+}
+.skill-tag {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 120px;
+  background-color: rgba(0,0,0,0.08);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+  color: rgb(212, 212, 212);
 }
 
 @media only screen and (max-width: 1920px) {
