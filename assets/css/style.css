@@ -701,7 +701,7 @@ q::before, q::after {
 @media only screen and (max-width: 601px) {
 
   .container-about-hero {
-    padding: 2rem;
+    padding: 1.5rem;
   }
 
   .container-about-hero br {
@@ -723,8 +723,8 @@ q::before, q::after {
   }
 
   .about-potato {
-    padding: 0;
-    margin: 1.5rem;
+    margin: 0;
+    padding: 1.5rem;
   }
 
   .hero-title {
