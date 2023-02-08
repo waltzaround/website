@@ -442,6 +442,8 @@ stupid crap grid
 
 .container-project-content {
   max-width: 1000px;
+  display: grid;
+  align-content: space-between;
 }
 
 .container-project-img-1 {
@@ -500,7 +502,7 @@ q::before, q::after {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0.25rem;
+  gap: 0.5rem;
   margin-top: 2.5rem;
 }
 .skill-tag {
@@ -508,7 +510,7 @@ q::before, q::after {
   border-radius: 120px;
   background-color: rgba(0,0,0,0.08);
   padding: 0.5rem 0.75rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: rgb(212, 212, 212);
 }
 
