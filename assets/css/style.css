@@ -414,7 +414,9 @@ stupid crap grid
   margin-bottom: 1rem;
 }
 
-.project-card-content {}
+.project-card-content {
+  font-size: 1.25rem;
+}
 
 .project-card {
   width: 100%;
