@@ -457,6 +457,11 @@ stupid crap grid
   align-content: space-between;
 }
 
+
+.container-project-content p {
+  font-size: 1.25rem;
+}
+
 .container-project-img-1 {
   margin: 0 auto;
   width: 100%;
