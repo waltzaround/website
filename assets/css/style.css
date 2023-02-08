@@ -409,19 +409,29 @@ stupid crap grid
 }
 
 .project-card-title {
-  margin: 0.5rem 0;
-}
-
-.project-card-content {
+  line-height: 1;
   margin-bottom: 1rem;
 }
+
+.project-card-content {}
 
 .project-card {
   width: 100%;
   overflow: hidden;
   transition: all 0.25s;
   object-fit: cover;
+  border-radius: 32px 32px 0 0;
+}
+
+.project-card-container {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 40px rgb(0 0 0 / 25%);
   border-radius: 32px;
+}
+
+.project-card-text {
+  padding: 2.5rem;
 }
 
 /* //projects */
@@ -431,7 +441,7 @@ stupid crap grid
   grid-template-columns: 27rem 1fr;
   max-width: 1920px;
   margin: 0 auto;
-  column-gap: 4rem;
+  column-gap: 2.5rem;
   padding: 2.5rem;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 0 0 32px 32px;
@@ -505,10 +515,11 @@ q::before, q::after {
   gap: 0.5rem;
   margin-top: 2.5rem;
 }
+
 .skill-tag {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 120px;
-  background-color: rgba(0,0,0,0.08);
+  background-color: rgba(0, 0, 0, 0.08);
   padding: 0.5rem 0.75rem;
   font-size: 1rem;
   color: rgb(212, 212, 212);
@@ -704,7 +715,7 @@ q::before, q::after {
 
   .about-potato {
     padding: 0;
-    margin: 2rem;
+    margin: 1.5rem;
   }
 
   .hero-title {
@@ -762,7 +773,9 @@ q::before, q::after {
     margin: 0;
   }
 
-
+  .project-card-text {
+    padding: 1.5rem;
+  }
 
   .container-project-template-1 {
     padding: 0rem;
@@ -776,6 +789,7 @@ q::before, q::after {
   .container-project-grid {
     margin: 0;
     border-radius: 0;
+    padding: 1.5rem;
   }
 
   .links {
@@ -807,7 +821,11 @@ q::before, q::after {
   }
 
   .project-title {
-    font-size: 2rem;
+    font-size: 3.5rem;
+  }
+
+  .quote-container {
+    padding: 1.5rem;
   }
 }
 
@@ -815,6 +833,8 @@ q::before, q::after {
   h1 {
     font-size: 2rem;
   }
+
+
 
   .hero-title {
     margin-top: 0rem;
