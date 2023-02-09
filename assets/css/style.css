@@ -528,6 +528,8 @@ stupid crap grid
   font-size: 1.25rem;
   color: white;
   font-weight: 200;
+  max-width: 1440px;
+  display: block;
 }
 
 .quote-divider {
@@ -637,7 +639,14 @@ q::before, q::after {
     padding: 0;
   }
 
+  .quote-container-3 {
+    grid-template-columns: 1fr;
+  }
 
+  .quote-divider {
+    width: 100%;
+    height: 1px;
+  }
 }
 
 .container-project-template-1 {
@@ -683,6 +692,12 @@ q::before, q::after {
     text-align: left;
     margin-left: 2rem;
   }
+
+  .quote-container {
+    margin: 0 2rem;
+  }
+
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -730,8 +745,21 @@ q::before, q::after {
 
 @media only screen and (max-width: 601px) {
 
+  .quote-container {
+    margin: 1.5rem 1rem;
+  }
+
+  .quote-container hr {
+    margin: 1rem 0;
+  }
+
+  .quote-container-heading {
+    font-size: 1.5rem;
+  }
+
   .container-about-hero {
     padding: 1.5rem;
+    margin: 0;
   }
 
   .container-about-hero br {
