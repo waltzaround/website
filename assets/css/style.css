@@ -497,7 +497,7 @@ stupid crap grid
 
 .quote {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1920px;
   padding: 0 4rem;
 }
 
@@ -505,12 +505,42 @@ stupid crap grid
   /* background-color: rgba(0, 0, 0, 0.2); */
   border-radius: 32px;
   box-sizing: border-box;
-  padding: 2.5rem
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 40px rgb(0 0 0 / 25%);
+}
+
+.quote-container hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 2.5rem 0;
+}
+
+.quote-container-3 {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr 1px 1fr;
+  gap: 2.5rem;
 }
 
 .quote-boy {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: white;
+  font-weight: 200;
+}
+
+.quote-divider {
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  ;
+}
+
+.quote-box {
+
+  border-radius: 32px;
+
 }
 
 q::before, q::after {
