@@ -255,6 +255,9 @@ ul {
   color: black;
 }
 
+.about-media-item a p {
+  font-weight: 400;
+}
 
 
 /* 
