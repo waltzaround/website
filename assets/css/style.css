@@ -511,6 +511,11 @@ stupid crap grid
   box-shadow: 0 4px 40px rgb(0 0 0 / 25%);
 }
 
+.quote-container-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 .quote-container hr {
   border: none;
   height: 1px;
