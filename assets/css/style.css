@@ -472,6 +472,7 @@ stupid crap grid
   margin: 0 auto;
   width: 100%;
   display: block;
+  
   max-width: 1920px;
   border-radius: 32px 32px 0 0;
   box-sizing: border-box;
@@ -531,7 +532,18 @@ stupid crap grid
   grid-template-columns: 1fr 1px 1fr 1px 1fr;
   gap: 2.5rem;
 }
-
+.quote-heading {
+   margin: 0;
+   font-size: 1rem;
+                   line-height: 1;
+                   margin-bottom: 1rem;
+                   border: 1px solid rgba(255, 255, 255, 0.1);
+                   border-radius: 120px;
+                   background-color: rgba(0, 0, 0, 0.08);
+                   padding: 0.75rem 1rem;
+                   width: fit-content;
+                   font-weight: 500;
+}
 .quote-boy {
   font-size: 1.25rem;
   color: white;
