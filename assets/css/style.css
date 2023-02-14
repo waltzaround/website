@@ -516,8 +516,9 @@ stupid crap grid
 }
 
 .quote-container-heading {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 400;
 }
 
 .quote-container hr {
